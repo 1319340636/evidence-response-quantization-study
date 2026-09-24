@@ -200,11 +200,86 @@ def verify_confirmatory(root: Path) -> None:
             raise ValueError(f"confirmatory {condition} Balanced Accuracy mismatch")
 
 
+def verify_tabfact(root: Path) -> None:
+    """Check source-bound safe rows and recalculate the four frozen diagnostics."""
+
+    data = root / "data/tabfact"
+    records_path = data / "analysis_records.jsonl"
+    manifest_path = data / "analysis_records_manifest.json"
+    sidecar = data / "analysis_records_manifest.json.sha256"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    if sidecar.read_text(encoding="utf-8").split() != [digest(manifest_path), manifest_path.name]:
+        raise ValueError("TabFact detached manifest hash mismatch")
+    canonical = json.dumps(
+        {k: v for k, v in manifest.items() if k != "manifest_sha256"},
+        ensure_ascii=False, sort_keys=True, separators=(",", ":"), allow_nan=False,
+    ).encode("utf-8")
+    if hashlib.sha256(canonical).hexdigest() != manifest.get("manifest_sha256"):
+        raise ValueError("TabFact manifest content hash mismatch")
+    if digest(records_path) != manifest.get("records_jsonl_sha256"):
+        raise ValueError("TabFact records hash mismatch")
+    if manifest.get("dataset_text_included") is not False:
+        raise ValueError("TabFact text-free flag missing")
+    conditions = {
+        "qwen_f16": "qwen35_9b_F16",
+        "qwen_q4": "qwen35_9b_Q4_K_M",
+        "gemma_f16": "gemma4_e4b_F16",
+        "gemma_q4": "gemma4_e4b_Q4_K_M",
+    }
+    by_condition: dict[str, dict[str, dict]] = {name: {} for name in conditions}
+    for line in records_path.open("rb"):
+        if any(marker in line for marker in FORBIDDEN) or b'"table_rows":' in line:
+            raise ValueError("TabFact record includes source text, credential, or host path")
+        row = json.loads(line)
+        condition = row.get("condition")
+        if condition not in by_condition:
+            raise ValueError("TabFact unexpected condition")
+        if f"{row.get('model_key')}_{row.get('precision')}" != conditions[condition]:
+            raise ValueError("TabFact model or precision mismatch")
+        sample_id = row.get("sample_id")
+        if not isinstance(sample_id, str) or sample_id in by_condition[condition]:
+            raise ValueError("TabFact duplicate or invalid sample")
+        if row.get("gold_label") not in ("Entailed", "Refuted"):
+            raise ValueError("TabFact invalid gold label")
+        if row.get("hard_scored_label") not in ("Entailed", "Refuted"):
+            raise ValueError("TabFact invalid scored label")
+        if set(row.get("choice_logprobs", {})) != {"A", "B"}:
+            raise ValueError("TabFact choice scores incomplete")
+        by_condition[condition][sample_id] = row
+    if manifest.get("conditions") != {name: 2000 for name in conditions}:
+        raise ValueError("TabFact manifest condition count mismatch")
+    reference: dict[str, tuple[str, int, str]] | None = None
+    metrics = json.loads((root / "results/tabfact/results.json").read_text())["fresh_tabfact_formal"]["condition_metrics"]
+    for condition, published_name in conditions.items():
+        records = by_condition[condition]
+        if len(records) != 2000:
+            raise ValueError("TabFact sample count mismatch")
+        metadata = {sample_id: (row["table_id"], row["claim_index"], row["gold_label"])
+                    for sample_id, row in records.items()}
+        if reference is None:
+            reference = metadata
+        elif metadata != reference:
+            raise ValueError("TabFact paired membership mismatch")
+        rows = list(records.values())
+        accuracy = sum(r["gold_label"] == r["hard_scored_label"] for r in rows) / len(rows)
+        balanced_accuracy = statistics.fmean(
+            sum(r["hard_scored_label"] == label for r in rows if r["gold_label"] == label)
+            / sum(r["gold_label"] == label for r in rows)
+            for label in ("Entailed", "Refuted")
+        )
+        frozen = metrics[published_name]
+        if abs(accuracy - frozen["accuracy"]) > 1e-12:
+            raise ValueError(f"TabFact {condition} accuracy mismatch")
+        if abs(balanced_accuracy - frozen["balanced_accuracy"]) > 1e-12:
+            raise ValueError(f"TabFact {condition} Balanced Accuracy mismatch")
+
+
 def verify_data() -> None:
     sys.path.insert(0, str(ROOT / "src"))
     from qer_fv.three_model_records import load_text_free_three_model_inputs
 
     verify_confirmatory(ROOT)
+    verify_tabfact(ROOT)
     values, pages = load_text_free_three_model_inputs(ROOT / "data/three_model", formal=True)
     if len(values) != 3 or sum(map(len, values.values())) != 9 or len(set(pages.values())) != 1078:
         raise ValueError("three-model release structure mismatch")

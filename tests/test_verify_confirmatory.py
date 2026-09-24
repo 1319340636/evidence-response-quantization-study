@@ -39,3 +39,16 @@ def test_release_file_inventory_ignores_test_cache(tmp_path):
     (cache / "nodeids").write_text("generated", encoding="utf-8")
     (tmp_path / "README.md").write_text("public", encoding="utf-8")
     assert set(verifier.release_files()) == {"README.md"}
+
+
+def test_tabfact_verifier_recalculates_frozen_balanced_accuracy(tmp_path):
+    shutil.copytree(ROOT / "data/tabfact", tmp_path / "data/tabfact")
+    shutil.copytree(ROOT / "results/tabfact", tmp_path / "results/tabfact")
+    verifier = _verifier()
+    verifier.verify_tabfact(tmp_path)
+    report = tmp_path / "results/tabfact/results.json"
+    payload = json.loads(report.read_text(encoding="utf-8"))
+    payload["fresh_tabfact_formal"]["condition_metrics"]["qwen35_9b_F16"]["balanced_accuracy"] += 0.01
+    report.write_text(json.dumps(payload), encoding="utf-8")
+    with pytest.raises(ValueError, match="TabFact.*Balanced Accuracy"):
+        verifier.verify_tabfact(tmp_path)

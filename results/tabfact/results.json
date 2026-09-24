@@ -1,0 +1,263 @@
+{
+  "fresh_tabfact_formal": {
+    "analysis_protocol": "tabfact-formal-analysis-v1-20260719",
+    "condition_metrics": {
+      "gemma4_e4b_F16": {
+        "accuracy": 0.686,
+        "balanced_accuracy": 0.6854001686015174,
+        "confusion": {
+          "fn": 115,
+          "fp": 513,
+          "tn": 484,
+          "tp": 888
+        },
+        "mcc": 0.4047675492324369,
+        "n": 2000,
+        "predicted_entailed_rate": 0.7005,
+        "recall": {
+          "Entailed": 0.8853439680957128,
+          "Refuted": 0.485456369107322
+        }
+      },
+      "gemma4_e4b_Q4_K_M": {
+        "accuracy": 0.6395,
+        "balanced_accuracy": 0.6385292467632209,
+        "confusion": {
+          "fn": 38,
+          "fp": 683,
+          "tn": 314,
+          "tp": 965
+        },
+        "mcc": 0.36376388434874,
+        "n": 2000,
+        "predicted_entailed_rate": 0.824,
+        "recall": {
+          "Entailed": 0.9621136590229312,
+          "Refuted": 0.3149448345035105
+        }
+      },
+      "qwen35_9b_F16": {
+        "accuracy": 0.7495,
+        "balanced_accuracy": 0.7493762443861995,
+        "confusion": {
+          "fn": 210,
+          "fp": 291,
+          "tn": 706,
+          "tp": 793
+        },
+        "mcc": 0.5005192020914938,
+        "n": 2000,
+        "predicted_entailed_rate": 0.542,
+        "recall": {
+          "Entailed": 0.7906281156530409,
+          "Refuted": 0.708124373119358
+        }
+      },
+      "qwen35_9b_Q4_K_M": {
+        "accuracy": 0.6745,
+        "balanced_accuracy": 0.673715563440071,
+        "confusion": {
+          "fn": 65,
+          "fp": 586,
+          "tn": 411,
+          "tp": 938
+        },
+        "mcc": 0.4079160661645482,
+        "n": 2000,
+        "predicted_entailed_rate": 0.762,
+        "recall": {
+          "Entailed": 0.9351944167497508,
+          "Refuted": 0.41223671013039115
+        }
+      }
+    },
+    "family_effect_heterogeneity": {
+      "accuracy": {
+        "cluster_bootstrap_95_ci": {
+          "clusters": 1434,
+          "draws": 10000,
+          "lower": -0.052369077306733236,
+          "seed": 20260711,
+          "upper": -0.00451790243681488
+        },
+        "contrast": "qwen_effect_minus_gemma_effect",
+        "estimate": -0.02849999999999997
+      },
+      "balanced_accuracy": {
+        "cluster_bootstrap_95_ci": {
+          "clusters": 1434,
+          "draws": 10000,
+          "lower": -0.05228356184102823,
+          "seed": 20260711,
+          "upper": -0.005181264161640906
+        },
+        "contrast": "qwen_effect_minus_gemma_effect",
+        "estimate": -0.02878975910783199
+      },
+      "interpretation_boundary": "This is heterogeneity of matched within-family effects, not a comparison of raw model quality or an internal mechanism."
+    },
+    "inference_scope": "external_structured_evidence_validation",
+    "integrity": {
+      "condition_sources": {
+        "gemma4_e4b_F16": {
+          "audit_certificate_sha256": "ecd00c36f8239b5353207ec09089af36d44dd803d5b94374350bfec0e1d0f794",
+          "export_manifest_sha256": "d0d0c6e681f0fe694614a02fefd6b5f9d6ec52f56601df8f8fc8bd8d884d4071",
+          "records_sha256": "62cb7b67bc20a20a2bd8cdb260990b6738bb1e029cfea334696a19fb716a4e6b"
+        },
+        "gemma4_e4b_Q4_K_M": {
+          "audit_certificate_sha256": "a9c01674190e23a36a02412cce2fd6fee3a4423b4307f363e654adda9cdc1147",
+          "export_manifest_sha256": "3e8f9cf522e22629c0a82943a39b1cffc9c8c65fb25ebad2a5d8eb6248248a98",
+          "records_sha256": "cf404fbca412406c47973f9379178b38187bfd018ac99726c0a2a8e9535b8e30"
+        },
+        "qwen35_9b_F16": {
+          "audit_certificate_sha256": "3e1efdd23a2309d0f2ea95fae13028b15fcfffa17a0919700fff416284f4340e",
+          "export_manifest_sha256": "87e3aac8fde7f43ffce4dd11abe49f40951dcdf32cb67a4fdba7243c518dd52d",
+          "records_sha256": "4cc05cb7932bbfbcc0a0ea1083462f53f47fe0a54990d7cccbdd30c5dcf12b79"
+        },
+        "qwen35_9b_Q4_K_M": {
+          "audit_certificate_sha256": "da3e038a0fa284cf182d615adaf90fe25f49e0d57d82e10cbf659332aad1d894",
+          "export_manifest_sha256": "3c4fdac0c1586c2c72003f04c1eee63f65c35229649da27748ea64ca37811733",
+          "records_sha256": "fdd192176a729f6ca947ac8418d0ace654f79278cf471e169ca9a0b966ee09fe"
+        }
+      },
+      "formal_gate_sha256": "a7e47c4c42eaf20dc837c4820268abe6d9098295f207e49db4afdaebb57d1cdd",
+      "hard_probability_label_disagreements": {
+        "gemma4_e4b_F16": 0,
+        "gemma4_e4b_Q4_K_M": 0,
+        "qwen35_9b_F16": 0,
+        "qwen35_9b_Q4_K_M": 0
+      },
+      "owner_alignment": "exact"
+    },
+    "parameters": {
+      "bootstrap_draws": 10000,
+      "cluster": "table",
+      "primary_comparison": "within_family_q4_k_m_minus_f16",
+      "seed": 20260711
+    },
+    "population": {
+      "claims": 2000,
+      "conditions": 4,
+      "gold_counts": {
+        "Entailed": 1003,
+        "Refuted": 997
+      },
+      "tables": 1434
+    },
+    "within_family_effects": {
+      "gemma4_e4b": {
+        "accuracy": {
+          "cluster_bootstrap_95_ci": {
+            "clusters": 1434,
+            "draws": 10000,
+            "lower": -0.06365048379028872,
+            "seed": 20260711,
+            "upper": -0.029426433915212043
+          },
+          "difference": -0.0465000000000001,
+          "f16": 0.686,
+          "q4_k_m": 0.6395
+        },
+        "balanced_accuracy": {
+          "cluster_bootstrap_95_ci": {
+            "clusters": 1434,
+            "draws": 10000,
+            "lower": -0.0631800870792684,
+            "seed": 20260711,
+            "upper": -0.0304834913382906
+          },
+          "difference": -0.04687092183829655,
+          "f16": 0.6854001686015174,
+          "q4_k_m": 0.6385292467632209
+        },
+        "mcc": {
+          "difference": -0.04100366488369689,
+          "f16": 0.4047675492324369,
+          "q4_k_m": 0.36376388434874
+        },
+        "predicted_entailed_rate": {
+          "difference": 0.12349999999999994,
+          "f16": 0.7005,
+          "q4_k_m": 0.824
+        },
+        "recall": {
+          "Entailed": {
+            "difference": 0.07676969092721841,
+            "f16": 0.8853439680957128,
+            "q4_k_m": 0.9621136590229312
+          },
+          "Refuted": {
+            "difference": -0.17051153460381147,
+            "f16": 0.485456369107322,
+            "q4_k_m": 0.3149448345035105
+          }
+        },
+        "transitions": {
+          "both_correct": 1173,
+          "both_wrong": 522,
+          "f16_correct_q4_wrong": 199,
+          "f16_wrong_q4_correct": 106,
+          "mcnemar_exact_pvalue": 1.109958087176672e-07,
+          "prediction_flips": 305
+        }
+      },
+      "qwen35_9b": {
+        "accuracy": {
+          "cluster_bootstrap_95_ci": {
+            "clusters": 1434,
+            "draws": 10000,
+            "lower": -0.0961250480616377,
+            "seed": 20260711,
+            "upper": -0.05408112168252377
+          },
+          "difference": -0.07500000000000007,
+          "f16": 0.7495,
+          "q4_k_m": 0.6745
+        },
+        "balanced_accuracy": {
+          "cluster_bootstrap_95_ci": {
+            "clusters": 1434,
+            "draws": 10000,
+            "lower": -0.0948541134130687,
+            "seed": 20260711,
+            "upper": -0.05701994414879583
+          },
+          "difference": -0.07566068094612854,
+          "f16": 0.7493762443861995,
+          "q4_k_m": 0.673715563440071
+        },
+        "mcc": {
+          "difference": -0.09260313592694563,
+          "f16": 0.5005192020914938,
+          "q4_k_m": 0.4079160661645482
+        },
+        "predicted_entailed_rate": {
+          "difference": 0.21999999999999997,
+          "f16": 0.542,
+          "q4_k_m": 0.762
+        },
+        "recall": {
+          "Entailed": {
+            "difference": 0.14456630109670987,
+            "f16": 0.7906281156530409,
+            "q4_k_m": 0.9351944167497508
+          },
+          "Refuted": {
+            "difference": -0.2958876629889669,
+            "f16": 0.708124373119358,
+            "q4_k_m": 0.41223671013039115
+          }
+        },
+        "transitions": {
+          "both_correct": 1191,
+          "both_wrong": 343,
+          "f16_correct_q4_wrong": 308,
+          "f16_wrong_q4_correct": 158,
+          "mcnemar_exact_pvalue": 3.3523204784988398e-12,
+          "prediction_flips": 466
+        }
+      }
+    }
+  },
+  "report_protocol": "tabfact-formal-report-v1-20260719"
+}

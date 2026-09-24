@@ -1,0 +1,27 @@
+{
+  "conditions": {
+    "gemma_f16": 2000,
+    "gemma_q4": 2000,
+    "qwen_f16": 2000,
+    "qwen_q4": 2000
+  },
+  "dataset_text_included": false,
+  "evidence_sha256": "cd78d8b74db92c651374ac75e99302a447b13c326e9f0649e4e6793f8e959610",
+  "manifest_sha256": "080271299271b8d4bbd15336037be71d44066c8456cdac2f7cbe68aa62b76192",
+  "paired_samples": 2000,
+  "prompt_contract_sha256": "62be3ad998b851887ce433bb80a8269f020dbea63c048d418f0e1277590352e1",
+  "protocol": "fresh-tabfact-text-free-v1-20260924",
+  "records": 8000,
+  "records_jsonl_sha256": "683263f95cf94b747fbfd30e25f6eb53e5e7f4759da98f94c61041d3cbb5bafb",
+  "source_sha256": {
+    "gemma_f16_manifest": "b8df37b478b2b2d00d0bc782e94b5972492137de4581fc5e6403ca433870482c",
+    "gemma_f16_records": "62cb7b67bc20a20a2bd8cdb260990b6738bb1e029cfea334696a19fb716a4e6b",
+    "gemma_q4_manifest": "2ddd2f30ac9c1246bdf9983f102cc6be8c300e168829c88272ad9b040fde5bb1",
+    "gemma_q4_records": "cf404fbca412406c47973f9379178b38187bfd018ac99726c0a2a8e9535b8e30",
+    "qwen_f16_manifest": "107ae70bf418e285f012a8ec3844b552eb06273358821b0577ae625b300b660b",
+    "qwen_f16_records": "4cc05cb7932bbfbcc0a0ea1083462f53f47fe0a54990d7cccbdd30c5dcf12b79",
+    "qwen_q4_manifest": "f891b215e19236755b90e1e1fb87c8c9c6441c3c9f78b70857041e12cded0424",
+    "qwen_q4_records": "fdd192176a729f6ca947ac8418d0ace654f79278cf471e169ca9a0b966ee09fe"
+  },
+  "split_sha256": "4318fc178818cdf14f86cdf94d5271a80ba5460ac8ae8c47c3dbb803b2b556a6"
+}
