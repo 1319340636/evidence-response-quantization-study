@@ -1,0 +1,71 @@
+{
+  "protocol_version": "vitaminc-hf-balanced-mapping-v2-20260905",
+  "freeze_date": "2026-09-05",
+  "scientific_role": "post_hoc_scoring_interface_robustness",
+  "prompt_contract": {
+    "path": "configs/prompt_contract_v2.json",
+    "sha256": "62be3ad998b851887ce433bb80a8269f020dbea63c048d418f0e1277590352e1"
+  },
+  "population": {
+    "formal_ids": "data/manifests/vitaminc_dose_subset_ids.txt",
+    "formal_ids_sha256": "bbe3e66dc7e53e0fa08c656716e113f63b8c5232de8b9fa895de6046b861b9f1",
+    "engineering_ids": "data/manifests/vitaminc_balanced_mapping_smoke_4_ids.txt",
+    "engineering_ids_sha256": "2aa8f103268c8e0e54def4a5d7afd27f761ba20a2dd7dce93ab54cf21991d1c2",
+    "engineering_quartets": 4,
+    "formal_quartets": 1200,
+    "formal_pages": 1078,
+    "full_evidence_inputs_per_condition": 4800
+  },
+  "mappings": {
+    "original": {
+      "A": "SUPPORTS",
+      "B": "REFUTES",
+      "C": "NOT ENOUGH INFO"
+    },
+    "cycle_1": {
+      "A": "REFUTES",
+      "B": "NOT ENOUGH INFO",
+      "C": "SUPPORTS"
+    },
+    "cycle_2": {
+      "A": "NOT ENOUGH INFO",
+      "B": "SUPPORTS",
+      "C": "REFUTES"
+    }
+  },
+  "models": {
+    "qwen35_9b": {
+      "repo_id": "Qwen/Qwen3.5-9B",
+      "routes": ["FP16", "GPTQ_INT4", "AWQ_INT4"]
+    },
+    "ministral3_8b": {
+      "repo_id": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+      "revision": "06cc81bfd6e45321d8fc8f816576c5b6ac67ec22",
+      "routes": ["FP16", "GPTQ_INT4", "AWQ_INT4"]
+    },
+    "olmo3_7b": {
+      "repo_id": "allenai/OLMo-3-7B-Instruct",
+      "revision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+      "routes": ["FP16", "GPTQ_INT4", "AWQ_INT4"]
+    }
+  },
+  "analysis": {
+    "primary_original_results_unchanged": true,
+    "alternative_mappings": ["cycle_1", "cycle_2"],
+    "scale_robust_endpoints_per_mapping": 12,
+    "new_sensitivity_hypotheses": 24,
+    "multiplicity": "holm_across_24_new_sensitivity_tests",
+    "cluster": "page",
+    "bootstrap_draws": 10000,
+    "seed": 20260711,
+    "robustness_rule": "direction_and_bounded_gate_match_original_for_both_alternative_mappings"
+  },
+  "execution": {
+    "rerun_original_mapping_in_same_runtime_window": true,
+    "engineering_gate_before_formal": true,
+    "engineering_outcome_access": false,
+    "serial_conditions": true,
+    "recovery_access": false
+  },
+  "causal_boundary": "mapping_sensitivity_of_model_route_associations_not_pure_quantizer_effect"
+}

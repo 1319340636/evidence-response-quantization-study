@@ -1,0 +1,48 @@
+{
+  "contract_version": "prompt-v2-20260714",
+  "system_instruction": "You are a fact verifier. Follow the supplied task definition and return exactly one allowed choice letter with no explanation.",
+  "controls": {
+    "full": {
+      "task_instruction": "Use the supplied evidence."
+    },
+    "no_evidence": {
+      "task_instruction": "Use the evidence field exactly as supplied, including the [NO_EVIDENCE] marker."
+    },
+    "knowledge_only": {
+      "task_instruction": "Using only your existing knowledge, determine whether the claim itself is true, false, or unknown.",
+      "choices": {
+        "A": "True",
+        "B": "False",
+        "C": "Unknown"
+      }
+    },
+    "query_only": {
+      "task_instruction": "Determine the claim label without supplied evidence."
+    }
+  },
+  "datasets": {
+    "vitaminc": {
+      "task_instruction": "Determine whether the evidence supports, refutes, or provides insufficient information for the claim.",
+      "choices": {
+        "A": "SUPPORTS",
+        "B": "REFUTES",
+        "C": "NOT ENOUGH INFO"
+      }
+    },
+    "cub_druid": {
+      "task_instruction": "Determine whether the claim is true, false, or cannot be determined from the supplied context.",
+      "choices": {
+        "A": "True",
+        "B": "False",
+        "C": "None"
+      }
+    },
+    "tabfact": {
+      "task_instruction": "Determine whether the table entails or refutes the claim.",
+      "choices": {
+        "A": "Entailed",
+        "B": "Refuted"
+      }
+    }
+  }
+}

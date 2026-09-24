@@ -1,0 +1,54 @@
+{
+  "choice_to_label": {
+    "A": "SUPPORTS",
+    "B": "REFUTES",
+    "C": "NOT ENOUGH INFO"
+  },
+  "conditions": {
+    "ministral_awq": 1200,
+    "ministral_fp16": 1200,
+    "ministral_gptq": 1200,
+    "olmo_awq": 1200,
+    "olmo_fp16": 1200,
+    "olmo_gptq": 1200,
+    "qwen_awq": 1200,
+    "qwen_fp16": 1200,
+    "qwen_gptq": 1200
+  },
+  "dataset_text_included": false,
+  "manifest_sha256": "6f1b64f0e546b16781ab4acac9de638774c552ca09210ac171be05aeac83e6aa",
+  "models": 3,
+  "prompt_contract_sha256": "62be3ad998b851887ce433bb80a8269f020dbea63c048d418f0e1277590352e1",
+  "protocol": "three-model-analysis-records-v1-20260902",
+  "quartet_interaction_formula": "(m0-m1-m2+m3)/2; m=logp(SUPPORTS)-logp(negative_label)",
+  "reconstructable_estimands": [
+    "quartet_interaction_I",
+    "within_model_route_contrasts",
+    "all_pairwise_reference_standardized_route_effects",
+    "all_pairwise_directional_common_language_effects"
+  ],
+  "records": 10800,
+  "records_jsonl_sha256": "d9930a50a4bc75de3917ef568f8ed660d76cc4522eae5ccd6aefdf8548210914",
+  "source_sha256": {
+    "ministral_awq_manifest": "18a9089aa866bad6befe6ae59f85e8b5ccbb78ede9d6d56a7f9ccd3a48c21ad8",
+    "ministral_awq_records": "82bac83c8eb6a2130a2ab8d19fe88e8da4ddbfb9812db47c027c0957640d9254",
+    "ministral_fp16_manifest": "566ebe0e3b613b635a1f4d24803f002334dd21c472f113b566ca684bd3952df8",
+    "ministral_fp16_records": "fac3ec9dd413fb1aecf7357b4f4d54d8e067ee34d56de2b2e130577ecda40bbc",
+    "ministral_gptq_manifest": "e70dd4152209d3ff70cd847ebf5e934f37dce46b028c2c3eee2a8378a84396e6",
+    "ministral_gptq_records": "16500180a6b82608f2b811d0bf506e1753790b528c860078f9c24bb094c7b9c8",
+    "olmo_awq_manifest": "686cc020b3978ac780896f035f4d3deee233dc6ab030aa3692b0aec400836480",
+    "olmo_awq_records": "f86ae7d30fa24956eeaaecdcf25f211e92f1618758b637328f1b19a625258ebd",
+    "olmo_fp16_manifest": "d0d99c3c0970a40d9e1d158881d8aa3391c2308ee841d3fd07250a0ea7d86228",
+    "olmo_fp16_records": "3ca327e6f8c010b09953c94067827538cae0b6bc9bb4db73be8611c1e97a3979",
+    "olmo_gptq_manifest": "3cebb574f29651224ca90521d30296fd10621432e2cb417053dca23cef09e751",
+    "olmo_gptq_records": "24935ed2747fc11783a739cdd3854da260d0c5284a3fbdc8faca3161019d9732",
+    "qwen_awq_manifest": "a4156fa40a8482d8d63074ed90bce96acae5b50939a40acc77189d71c275c954",
+    "qwen_awq_records": "aebdf8b8a8a63a80114af214313e9b3afd263e9c6f07cfbcfe83d65fedda914f",
+    "qwen_fp16_manifest": "cd5f82b9ba44f57c915c055d9c276cbf7bf1c034709ed865dfcfda2fcf55aedd",
+    "qwen_fp16_records": "75a6200a945dc5eb9790412087f67a5bcaa75e6c3ac2af412a397894219ce5ea",
+    "qwen_gptq_manifest": "5b21789f52822c76518ca87085d08c684d9189d11923aec3b660067dcd8b7125",
+    "qwen_gptq_records": "c5e74a630bffba7264519c698984f4981c024b02f334ac03b5603eaf0c6dadc1"
+  },
+  "split": "dose_subset",
+  "split_sha256": "bbe3e66dc7e53e0fa08c656716e113f63b8c5232de8b9fa895de6046b861b9f1"
+}

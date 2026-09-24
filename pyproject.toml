@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qer-fv"
+version = "0.1.0"
+description = "Quantization effects on evidence-grounded fact verification"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+report = ["matplotlib>=3.8,<4"]
+
+[project.scripts]
+qer-fv-build-data-foundation = "qer_fv.manifests:main"
+qer-fv-audit-runtime = "qer_fv.runtime_audit:main"
+qer-fv-run-vitaminc-pilot = "qer_fv.pilot_runner:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

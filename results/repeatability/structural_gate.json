@@ -1,0 +1,1304 @@
+{
+  "cells": [
+    {
+      "cell": [
+        1,
+        "original",
+        "qwen35_9b",
+        "FP16"
+      ],
+      "complete_sha256": "f0e69579ae7ff454a8f62702fdfef908be76453f97fd98c64a621c198aef6edf",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "original",
+        "qwen35_9b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "323031c46a6dde45bc33af759577f31087d7ff8eb93519cfbc7f05fb92585962",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "original",
+        "qwen35_9b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "d0377f669647728c5c00b29868999d69a44ff592f46f87da3282382127a95c05",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "original",
+        "ministral3_8b",
+        "FP16"
+      ],
+      "complete_sha256": "ca42dc131d0401bcc4211049722646a94db10fee4c9ff8dd6d6bca22e38e301f",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "original",
+        "ministral3_8b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "c62c2f7be91ee67c1fde21b0973040eb4d7fa37a435ac7f6406dfd527554c4a8",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "original",
+        "ministral3_8b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "1a4cf84b230827943d39303f8682ddd9f0702e13e0c0f43a9f61f593799e235e",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "original",
+        "olmo3_7b",
+        "FP16"
+      ],
+      "complete_sha256": "b7d650277ea37bba9c94613835a2345091e82dfca8a3a29bace715863c8b3bf2",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "original",
+        "olmo3_7b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "ba4f78330762e3f65ae06ebc9b0dfb8ccfc9c7f626a8a5a0790da5100a28114f",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "original",
+        "olmo3_7b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "39a249a35be19dd15e2ef64a77f50dea9a3a8c578c51e06e77c23bcc36e91c5c",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "cycle_1",
+        "qwen35_9b",
+        "FP16"
+      ],
+      "complete_sha256": "89f9c6a99463fd8e2a12e18656c2deefac3042040ca654ad50bea6af7be8f1be",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "cycle_1",
+        "qwen35_9b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "36aa45504dcb0b9adc7fb4a4ef8ee497854a41bc2e3549a50d1bc9e3c464063a",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "cycle_1",
+        "qwen35_9b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "494291b415c03128e9f9b2d0d48eb5ece6d7da1a2c3eda252d11bd54767436d7",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "cycle_1",
+        "ministral3_8b",
+        "FP16"
+      ],
+      "complete_sha256": "9e6211036d817f7bde1b23116936592e6ba6e6f4adaf44dd053578825b313bfc",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "cycle_1",
+        "ministral3_8b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "e305e74ca48719c464d92df72d88e623b9da759d8ed31479414ff5d91a869342",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "cycle_1",
+        "ministral3_8b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "d612ba9a1bfa7f64f7b8faaf671471c43239910d560b775e9678895d24aed824",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "cycle_1",
+        "olmo3_7b",
+        "FP16"
+      ],
+      "complete_sha256": "a63fbcad056895744a22cd03d6660cb49c8eaccd0d39acf1633fcf577764a10a",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "cycle_1",
+        "olmo3_7b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "1a35162e8e8787bdf36030d3e79887f700997764151c96aa965261e9db965b32",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "cycle_1",
+        "olmo3_7b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "0f1c3147bc265d404eba6870a2e4c7666922124b15d2294a45ae222a0b81c2b6",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "cycle_2",
+        "qwen35_9b",
+        "FP16"
+      ],
+      "complete_sha256": "93d463100bf8274c9a41e740877a3423b233de9ad4f5757424726a153983efbb",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "cycle_2",
+        "qwen35_9b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "0c41dde4ec1b7f5a43f006356c3b4da8141a605a40fe6950366a441aab773f2c",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "cycle_2",
+        "qwen35_9b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "a6d41f9fd9186872eb7713f7ed9a5b5802bbf2c4cca7a580fdd660cabc907c1a",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "cycle_2",
+        "ministral3_8b",
+        "FP16"
+      ],
+      "complete_sha256": "1ebad57d6950e3c3afcc32ced2cd5b9e495b3ba83c584b838a9edd0cb1a480b6",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "cycle_2",
+        "ministral3_8b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "bed8c62acdaa6e5a4269d3e20099414414d31a07f2991f6ee849e57ec30a8caf",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "cycle_2",
+        "ministral3_8b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "bd743fa87a2572a5d330ddb421bc7cc7ddac98760219b42e9d2a1b2745c12704",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "cycle_2",
+        "olmo3_7b",
+        "FP16"
+      ],
+      "complete_sha256": "1ce4968e0015881fc41bc2b22432571cabadad0cd94e1b3649c2f62566aeff3f",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "cycle_2",
+        "olmo3_7b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "32793bd22ea1de323424d0cbe994aba968f32505d950d3c03b3218236682ca37",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        1,
+        "cycle_2",
+        "olmo3_7b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "cad3cea5e66cc3197c72750174e1bcab30d968c4a56674168ff031f1fd052bb8",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "original",
+        "qwen35_9b",
+        "FP16"
+      ],
+      "complete_sha256": "3a2673c872e1916feab8efde86a66d9357c2947b6ab1351a9088884e17cb7a8c",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "original",
+        "qwen35_9b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "f7fec3b49680d7b7e2869bfe63d51f9841f2b8c3e316404276f670034cc1c3c0",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "original",
+        "qwen35_9b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "7235f97e6b7f054ef12e696a3d63231a16b25b54d01b93ba15c11a04585a2867",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "original",
+        "ministral3_8b",
+        "FP16"
+      ],
+      "complete_sha256": "42655762254306cca69b6f0da385ff56b559fa9ed6361c6e15dc926f74fa1254",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "original",
+        "ministral3_8b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "80d976828c89ede8c6c09aeb7a3f43016a74e74df23179106802e5488a1edc1d",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "original",
+        "ministral3_8b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "707f3f033ea6924d244b5c237122a1828f128a8ab3acc610baf5668c53fbda38",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "original",
+        "olmo3_7b",
+        "FP16"
+      ],
+      "complete_sha256": "729d4e1f9763e23a7abfecd84084c74c72ddccbea911f4da3ee3875f1c548eb0",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "original",
+        "olmo3_7b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "649c38a77b48876884174fd89331562759c71fe32651ec43ea28ba55374c3310",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "original",
+        "olmo3_7b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "46917e38866c9800d7ca2fac6c59050302f1658f7ce89ba32ac4fe8a68489c68",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "cycle_1",
+        "qwen35_9b",
+        "FP16"
+      ],
+      "complete_sha256": "07249276ac894acc6193d67bee3a677c263182b77cdd2a0d2261138499be73a1",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "cycle_1",
+        "qwen35_9b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "0140115697c8658cd0a22aa7a4f66f461fe84e7fe3655bce99d47f10b1990ed3",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "cycle_1",
+        "qwen35_9b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "830445a26bfc6f16f8bfec28e0259e4730edd66a5abc383b611df2aa64d0bf7f",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "cycle_1",
+        "ministral3_8b",
+        "FP16"
+      ],
+      "complete_sha256": "4af00ae96c4b3b426300fcfbdbe745d1f226ab20e5be17003014c9148b6d4a50",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "cycle_1",
+        "ministral3_8b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "46557aaf26cb37eab62198461e43253b371379e1cfe61fbad28bbbdd85ef37c8",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "cycle_1",
+        "ministral3_8b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "2c872a5e1ff22205507bd17bdf92b6d7542ec85e1b98a13a7a33996214a89fee",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "cycle_1",
+        "olmo3_7b",
+        "FP16"
+      ],
+      "complete_sha256": "b297e62835717e1b7591a73f9619216eea7fa4850589cf6288d0a8d69fb8055a",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "cycle_1",
+        "olmo3_7b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "d094307fdf1351d05618c490a598361620c3ad3a38a7747418453ca92f368923",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "cycle_1",
+        "olmo3_7b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "9b423a1336dc4822ef703c6d224a1438c4ba629b4e0b3566d550668196bf9ccc",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "cycle_2",
+        "qwen35_9b",
+        "FP16"
+      ],
+      "complete_sha256": "1cfcb128289786af729b15bdd94a19c6667a371f6798675880d39bbe39a34147",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "cycle_2",
+        "qwen35_9b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "8fc64c7fec11090e0ff8864aeae160a53617a36cc3bd0b182db80f19fa8a4256",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "cycle_2",
+        "qwen35_9b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "ccb4d8a44af5deec59fa4b279cfd792ef69e7ea63df9e3b2662467957ecce8ec",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "cycle_2",
+        "ministral3_8b",
+        "FP16"
+      ],
+      "complete_sha256": "168c4f405e644f6fa58a71fe32dd260369b37af6b09b62399a48c034bfd30bbd",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "cycle_2",
+        "ministral3_8b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "4d6bde3dbdd285b9b384a3c72d449ac80e05f8ee566ad1cf1b525206200d71e9",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "cycle_2",
+        "ministral3_8b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "a1d5136172121c04cd80142fb412f11da0ef269aa16ca3d2c4a3738a4dbf41e4",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "cycle_2",
+        "olmo3_7b",
+        "FP16"
+      ],
+      "complete_sha256": "73207fa53a433883bc863bdffcfcffb6d94e0960ee20e116abdacdb439cdc4ae",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "cycle_2",
+        "olmo3_7b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "884e5c009688720abf4e025cfb0a6b30eccaae989960ee6dd4e0c122347b5b38",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        2,
+        "cycle_2",
+        "olmo3_7b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "651624b3becc7230170a606210bc31c7d0bf2f2660de3a984f29983c65e423dd",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "original",
+        "qwen35_9b",
+        "FP16"
+      ],
+      "complete_sha256": "2d6e6095f1dfb52ab95f0088fc63e0343570a125d0ff8748de04a6f1d60f08a7",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "original",
+        "qwen35_9b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "a775b925dda56677a2194854b14657dcf93b7708d41a297419011f619ee5182c",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "original",
+        "qwen35_9b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "bf3761c98ddec44b59a7b326beff22c0d74a0b0443a70e6e3388199d50f7f149",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "original",
+        "ministral3_8b",
+        "FP16"
+      ],
+      "complete_sha256": "71ff57812daa46dd95aa80d49345b709226fbabdc60ef88433e2ce3c75413627",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "original",
+        "ministral3_8b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "4439b755776ecfb26a0ba7941544c8c36a3a8189b926b73920ad2fd882899a3e",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "original",
+        "ministral3_8b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "578d8e6c062aa06e5f2f212f9dee9493e7f81425ec04d3075eab649ed6576838",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "original",
+        "olmo3_7b",
+        "FP16"
+      ],
+      "complete_sha256": "df9def6fb5f79e63e8af3814d0849762eb8bd14f3500d1e7508cce8872bab5a4",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "original",
+        "olmo3_7b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "588d41ee162151653930994aa4eebb11de053afa0a369c1ad871215477838e52",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "original",
+        "olmo3_7b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "c4142688a09bc24d077bc5ed4cefd25a99abe7de2568ecfb0443600a0dac6419",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "cycle_1",
+        "qwen35_9b",
+        "FP16"
+      ],
+      "complete_sha256": "07e28119acf060fd6e9ddaab463fcf3fc42e3a241872e34a876303452cd96f8b",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "cycle_1",
+        "qwen35_9b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "4570ae6ee163217127604d09b29c503cd5016249a0c10af1151b8684592384b2",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "cycle_1",
+        "qwen35_9b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "765669d7b1f429ec553c5f4c58ee6a739f79b52f22da0aca91b759c081ec260e",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "cycle_1",
+        "ministral3_8b",
+        "FP16"
+      ],
+      "complete_sha256": "17a220357ab9f440d89b09e75e204e2118ebe878acb6947de605855c617c5e80",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "cycle_1",
+        "ministral3_8b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "cf1e06f6496b26333ef3b841b4ee91037fa5c361bf51e1474fa5d0a22f493e42",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "cycle_1",
+        "ministral3_8b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "91f16e2e377f1fbfbc0e7620b8f5932a85831fa9131f62cd31faf860d86b086a",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "cycle_1",
+        "olmo3_7b",
+        "FP16"
+      ],
+      "complete_sha256": "a46e93150a8ba647524953fddff20c25d78b625a32b0c1c52590d1977945f8f0",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "cycle_1",
+        "olmo3_7b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "b8ffd4e5110e5712a176874fed1534a498c5e9397d1600c54b7e33876ae95ff0",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "cycle_1",
+        "olmo3_7b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "dca2c1d713a2f07a5a9b1b698cd9cbb28fddcd1c472f0438c2168b986847ee86",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "cycle_2",
+        "qwen35_9b",
+        "FP16"
+      ],
+      "complete_sha256": "4185cd1b1b75856eab3712c72281fac08661585ddc9b9c65ecdb22a85dbd0855",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "cycle_2",
+        "qwen35_9b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "81a059c427e3623f16d5d2ebeb63cdabfdcedfe0daa9b7a03eebe367f8197950",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "cycle_2",
+        "qwen35_9b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "3676f5fdff562509dd11b40cfa7e32b186ff34d8982b6dcbf477bfdb4c8e7e61",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "cycle_2",
+        "ministral3_8b",
+        "FP16"
+      ],
+      "complete_sha256": "b857a738c80937697b8d87eefa91fa38de41b275f17e08e76b1128bd3de73227",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "cycle_2",
+        "ministral3_8b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "a26905e277797c47978cdc68e7acb83fb9575450a2530296c1fddbcc379f1d75",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "cycle_2",
+        "ministral3_8b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "01aed8e0d0c398f41322f5f86f226a422b692ddf085c42b43a14882f49bdf189",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "cycle_2",
+        "olmo3_7b",
+        "FP16"
+      ],
+      "complete_sha256": "f389ec8b28e140a6338a7627b6a467483d545e67ace7884ed5de8bdc765466c8",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "cycle_2",
+        "olmo3_7b",
+        "GPTQ_INT4"
+      ],
+      "complete_sha256": "09cbd23a096ddbdb1d11e92fab7ddc91ff611ed64d6afda2672ba481d547a9fa",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    },
+    {
+      "cell": [
+        3,
+        "cycle_2",
+        "olmo3_7b",
+        "AWQ_INT4"
+      ],
+      "complete_sha256": "c14e97b977cee0b02a7425150a3a27a2cc215219301a860c9b3ec53141cf6189",
+      "counts": {
+        "errors": 0,
+        "full": 480,
+        "hard": 480,
+        "owners": 480,
+        "probability": 480
+      }
+    }
+  ],
+  "completed_utc": "2026-09-12T16:35:52.255192+00:00",
+  "config_sha256": "b0ed127b4e9f95c27b89d9123b083e8311fe9c813a452d3f505a02fdd87c4c36",
+  "gate_passed": true,
+  "inputs": 38880
+}

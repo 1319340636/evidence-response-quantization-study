@@ -1,0 +1,780 @@
+{
+  "cases": [
+    {
+      "case_id": "5ec284ffc9e77c0008417b32",
+      "negative_label": "REFUTES",
+      "page": "Mahmoud Dahoud"
+    },
+    {
+      "case_id": "5ec284fec9e77c00084173c4",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "LeAnn Rimes"
+    },
+    {
+      "case_id": "5ee3949ac9e77c0008ccfd84",
+      "negative_label": "REFUTES",
+      "page": "Rebel in the Rye"
+    },
+    {
+      "case_id": "5ec284fec9e77c0008417317",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "Glenn Robinson III"
+    },
+    {
+      "case_id": "5ed7ad01c9e77c00084a62da",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "Joe Dante"
+    },
+    {
+      "case_id": "5ebe6f30c9e77c00084084c4",
+      "negative_label": "REFUTES",
+      "page": "Proxy voting"
+    },
+    {
+      "case_id": "5ebe6f31c9e77c00084093e4",
+      "negative_label": "REFUTES",
+      "page": "Les Ferdinand"
+    },
+    {
+      "case_id": "5ec7d50ec9e77c00084428d6",
+      "negative_label": "REFUTES",
+      "page": "Joseph Minala"
+    },
+    {
+      "case_id": "5eb29889c9e77c0008d93ba9",
+      "negative_label": "REFUTES",
+      "page": "Harry Potter-COLON- Hogwarts Mystery"
+    },
+    {
+      "case_id": "5eb9573ac9e77c0008fa1739",
+      "negative_label": "REFUTES",
+      "page": "Catalan independence movement"
+    },
+    {
+      "case_id": "5ebbf32bc9e77c00092955b3",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "Ragini Dwivedi"
+    },
+    {
+      "case_id": "5ea2d97bc9e77c0009cda362",
+      "negative_label": "REFUTES",
+      "page": "The Darjeeling Limited"
+    },
+    {
+      "case_id": "5ee3932bc9e77c0008cc9f81",
+      "negative_label": "REFUTES",
+      "page": "2020 coronavirus pandemic in Cameroon"
+    },
+    {
+      "case_id": "5ec7d50ec9e77c00084427d6",
+      "negative_label": "REFUTES",
+      "page": "Joe Webb"
+    },
+    {
+      "case_id": "5ec284fec9e77c000841729a",
+      "negative_label": "REFUTES",
+      "page": "Grand Theft Auto -LRB-film-RRB-"
+    },
+    {
+      "case_id": "5ec5598dc9e77c000842c44d",
+      "negative_label": "REFUTES",
+      "page": "Navya Nair"
+    },
+    {
+      "case_id": "5ed7ad01c9e77c00084a65d9",
+      "negative_label": "REFUTES",
+      "page": "Jang Na-ra"
+    },
+    {
+      "case_id": "5ec5598ec9e77c000842c82d",
+      "negative_label": "REFUTES",
+      "page": "Investment management"
+    },
+    {
+      "case_id": "5ee39418c9e77c0008ccf1bb",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "Robinson Crusoe on Mars"
+    },
+    {
+      "case_id": "5ec55990c9e77c000842d442",
+      "negative_label": "REFUTES",
+      "page": "Spy Kids 3-D-COLON- Game Over"
+    },
+    {
+      "case_id": "5ed4de0ac9e77c000848af83",
+      "negative_label": "REFUTES",
+      "page": "Great Basin"
+    },
+    {
+      "case_id": "5ebe6f2fc9e77c0008407d83",
+      "negative_label": "REFUTES",
+      "page": "Vol. 3-COLON- -LRB-The Subliminal Verses-RRB-"
+    },
+    {
+      "case_id": "5eb2988ac9e77c0008d9484e",
+      "negative_label": "REFUTES",
+      "page": "Bharatiya Janata Party"
+    },
+    {
+      "case_id": "5eb2988ac9e77c0008d9457e",
+      "negative_label": "REFUTES",
+      "page": "Jamiroquai"
+    },
+    {
+      "case_id": "5ed7ad02c9e77c00084a693b",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "Coloureds"
+    },
+    {
+      "case_id": "5ee3949bc9e77c0008ccffbf",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "Vampire Academy -LRB-film-RRB-"
+    },
+    {
+      "case_id": "5ebe6f2ec9e77c0008407a13",
+      "negative_label": "REFUTES",
+      "page": "Joel Osteen"
+    },
+    {
+      "case_id": "5ede072fc9e77c00084d2f8a",
+      "negative_label": "REFUTES",
+      "page": "Bethany Mota"
+    },
+    {
+      "case_id": "5ec7d50dc9e77c0008441c83",
+      "negative_label": "REFUTES",
+      "page": "Duron Harmon"
+    },
+    {
+      "case_id": "5ec284fdc9e77c000841650c",
+      "negative_label": "REFUTES",
+      "page": "Shell shock"
+    },
+    {
+      "case_id": "5ee39418c9e77c0008ccf307",
+      "negative_label": "REFUTES",
+      "page": "Joseph Goebbels"
+    },
+    {
+      "case_id": "5ec55990c9e77c000842d474",
+      "negative_label": "REFUTES",
+      "page": "Go Goa Gone"
+    },
+    {
+      "case_id": "5ed4de08c9e77c000848a40a",
+      "negative_label": "REFUTES",
+      "page": "Lyoto Machida"
+    },
+    {
+      "case_id": "5ebe6f32c9e77c0008409775",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "Adrian Mutu"
+    },
+    {
+      "case_id": "5eafed80c9e77c0009ce100e",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "Rochelle Humes"
+    },
+    {
+      "case_id": "5ec55990c9e77c000842d5ab",
+      "negative_label": "REFUTES",
+      "page": "Vinny Appice"
+    },
+    {
+      "case_id": "5ebe6f2ec9e77c0008407b4e",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "Saeed Ajmal"
+    },
+    {
+      "case_id": "5ed7ad03c9e77c00084a7865",
+      "negative_label": "REFUTES",
+      "page": "Alabama Shakes"
+    },
+    {
+      "case_id": "5eb9573bc9e77c0008fa18a7",
+      "negative_label": "REFUTES",
+      "page": "Bharat Petroleum"
+    },
+    {
+      "case_id": "5ece9462c9e77c0008466ec2",
+      "negative_label": "REFUTES",
+      "page": "Billy Idol"
+    },
+    {
+      "case_id": "5ec55991c9e77c000842db0e",
+      "negative_label": "REFUTES",
+      "page": "Mount of Olives"
+    },
+    {
+      "case_id": "5ec55990c9e77c000842cf45",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "Nick Jr."
+    },
+    {
+      "case_id": "5ec7d50dc9e77c0008441ead",
+      "negative_label": "REFUTES",
+      "page": "Pheromone"
+    },
+    {
+      "case_id": "5ece9460c9e77c000846594e",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "The Vandals"
+    },
+    {
+      "case_id": "5ebe6f30c9e77c0008408ac0",
+      "negative_label": "REFUTES",
+      "page": "Fred Claus"
+    },
+    {
+      "case_id": "5eb29889c9e77c0008d93f52",
+      "negative_label": "REFUTES",
+      "page": "Alexandra Palace"
+    },
+    {
+      "case_id": "5ebe6f30c9e77c00084086da",
+      "negative_label": "REFUTES",
+      "page": "Mimic -LRB-film-RRB-"
+    },
+    {
+      "case_id": "5ec7d50cc9e77c0008440ff7",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "Sally Ride"
+    },
+    {
+      "case_id": "5ece9463c9e77c0008467891",
+      "negative_label": "REFUTES",
+      "page": "Cláudio Taffarel"
+    },
+    {
+      "case_id": "5ed4de09c9e77c000848ac05",
+      "negative_label": "REFUTES",
+      "page": "Dina Lohan"
+    },
+    {
+      "case_id": "5eb2988ac9e77c0008d94615",
+      "negative_label": "REFUTES",
+      "page": "Max Schneider"
+    },
+    {
+      "case_id": "5ed4de0bc9e77c000848b6a3",
+      "negative_label": "REFUTES",
+      "page": "Anne with an E"
+    },
+    {
+      "case_id": "5ee39416c9e77c0008ccda9c",
+      "negative_label": "REFUTES",
+      "page": "Guardians of the Galaxy -LRB-film-RRB-"
+    },
+    {
+      "case_id": "5ec7d50dc9e77c0008442112",
+      "negative_label": "REFUTES",
+      "page": "Edwin van der Sar"
+    },
+    {
+      "case_id": "5ec7d50fc9e77c000844305b",
+      "negative_label": "REFUTES",
+      "page": "Chelsea Wolfe"
+    },
+    {
+      "case_id": "5eb29887c9e77c0008d92e69",
+      "negative_label": "REFUTES",
+      "page": "O Kadhal Kanmani"
+    },
+    {
+      "case_id": "5ebe6f2fc9e77c0008408080",
+      "negative_label": "REFUTES",
+      "page": "Juice Wrld discography"
+    },
+    {
+      "case_id": "5ed7ad03c9e77c00084a7522",
+      "negative_label": "REFUTES",
+      "page": "Hallmark"
+    },
+    {
+      "case_id": "5ec7d50bc9e77c0008440cad",
+      "negative_label": "REFUTES",
+      "page": "Jason McCourty"
+    },
+    {
+      "case_id": "5ee3949bc9e77c0008cd014c",
+      "negative_label": "REFUTES",
+      "page": "Sky UK"
+    },
+    {
+      "case_id": "5ed4de05c9e77c00084899cf",
+      "negative_label": "REFUTES",
+      "page": "Rod Woodson"
+    },
+    {
+      "case_id": "5ebe6f2dc9e77c000840787c",
+      "negative_label": "REFUTES",
+      "page": "Nuclear power by country"
+    },
+    {
+      "case_id": "5ece9462c9e77c0008466dcf",
+      "negative_label": "REFUTES",
+      "page": "McLaren Senna"
+    },
+    {
+      "case_id": "5ece9464c9e77c0008467e2f",
+      "negative_label": "REFUTES",
+      "page": "German battleship Tirpitz"
+    },
+    {
+      "case_id": "5ed4de07c9e77c000848a1a4",
+      "negative_label": "REFUTES",
+      "page": "Economy of Pakistan"
+    },
+    {
+      "case_id": "5ece9462c9e77c00084665d4",
+      "negative_label": "REFUTES",
+      "page": "Paleoconservatism"
+    },
+    {
+      "case_id": "5ec284fdc9e77c00084165f3",
+      "negative_label": "REFUTES",
+      "page": "DJ Shadow"
+    },
+    {
+      "case_id": "5eafed7ec9e77c0009ce0f28",
+      "negative_label": "REFUTES",
+      "page": "Northrop Grumman"
+    },
+    {
+      "case_id": "5ee39419c9e77c0008ccfc9b",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "Aeneas"
+    },
+    {
+      "case_id": "5ebbf32bc9e77c00092955b0",
+      "negative_label": "REFUTES",
+      "page": "Ronny Chieng"
+    },
+    {
+      "case_id": "5ece9462c9e77c0008466ff3",
+      "negative_label": "REFUTES",
+      "page": "Ed Sullivan Theater"
+    },
+    {
+      "case_id": "5ed4de07c9e77c000848a269",
+      "negative_label": "REFUTES",
+      "page": "Diego Laxalt"
+    },
+    {
+      "case_id": "5ec5598dc9e77c000842c3f3",
+      "negative_label": "REFUTES",
+      "page": "Hubert H. Humphrey Metrodome"
+    },
+    {
+      "case_id": "5ec7d50ec9e77c0008442560",
+      "negative_label": "REFUTES",
+      "page": "European Space Agency"
+    },
+    {
+      "case_id": "5ebbf32bc9e77c00092951ed",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "Jus sanguinis"
+    },
+    {
+      "case_id": "5ec284fdc9e77c000841662f",
+      "negative_label": "REFUTES",
+      "page": "Hillary Scott"
+    },
+    {
+      "case_id": "5ee3932bc9e77c0008cc9eee",
+      "negative_label": "REFUTES",
+      "page": "2020 coronavirus pandemic in Africa"
+    },
+    {
+      "case_id": "5ec55991c9e77c000842dfae",
+      "negative_label": "REFUTES",
+      "page": "Christian Mortensen"
+    },
+    {
+      "case_id": "5ee3949bc9e77c0008cd0084",
+      "negative_label": "REFUTES",
+      "page": "Kareem Abdul-Jabbar"
+    },
+    {
+      "case_id": "5ed4de08c9e77c000848a60d",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "Street Fighter"
+    },
+    {
+      "case_id": "5ea2d97bc9e77c0009cda6d2",
+      "negative_label": "REFUTES",
+      "page": "2008ï¿½09 UEFA Champions League"
+    },
+    {
+      "case_id": "5ec284fec9e77c00084176e7",
+      "negative_label": "REFUTES",
+      "page": "Economy of London"
+    },
+    {
+      "case_id": "5eb9573cc9e77c0008fa1d68",
+      "negative_label": "REFUTES",
+      "page": "David Stern"
+    },
+    {
+      "case_id": "5ed7ad01c9e77c00084a668b",
+      "negative_label": "REFUTES",
+      "page": "Ford Galaxie"
+    },
+    {
+      "case_id": "5ed4de03c9e77c000848937b",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "Italian Army"
+    },
+    {
+      "case_id": "5ece9461c9e77c00084664e4",
+      "negative_label": "REFUTES",
+      "page": "Fluminense FC"
+    },
+    {
+      "case_id": "5ec7d50fc9e77c000844313b",
+      "negative_label": "REFUTES",
+      "page": "Gabriel Heinze"
+    },
+    {
+      "case_id": "5ee3932cc9e77c0008ccb02c",
+      "negative_label": "REFUTES",
+      "page": "Misinformation related to the 2019–20 coronavirus pandemic"
+    },
+    {
+      "case_id": "5ee39418c9e77c0008ccf37f",
+      "negative_label": "REFUTES",
+      "page": "10 Cloverfield Lane"
+    },
+    {
+      "case_id": "5ec7d50cc9e77c000844153f",
+      "negative_label": "REFUTES",
+      "page": "Flo Rida"
+    },
+    {
+      "case_id": "5ee3949bc9e77c0008ccff86",
+      "negative_label": "REFUTES",
+      "page": "Goldie Hawn"
+    },
+    {
+      "case_id": "5eb29885c9e77c0008d92649",
+      "negative_label": "REFUTES",
+      "page": "Ben McLemore"
+    },
+    {
+      "case_id": "5ed4de0ac9e77c000848aeb4",
+      "negative_label": "REFUTES",
+      "page": "United Talent Agency"
+    },
+    {
+      "case_id": "5ece9462c9e77c0008466c2e",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "Shoshana Bean"
+    },
+    {
+      "case_id": "5ede072fc9e77c00084d34ac",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "Richard Cheese"
+    },
+    {
+      "case_id": "5ec5598dc9e77c000842c334",
+      "negative_label": "REFUTES",
+      "page": "Malcolm Brogdon"
+    },
+    {
+      "case_id": "5ed4de05c9e77c00084899fe",
+      "negative_label": "REFUTES",
+      "page": "Carlos Slim"
+    },
+    {
+      "case_id": "5ebe6f30c9e77c0008408abd",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "Scream queen"
+    },
+    {
+      "case_id": "5ee3949ac9e77c0008ccfd98",
+      "negative_label": "REFUTES",
+      "page": "David Attenborough"
+    },
+    {
+      "case_id": "5ed7acffc9e77c00084a5b8a",
+      "negative_label": "REFUTES",
+      "page": "William III of England"
+    },
+    {
+      "case_id": "5ed4de09c9e77c000848a81c",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "Star Wars Rebels"
+    },
+    {
+      "case_id": "5ec284fcc9e77c0008415e72",
+      "negative_label": "REFUTES",
+      "page": "Yeh Jawaani Hai Deewani"
+    },
+    {
+      "case_id": "5ec284fec9e77c00084175a3",
+      "negative_label": "REFUTES",
+      "page": "Kings -LRB-2017 film-RRB-"
+    },
+    {
+      "case_id": "5ed4de0ac9e77c000848b0d6",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "La Roux"
+    },
+    {
+      "case_id": "5ece9461c9e77c0008465f65",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "Fredro Starr"
+    },
+    {
+      "case_id": "5ec7d50dc9e77c0008442094",
+      "negative_label": "REFUTES",
+      "page": "2018 Houston Texans season"
+    },
+    {
+      "case_id": "5ee3949bc9e77c0008ccffd8",
+      "negative_label": "REFUTES",
+      "page": "Michael Hutchence"
+    },
+    {
+      "case_id": "5ec55990c9e77c000842d20d",
+      "negative_label": "REFUTES",
+      "page": "4Real 4Real"
+    },
+    {
+      "case_id": "5ed7acffc9e77c00084a59ed",
+      "negative_label": "REFUTES",
+      "page": "Mr. Irrelevant"
+    },
+    {
+      "case_id": "5eb9573ac9e77c0008fa17fc",
+      "negative_label": "REFUTES",
+      "page": "Jermall Charlo"
+    },
+    {
+      "case_id": "5ede072fc9e77c00084d2dd4",
+      "negative_label": "REFUTES",
+      "page": "Taylor Momsen"
+    },
+    {
+      "case_id": "5eb29889c9e77c0008d9400b",
+      "negative_label": "REFUTES",
+      "page": "BMW 7 Series -LRB-G11-RRB-"
+    },
+    {
+      "case_id": "5ee3949bc9e77c0008cd019f",
+      "negative_label": "REFUTES",
+      "page": "Telephone -LRB-song-RRB-"
+    },
+    {
+      "case_id": "5ec5598cc9e77c000842c0ac",
+      "negative_label": "REFUTES",
+      "page": "Walther PP"
+    },
+    {
+      "case_id": "5ebe6f2bc9e77c0008407558",
+      "negative_label": "REFUTES",
+      "page": "Limitless -LRB-TV series-RRB-"
+    },
+    {
+      "case_id": "5ed7ad03c9e77c00084a7975",
+      "negative_label": "REFUTES",
+      "page": "Countries of the United Kingdom"
+    },
+    {
+      "case_id": "5ebbf32ac9e77c0009294d13",
+      "negative_label": "REFUTES",
+      "page": "Rob Bourdon"
+    },
+    {
+      "case_id": "5ec7d50cc9e77c0008441093",
+      "negative_label": "REFUTES",
+      "page": "Carrow Road"
+    },
+    {
+      "case_id": "5ec284fcc9e77c000841602e",
+      "negative_label": "REFUTES",
+      "page": "Jordan Mailata"
+    },
+    {
+      "case_id": "5eb29889c9e77c0008d94012",
+      "negative_label": "NOT ENOUGH INFO",
+      "page": "Intel"
+    }
+  ],
+  "created_utc": "2026-09-11T13:26:45.044869+00:00",
+  "engineering_absolute_logscore_threshold": 1e-06,
+  "expected_inputs_per_cell": 480,
+  "files": {
+    "configs/freeze_v1.json": "241472bbe2fc2a1cc673bc9194736bcf595955fddeca2ca010ae093e3101c0af",
+    "configs/prompt_contract_v2.json": "62be3ad998b851887ce433bb80a8269f020dbea63c048d418f0e1277590352e1",
+    "data/manifests/vitaminc_dose_subset_ids.txt": "bbe3e66dc7e53e0fa08c656716e113f63b8c5232de8b9fa895de6046b861b9f1",
+    "data/manifests/vitaminc_splits_summary.json": "029bac5126af83e978accc8a71c22265c22ad731f743eceb5dfd239f7945dc76",
+    "data/manifests/vitaminc_strict_quartets.jsonl": "fc11f81e5f916b621c2fff7868570ddab89e1b6a17286112904f1e28d7b29d29"
+  },
+  "ids": [
+    "5ec284ffc9e77c0008417b32",
+    "5ec284fec9e77c00084173c4",
+    "5ee3949ac9e77c0008ccfd84",
+    "5ec284fec9e77c0008417317",
+    "5ed7ad01c9e77c00084a62da",
+    "5ebe6f30c9e77c00084084c4",
+    "5ebe6f31c9e77c00084093e4",
+    "5ec7d50ec9e77c00084428d6",
+    "5eb29889c9e77c0008d93ba9",
+    "5eb9573ac9e77c0008fa1739",
+    "5ebbf32bc9e77c00092955b3",
+    "5ea2d97bc9e77c0009cda362",
+    "5ee3932bc9e77c0008cc9f81",
+    "5ec7d50ec9e77c00084427d6",
+    "5ec284fec9e77c000841729a",
+    "5ec5598dc9e77c000842c44d",
+    "5ed7ad01c9e77c00084a65d9",
+    "5ec5598ec9e77c000842c82d",
+    "5ee39418c9e77c0008ccf1bb",
+    "5ec55990c9e77c000842d442",
+    "5ed4de0ac9e77c000848af83",
+    "5ebe6f2fc9e77c0008407d83",
+    "5eb2988ac9e77c0008d9484e",
+    "5eb2988ac9e77c0008d9457e",
+    "5ed7ad02c9e77c00084a693b",
+    "5ee3949bc9e77c0008ccffbf",
+    "5ebe6f2ec9e77c0008407a13",
+    "5ede072fc9e77c00084d2f8a",
+    "5ec7d50dc9e77c0008441c83",
+    "5ec284fdc9e77c000841650c",
+    "5ee39418c9e77c0008ccf307",
+    "5ec55990c9e77c000842d474",
+    "5ed4de08c9e77c000848a40a",
+    "5ebe6f32c9e77c0008409775",
+    "5eafed80c9e77c0009ce100e",
+    "5ec55990c9e77c000842d5ab",
+    "5ebe6f2ec9e77c0008407b4e",
+    "5ed7ad03c9e77c00084a7865",
+    "5eb9573bc9e77c0008fa18a7",
+    "5ece9462c9e77c0008466ec2",
+    "5ec55991c9e77c000842db0e",
+    "5ec55990c9e77c000842cf45",
+    "5ec7d50dc9e77c0008441ead",
+    "5ece9460c9e77c000846594e",
+    "5ebe6f30c9e77c0008408ac0",
+    "5eb29889c9e77c0008d93f52",
+    "5ebe6f30c9e77c00084086da",
+    "5ec7d50cc9e77c0008440ff7",
+    "5ece9463c9e77c0008467891",
+    "5ed4de09c9e77c000848ac05",
+    "5eb2988ac9e77c0008d94615",
+    "5ed4de0bc9e77c000848b6a3",
+    "5ee39416c9e77c0008ccda9c",
+    "5ec7d50dc9e77c0008442112",
+    "5ec7d50fc9e77c000844305b",
+    "5eb29887c9e77c0008d92e69",
+    "5ebe6f2fc9e77c0008408080",
+    "5ed7ad03c9e77c00084a7522",
+    "5ec7d50bc9e77c0008440cad",
+    "5ee3949bc9e77c0008cd014c",
+    "5ed4de05c9e77c00084899cf",
+    "5ebe6f2dc9e77c000840787c",
+    "5ece9462c9e77c0008466dcf",
+    "5ece9464c9e77c0008467e2f",
+    "5ed4de07c9e77c000848a1a4",
+    "5ece9462c9e77c00084665d4",
+    "5ec284fdc9e77c00084165f3",
+    "5eafed7ec9e77c0009ce0f28",
+    "5ee39419c9e77c0008ccfc9b",
+    "5ebbf32bc9e77c00092955b0",
+    "5ece9462c9e77c0008466ff3",
+    "5ed4de07c9e77c000848a269",
+    "5ec5598dc9e77c000842c3f3",
+    "5ec7d50ec9e77c0008442560",
+    "5ebbf32bc9e77c00092951ed",
+    "5ec284fdc9e77c000841662f",
+    "5ee3932bc9e77c0008cc9eee",
+    "5ec55991c9e77c000842dfae",
+    "5ee3949bc9e77c0008cd0084",
+    "5ed4de08c9e77c000848a60d",
+    "5ea2d97bc9e77c0009cda6d2",
+    "5ec284fec9e77c00084176e7",
+    "5eb9573cc9e77c0008fa1d68",
+    "5ed7ad01c9e77c00084a668b",
+    "5ed4de03c9e77c000848937b",
+    "5ece9461c9e77c00084664e4",
+    "5ec7d50fc9e77c000844313b",
+    "5ee3932cc9e77c0008ccb02c",
+    "5ee39418c9e77c0008ccf37f",
+    "5ec7d50cc9e77c000844153f",
+    "5ee3949bc9e77c0008ccff86",
+    "5eb29885c9e77c0008d92649",
+    "5ed4de0ac9e77c000848aeb4",
+    "5ece9462c9e77c0008466c2e",
+    "5ede072fc9e77c00084d34ac",
+    "5ec5598dc9e77c000842c334",
+    "5ed4de05c9e77c00084899fe",
+    "5ebe6f30c9e77c0008408abd",
+    "5ee3949ac9e77c0008ccfd98",
+    "5ed7acffc9e77c00084a5b8a",
+    "5ed4de09c9e77c000848a81c",
+    "5ec284fcc9e77c0008415e72",
+    "5ec284fec9e77c00084175a3",
+    "5ed4de0ac9e77c000848b0d6",
+    "5ece9461c9e77c0008465f65",
+    "5ec7d50dc9e77c0008442094",
+    "5ee3949bc9e77c0008ccffd8",
+    "5ec55990c9e77c000842d20d",
+    "5ed7acffc9e77c00084a59ed",
+    "5eb9573ac9e77c0008fa17fc",
+    "5ede072fc9e77c00084d2dd4",
+    "5eb29889c9e77c0008d9400b",
+    "5ee3949bc9e77c0008cd019f",
+    "5ec5598cc9e77c000842c0ac",
+    "5ebe6f2bc9e77c0008407558",
+    "5ed7ad03c9e77c00084a7975",
+    "5ebbf32ac9e77c0009294d13",
+    "5ec7d50cc9e77c0008441093",
+    "5ec284fcc9e77c000841602e",
+    "5eb29889c9e77c0008d94012"
+  ],
+  "ids_sha256": "6874a19bb0154ff7ac4098d3cfa25fff7e4ff376781d7d27aa3adde5b5ef5c4e",
+  "input_order": "case_id ascending, cell_index 0..3",
+  "mappings": [
+    "original",
+    "cycle_1",
+    "cycle_2"
+  ],
+  "models": [
+    "qwen35_9b",
+    "ministral3_8b",
+    "olmo3_7b"
+  ],
+  "no_new_significance_tests": true,
+  "no_requantization": true,
+  "pages": 120,
+  "parent_ids_sha256": "bbe3e66dc7e53e0fa08c656716e113f63b8c5232de8b9fa895de6046b861b9f1",
+  "protocol": "hf-repeatability-v1-20260911",
+  "repeats": 3,
+  "routes": [
+    "FP16",
+    "GPTQ_INT4",
+    "AWQ_INT4"
+  ],
+  "source_lf_sha256": {
+    "scripts/run_hf_repeatability.py": "269d2db83dd10350be3275439a39dfc61f28d54162e965891d9ba3a615fa6af0",
+    "src/qer_fv/awq_route.py": "47815cf4a7c31dad7da6ba7affa92ba42728d7994af6d246d255022756638f03",
+    "src/qer_fv/gptq_adapters.py": "d5245b52a3afa3ab73e3b98351c39485ca6cdd970164099d8217d1bffae380d0",
+    "src/qer_fv/hf_model_identity.py": "42bca96dea0d8a2917bc99cb3e969d994cb0a57efacf63e28fa809e1eecd1ac6",
+    "src/qer_fv/hf_repeatability.py": "475d50eb5d9088da972e16fc8d2e591ec714c287a623acfc4c40f67442340162",
+    "src/qer_fv/hf_repeatability_analysis.py": "ecceee71843e013e4dae641672d576e22c41ebc6e283f995f198e05d916f116d",
+    "src/qer_fv/hf_repeatability_run.py": "d373678ab68dfef08b97f45599063dda58abe92a78911fad948ab7655b2ff6b5",
+    "src/qer_fv/hf_runtime.py": "44b35f73f7eb396c899910fdd9161cec0ccece3a9aaa135e7d5c1a229f7e5a1b",
+    "src/qer_fv/hf_runtime_audit.py": "76041c8aa2fc153d5ba00b21bf878408308051afe57872a57e57dc51db7c3316",
+    "src/qer_fv/ministral_calibration.py": "178cb21d23d9943bb9dbc95ad8ddca6948ca47c1e4f2efed6bc3c505eea6d2cd",
+    "src/qer_fv/ministral_preflight.py": "7ee3b1de490efdb24a1383370d25a0c6544d813423ad109fe4a5b8d9b1b0c0ed",
+    "src/qer_fv/ministral_source_audit.py": "444d3aabcfe96b3d40fdbf9cf3497c459d89034416ce4acd6a12171f89d7517c",
+    "src/qer_fv/olmo3_source_audit.py": "a7ef112398fc5e5e546175f38971d4bdbd68e2230f3f1438cb9aa349aa23eb52",
+    "src/qer_fv/prompts.py": "8a82b90c287bffb98224f299a8fc5cf45fb954429ceab3b0627ce03bcbb4c274",
+    "src/qer_fv/provenance.py": "b636303a7fc4deed3f4c81a56b4981227ea128ca3a9d96c03aa3f461133cc851",
+    "src/qer_fv/scoring.py": "9b5682cf6af66fe64167b249df7622a43fca580182c72a2595c7646020246326",
+    "src/qer_fv/vitaminc.py": "51e616e36bb293d3a1375f5bfeaba2689bdc80944f5a958abc005edfc38be4f6",
+    "src/qer_fv/vitaminc_inputs.py": "962915510874418031768953646b2449162171ff820e144b6bd7e6d68cec7889",
+    "src/qer_fv/vitaminc_store_v4.py": "b3f0630ebc7e7d8fd38b449d3f12f4713eb961e53c16b4d86d10a06f06519a1c"
+  }
+}
