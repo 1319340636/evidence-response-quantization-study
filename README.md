@@ -1,6 +1,6 @@
 # Evidence-response quantization study: public-release candidate
 
-This is a **staged candidate**, not yet a published GitHub Release or a complete archive for every result in the manuscript. Do not cite a repository URL or claim public availability until the final upload and access check are complete.
+This public repository contains a **candidate commit**, not yet a frozen GitHub Release or a complete archive for every result in the manuscript. Its listed files can be inspected now, but it must not be described as a complete, final, independently reproducible release of all manuscript data.
 
 ## Included material
 
@@ -20,6 +20,6 @@ The original datasets are obtained from their maintainers: [VitaminC](https://gi
 
 ## Integrity and reuse
 
-The code in this candidate is offered under the MIT License (`LICENSE_CODE`). Original derived numeric/label records and report data are offered under CC BY 4.0 (`LICENSE_DATA.md`). These grants do not relicense third-party datasets or model artifacts. The frozen GitHub tag, commit SHA, repository URL, and any DOI remain to be assigned after final verification.
+The code in this candidate is offered under the MIT License (`LICENSE_CODE`). Original derived numeric/label records and report data are offered under CC BY 4.0 (`LICENSE_DATA.md`). These grants do not relicense third-party datasets or model artifacts. A frozen GitHub tag and any DOI remain to be assigned after final coverage and access verification; cite an exact commit if referring only to this candidate subset.
 
 For the three-model original-mapping result, install the local package and run `scripts/reestimate_three_model_scale_heterogeneity.py` with `--analysis-records data/three_model` and `--reference-result results/three_model/results.json`, supplying an output path outside the release tree. This re-estimation completed successfully from the staged package on 2026-09-24. Full model execution requires separately acquired upstream datasets/models and the specified runtime. The mapping and repeatability archives are provided as per-run outputs; the included source scripts document the generating protocol, but an independent turnkey replay of those two addenda from this candidate has not yet been demonstrated.
