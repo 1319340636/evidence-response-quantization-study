@@ -1,0 +1,24 @@
+{
+  "conditions": {
+    "f16": 2483,
+    "q4": 2483
+  },
+  "dataset_text_included": false,
+  "manifest_sha256": "45c23fb24637b1006f6aa0cd8ee4cd702134b567e8278311c1e329a38b439a35",
+  "model_key": "qwen35_9b",
+  "paired_pages": 1158,
+  "paired_quartets": 2483,
+  "prompt_contract_sha256": "62be3ad998b851887ce433bb80a8269f020dbea63c048d418f0e1277590352e1",
+  "protocol": "vitaminc-confirmatory-text-free-v1-20260924",
+  "quartet_interaction_formula": "(m0-m1-m2+m3)/2; m=logp(SUPPORTS)-logp(negative_label)",
+  "records": 4966,
+  "records_jsonl_sha256": "abdfbbbfd841526f4a0c556a514850478f5ba38cad4fa631a3d52fe1ad7819a5",
+  "source_sha256": {
+    "f16_manifest": "df78eeafef88f64091631561604bf15ecc2d2d888c95bf78fdf57994bcce3a5f",
+    "f16_records": "0936f1db6475cf5883dafd53946dff23bf6ae0758bfc1798103f82800e3c1ed9",
+    "q4_manifest": "4197c4c3fa9100b4839bbf2d844b81985f4d7a4aecf6bfc570965d6a525fba04",
+    "q4_records": "825af735662906e68c36affb6e3a6e8fb34dbd004a4e928440a87239c97b0360"
+  },
+  "split": "confirmatory",
+  "split_sha256": "2ca1fcc9fdc9dd857202756be072f518c627a67307cfc75df73e4c3b04cf56ee"
+}

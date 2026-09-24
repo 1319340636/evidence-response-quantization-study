@@ -3,9 +3,11 @@
 from __future__ import annotations
 
 import argparse
+from collections import defaultdict
 import hashlib
 import json
 from pathlib import Path, PurePosixPath
+import statistics
 import sys
 import tarfile
 
@@ -31,7 +33,7 @@ def digest(path: Path) -> str:
 def release_files() -> dict[str, Path]:
     result = {}
     for path in ROOT.rglob("*"):
-        if any(part in {".git", "__pycache__"} for part in path.relative_to(ROOT).parts):
+        if any(part in {".git", "__pycache__", ".pytest_cache"} for part in path.relative_to(ROOT).parts):
             continue
         if path.is_symlink():
             raise ValueError(f"symlink forbidden: {path}")
@@ -103,10 +105,106 @@ def verify_archive(path: Path, *, files: int, rows_each: int) -> None:
                 raise ValueError(f"count or embedded hash mismatch: {name}")
 
 
+def verify_confirmatory(root: Path) -> None:
+    """Reconstruct the frozen primary estimate and hard-label metric from safe rows."""
+
+    data = root / "data/confirmatory"
+    records_path = data / "analysis_records.jsonl"
+    manifest_path = data / "analysis_records_manifest.json"
+    sidecar_path = data / "analysis_records_manifest.json.sha256"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    if sidecar_path.read_text(encoding="utf-8").split() != [
+        digest(manifest_path), manifest_path.name,
+    ]:
+        raise ValueError("confirmatory detached manifest hash mismatch")
+    canonical = json.dumps(
+        {key: value for key, value in manifest.items() if key != "manifest_sha256"},
+        ensure_ascii=False, sort_keys=True, separators=(",", ":"), allow_nan=False,
+    ).encode("utf-8")
+    if hashlib.sha256(canonical).hexdigest() != manifest.get("manifest_sha256"):
+        raise ValueError("confirmatory manifest content hash mismatch")
+    if digest(records_path) != manifest.get("records_jsonl_sha256"):
+        raise ValueError("confirmatory records hash mismatch")
+    if manifest.get("dataset_text_included") is not False:
+        raise ValueError("confirmatory text-free flag missing")
+
+    by_condition: dict[str, dict[str, dict]] = {"f16": {}, "q4": {}}
+    for line in records_path.open("rb"):
+        if any(marker in line for marker in FORBIDDEN):
+            raise ValueError("confirmatory record includes text, credential, or host path")
+        row = json.loads(line)
+        condition = row.get("condition")
+        if condition not in by_condition:
+            raise ValueError("confirmatory unexpected condition")
+        if row.get("model_key") != "qwen35_9b" or row.get("precision") != {
+            "f16": "F16", "q4": "Q4_K_M",
+        }[condition]:
+            raise ValueError("confirmatory model or precision mismatch")
+        case_id = row.get("case_id")
+        if not isinstance(case_id, str) or case_id in by_condition[condition]:
+            raise ValueError("confirmatory duplicate or invalid quartet")
+        cells = row.get("cells")
+        if not isinstance(cells, list) or len(cells) != 4:
+            raise ValueError("confirmatory quartet cells incomplete")
+        negative_choice = {"REFUTES": "B", "NOT ENOUGH INFO": "C"}.get(
+            row.get("negative_label")
+        )
+        if negative_choice is None or [c.get("cell_index") for c in cells] != [0, 1, 2, 3]:
+            raise ValueError("confirmatory quartet cell identity mismatch")
+        margins = []
+        for cell in cells:
+            scores = cell.get("choice_logprobs")
+            if not isinstance(scores, dict) or set(scores) != {"A", "B", "C"}:
+                raise ValueError("confirmatory choice scores incomplete")
+            margins.append(scores["A"] - scores[negative_choice])
+        interaction = (margins[0] - margins[1] - margins[2] + margins[3]) / 2
+        if interaction != row.get("quartet_interaction"):
+            raise ValueError("confirmatory quartet interaction mismatch")
+        by_condition[condition][case_id] = row
+
+    f16, q4 = by_condition["f16"], by_condition["q4"]
+    if len(f16) != 2483 or set(f16) != set(q4):
+        raise ValueError("confirmatory paired quartet count mismatch")
+    if manifest.get("conditions") != {"f16": 2483, "q4": 2483}:
+        raise ValueError("confirmatory manifest condition count mismatch")
+    page_values: dict[str, list[float]] = defaultdict(list)
+    all_effects: list[float] = []
+    for case_id, f16_row in f16.items():
+        q4_row = q4[case_id]
+        if (f16_row["page"], f16_row["negative_label"]) != (
+            q4_row["page"], q4_row["negative_label"]
+        ):
+            raise ValueError("confirmatory quartet metadata mismatch")
+        effect = q4_row["quartet_interaction"] - f16_row["quartet_interaction"]
+        page_values[f16_row["page"]].append(effect)
+        all_effects.append(effect)
+    if len(page_values) != 1158 or manifest.get("paired_pages") != 1158:
+        raise ValueError("confirmatory page count mismatch")
+    primary = json.loads((root / "results/confirmatory/primary_results.json").read_text())
+    estimate = statistics.fmean(statistics.fmean(v) for v in page_values.values())
+    quartet_estimate = statistics.fmean(all_effects)
+    if abs(estimate - primary["primary"]["estimate"]) > 1e-12:
+        raise ValueError("confirmatory primary estimate mismatch")
+    if abs(quartet_estimate - primary["primary"]["quartet_weighted_sensitivity"]) > 1e-12:
+        raise ValueError("confirmatory quartet-weighted estimate mismatch")
+    hard = json.loads((root / "results/confirmatory/hard_metrics.json").read_text())
+    for condition, key in (("f16", "f16"), ("q4", "q4")):
+        cells = [cell for row in by_condition[condition].values() for cell in row["cells"]]
+        labels = ("SUPPORTS", "REFUTES", "NOT ENOUGH INFO")
+        balanced_accuracy = statistics.fmean(
+            sum(cell["hard_scored_label"] == label for cell in cells if cell["gold_label"] == label)
+            / sum(cell["gold_label"] == label for cell in cells)
+            for label in labels
+        )
+        if abs(balanced_accuracy - hard["balanced_accuracy"][key]) > 1e-12:
+            raise ValueError(f"confirmatory {condition} Balanced Accuracy mismatch")
+
+
 def verify_data() -> None:
     sys.path.insert(0, str(ROOT / "src"))
     from qer_fv.three_model_records import load_text_free_three_model_inputs
 
+    verify_confirmatory(ROOT)
     values, pages = load_text_free_three_model_inputs(ROOT / "data/three_model", formal=True)
     if len(values) != 3 or sum(map(len, values.values())) != 9 or len(set(pages.values())) != 1078:
         raise ValueError("three-model release structure mismatch")

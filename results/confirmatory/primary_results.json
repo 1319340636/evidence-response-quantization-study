@@ -1,0 +1,42 @@
+{
+  "analysis_protocol": "vitaminc-primary-analysis-v1-20260716",
+  "data_quality": {
+    "f16_hard_coverage": 1.0,
+    "f16_probability_coverage": 1.0,
+    "paired_pages": 1158,
+    "paired_quartets": 2483,
+    "q4_hard_coverage": 1.0,
+    "q4_probability_coverage": 1.0
+  },
+  "hard_accuracy_descriptive": {
+    "ci95_percentile": [
+      -0.0316606573940615,
+      -0.01819870756336899
+    ],
+    "f16": 0.7720003818841641,
+    "metric": "page-balanced mean of quartet cell accuracy; not Balanced Accuracy",
+    "q4": 0.7470422321120992,
+    "q4_minus_f16": -0.024958149772064932,
+    "shared_bootstrap_indices_with_primary": true
+  },
+  "identity": {
+    "f16_quantization": "F16",
+    "model_key": "qwen35_9b",
+    "prompt_contract_sha256": "62be3ad998b851887ce433bb80a8269f020dbea63c048d418f0e1277590352e1",
+    "q4_quantization": "Q4_K_M",
+    "split": "confirmatory",
+    "split_sha256": "2ca1fcc9fdc9dd857202756be072f518c627a67307cfc75df73e4c3b04cf56ee"
+  },
+  "primary": {
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 20260711,
+    "ci95_percentile": [
+      0.018730036162175074,
+      0.1196716879045416
+    ],
+    "clusters": 1158,
+    "estimand": "page-balanced mean(I_Q4-I_F16)",
+    "estimate": 0.06864686011285964,
+    "quartet_weighted_sensitivity": 0.085654498586912
+  }
+}

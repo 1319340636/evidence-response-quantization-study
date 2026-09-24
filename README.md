@@ -4,6 +4,7 @@ This public repository contains a **candidate commit**, not yet a frozen GitHub 
 
 ## Included material
 
+- `data/confirmatory/`: 4,966 text-free quartet-level records for the frozen Qwen GGUF F16/Q4_K_M comparison (2,483 paired VitaminC quartets, 1,158 pages), with source-bound and detached SHA-256 manifests. The recomputed page-balanced interaction contrast and quartet-weighted sensitivity equal `results/confirmatory/primary_results.json`; cell-level Balanced Accuracy equals `results/confirmatory/hard_metrics.json`.
 - `data/three_model/`: 10,800 text-free quartet-level records for the nine Qwen, Ministral, and OLMo FP16/GPTQ/AWQ conditions (1,200 quartets per condition), with a detached integrity manifest.
 - `data/mapping/mapping_exports.tar.gz`: 27 original/cyclic-mapping condition exports, 4,800 full-evidence records per condition (129,600 total). Each export includes a manifest binding its `records.jsonl` SHA-256.
 - `data/repeatability/repeatability_exports.tar.gz`: 81 fixed-artifact process-repeat exports, 480 full-evidence records per run (38,880 total), each with a SHA-256-bound manifest.
@@ -14,7 +15,7 @@ The exported records contain selected-token scores, labels, case IDs, and source
 
 ## Scope and boundaries
 
-The 1,200-quartet three-model analysis is post-confirmatory, not an independent replication of the earlier 2,483-quartet comparison. The repeatability archive fixes model artifacts and runtime and does not test independent requantization. The original source datasets and model weights are not redistributed here. The present candidate does not yet provide text-free row-level exports for the earlier 2,483-quartet confirmatory comparison, Fresh TabFact, or CUB/DRUID diagnostics; their report-level coverage and access routes must be resolved before an unqualified manuscript Data Availability statement is used.
+The 1,200-quartet three-model analysis is post-confirmatory, not an independent replication of the earlier 2,483-quartet comparison. The repeatability archive fixes model artifacts and runtime and does not test independent requantization. The original source datasets and model weights are not redistributed here. The present candidate does not yet provide text-free row-level exports for Fresh TabFact or CUB/DRUID diagnostics; their report-level coverage and access routes must be resolved before an unqualified manuscript Data Availability statement is used.
 
 The original datasets are obtained from their maintainers: [VitaminC](https://github.com/TalSchuster/VitaminC), [TabFact](https://github.com/wenhuchen/Table-Fact-Checking), and [CUB/DRUID benchmark repository](https://github.com/copenlu/cmt-benchmark). VitaminC's source annotations incorporate Wikipedia and FEVER material; its [data-license notice](https://github.com/TalSchuster/VitaminC/blob/main/DATA_LICENSE) governs source data. Users must obtain source texts and model weights under their respective upstream terms.
 
