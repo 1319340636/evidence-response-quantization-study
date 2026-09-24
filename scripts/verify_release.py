@@ -274,12 +274,96 @@ def verify_tabfact(root: Path) -> None:
             raise ValueError(f"TabFact {condition} Balanced Accuracy mismatch")
 
 
+def verify_cub(root: Path) -> None:
+    """Recompute the frozen CUB/DRUID point estimates from paired safe rows."""
+
+    sys.path.insert(0, str(root / "src"))
+    from qer_fv.cub_statistics import PairedCubObservation, cluster_effects
+
+    data = root / "data/cub_druid"
+    records_path = data / "analysis_records.jsonl"
+    manifest_path = data / "analysis_records_manifest.json"
+    sidecar = data / "analysis_records_manifest.json.sha256"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    if sidecar.read_text(encoding="utf-8").split() != [digest(manifest_path), manifest_path.name]:
+        raise ValueError("CUB detached manifest hash mismatch")
+    canonical = json.dumps(
+        {k: v for k, v in manifest.items() if k != "manifest_sha256"},
+        ensure_ascii=False, sort_keys=True, separators=(",", ":"), allow_nan=False,
+    ).encode("utf-8")
+    if hashlib.sha256(canonical).hexdigest() != manifest.get("manifest_sha256"):
+        raise ValueError("CUB manifest content hash mismatch")
+    if digest(records_path) != manifest.get("records_jsonl_sha256"):
+        raise ValueError("CUB records hash mismatch")
+    if manifest.get("dataset_text_included") is not False:
+        raise ValueError("CUB text-free flag missing")
+    comparisons = {
+        "ministral3_3b_q4": ("ministral3_3b", "Q4_K_M"),
+        "ministral3_8b_q4": ("ministral3_8b", "Q4_K_M"),
+        "qwen35_4b_q4": ("qwen35_4b", "Q4_K_M"),
+        "qwen35_9b_q4": ("qwen35_9b", "Q4_K_M"),
+        "qwen35_9b_q5": ("qwen35_9b", "Q5_K_M"),
+        "qwen35_9b_q8": ("qwen35_9b", "Q8_0"),
+    }
+    by_comparison: dict[str, list[PairedCubObservation]] = {name: [] for name in comparisons}
+    allowed = set(PairedCubObservation.__dataclass_fields__) | {
+        "comparison", "model_key", "quantization",
+    }
+    for line in records_path.open("rb"):
+        if any(marker in line for marker in FORBIDDEN) or b'"claimant":' in line:
+            raise ValueError("CUB record includes source text, credential, or host path")
+        row = json.loads(line)
+        if set(row) != allowed:
+            raise ValueError("CUB record field allowlist mismatch")
+        comparison = row.pop("comparison")
+        if comparison not in comparisons:
+            raise ValueError("CUB comparison identity mismatch")
+        model, precision = comparisons[comparison]
+        if (row.pop("model_key"), row.pop("quantization")) != (model, precision):
+            raise ValueError("CUB model or precision mismatch")
+        by_comparison[comparison].append(PairedCubObservation(**row))
+    if manifest.get("comparisons") != {name: 4302 for name in comparisons}:
+        raise ValueError("CUB manifest count mismatch")
+    for comparison, rows in by_comparison.items():
+        if len(rows) != 4302 or len({row.sample_id for row in rows}) != 4302:
+            raise ValueError("CUB sample count or identity mismatch")
+        report_name = f"{comparison}.json" if comparison.startswith("qwen35_9b_") else f"{comparisons[comparison][0]}.json"
+        report = json.loads((root / "results/cub_druid" / report_name).read_text())
+        if (report.get("model_key"), report.get("quantization")) != comparisons[comparison]:
+            raise ValueError("CUB frozen report identity mismatch")
+        for context, expected_count in (("gold", 1872), ("conflicting", 2413)):
+            selected = [row for row in rows if row.analysis_context_type == context]
+            if len(selected) != expected_count:
+                raise ValueError("CUB context count mismatch")
+            for metric in ("bcu", "ccu"):
+                complete = selected if metric == "bcu" else [
+                    row for row in selected
+                    if row.ccu_f16 is not None and row.ccu_quantized is not None
+                ]
+                effects = cluster_effects(complete, metric=metric, context_type=context)
+                estimate = statistics.fmean(effects.values())
+                if abs(estimate - report[context][metric]["estimate"]) > 1e-12:
+                    raise ValueError(f"CUB {comparison} {context} {metric} estimate mismatch")
+        irrelevant = [row for row in rows if row.analysis_context_type == "irrelevant"]
+        if len(irrelevant) != 17:
+            raise ValueError("CUB irrelevant context count mismatch")
+        bcu = statistics.fmean(float(row.bcu_quantized) - float(row.bcu_f16) for row in irrelevant)
+        ccu = statistics.fmean(
+            row.ccu_quantized - row.ccu_f16 for row in irrelevant
+            if row.ccu_f16 is not None and row.ccu_quantized is not None
+        )
+        if (abs(bcu - report["irrelevant"]["bcu_effect"]) > 1e-12
+            or abs(ccu - report["irrelevant"]["ccu_effect"]) > 1e-12):
+            raise ValueError(f"CUB {comparison} irrelevant estimate mismatch")
+
+
 def verify_data() -> None:
     sys.path.insert(0, str(ROOT / "src"))
     from qer_fv.three_model_records import load_text_free_three_model_inputs
 
     verify_confirmatory(ROOT)
     verify_tabfact(ROOT)
+    verify_cub(ROOT)
     values, pages = load_text_free_three_model_inputs(ROOT / "data/three_model", formal=True)
     if len(values) != 3 or sum(map(len, values.values())) != 9 or len(set(pages.values())) != 1078:
         raise ValueError("three-model release structure mismatch")

@@ -1,0 +1,111 @@
+{
+  "analysis_version": "cub-confirmatory-holm-v1",
+  "families": {
+    "bcu": [
+      {
+        "adjusted_p_value": 0.014669853301466983,
+        "context_type": "conflicting",
+        "model_key": "ministral3_3b",
+        "raw_p_value": 0.004889951100488995
+      },
+      {
+        "adjusted_p_value": 7.999920000799993e-05,
+        "context_type": "gold",
+        "model_key": "ministral3_3b",
+        "raw_p_value": 9.99990000099999e-06
+      },
+      {
+        "adjusted_p_value": 7.999920000799993e-05,
+        "context_type": "conflicting",
+        "model_key": "ministral3_8b",
+        "raw_p_value": 9.99990000099999e-06
+      },
+      {
+        "adjusted_p_value": 0.014669853301466983,
+        "context_type": "gold",
+        "model_key": "ministral3_8b",
+        "raw_p_value": 0.0065499345006549935
+      },
+      {
+        "adjusted_p_value": 7.999920000799993e-05,
+        "context_type": "conflicting",
+        "model_key": "qwen35_4b",
+        "raw_p_value": 9.99990000099999e-06
+      },
+      {
+        "adjusted_p_value": 7.999920000799993e-05,
+        "context_type": "gold",
+        "model_key": "qwen35_4b",
+        "raw_p_value": 9.99990000099999e-06
+      },
+      {
+        "adjusted_p_value": 0.2531674683253167,
+        "context_type": "conflicting",
+        "model_key": "qwen35_9b",
+        "raw_p_value": 0.2531674683253167
+      },
+      {
+        "adjusted_p_value": 7.999920000799993e-05,
+        "context_type": "gold",
+        "model_key": "qwen35_9b",
+        "raw_p_value": 9.99990000099999e-06
+      }
+    ],
+    "ccu": [
+      {
+        "adjusted_p_value": 7.999920000799993e-05,
+        "context_type": "conflicting",
+        "model_key": "ministral3_3b",
+        "raw_p_value": 9.99990000099999e-06
+      },
+      {
+        "adjusted_p_value": 7.999920000799993e-05,
+        "context_type": "gold",
+        "model_key": "ministral3_3b",
+        "raw_p_value": 9.99990000099999e-06
+      },
+      {
+        "adjusted_p_value": 7.999920000799993e-05,
+        "context_type": "conflicting",
+        "model_key": "ministral3_8b",
+        "raw_p_value": 9.99990000099999e-06
+      },
+      {
+        "adjusted_p_value": 7.999920000799993e-05,
+        "context_type": "gold",
+        "model_key": "ministral3_8b",
+        "raw_p_value": 9.99990000099999e-06
+      },
+      {
+        "adjusted_p_value": 7.999920000799993e-05,
+        "context_type": "conflicting",
+        "model_key": "qwen35_4b",
+        "raw_p_value": 9.99990000099999e-06
+      },
+      {
+        "adjusted_p_value": 7.999920000799993e-05,
+        "context_type": "gold",
+        "model_key": "qwen35_4b",
+        "raw_p_value": 9.99990000099999e-06
+      },
+      {
+        "adjusted_p_value": 7.999920000799993e-05,
+        "context_type": "conflicting",
+        "model_key": "qwen35_9b",
+        "raw_p_value": 9.99990000099999e-06
+      },
+      {
+        "adjusted_p_value": 7.999920000799993e-05,
+        "context_type": "gold",
+        "model_key": "qwen35_9b",
+        "raw_p_value": 9.99990000099999e-06
+      }
+    ]
+  },
+  "input_reports": [
+    "reports\\cub_formal_v4\\qwen35_4b.json",
+    "reports\\cub_formal_v4\\qwen35_9b_q4.json",
+    "reports\\cub_formal_v4\\ministral3_3b.json",
+    "reports\\cub_formal_v4\\ministral3_8b.json"
+  ]
+}

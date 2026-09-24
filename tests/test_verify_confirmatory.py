@@ -52,3 +52,16 @@ def test_tabfact_verifier_recalculates_frozen_balanced_accuracy(tmp_path):
     report.write_text(json.dumps(payload), encoding="utf-8")
     with pytest.raises(ValueError, match="TabFact.*Balanced Accuracy"):
         verifier.verify_tabfact(tmp_path)
+
+
+def test_cub_verifier_recalculates_frozen_point_estimates(tmp_path):
+    shutil.copytree(ROOT / "data/cub_druid", tmp_path / "data/cub_druid")
+    shutil.copytree(ROOT / "results/cub_druid", tmp_path / "results/cub_druid")
+    verifier = _verifier()
+    verifier.verify_cub(tmp_path)
+    report = tmp_path / "results/cub_druid/qwen35_9b_q4.json"
+    payload = json.loads(report.read_text(encoding="utf-8"))
+    payload["gold"]["bcu"]["estimate"] += 0.01
+    report.write_text(json.dumps(payload), encoding="utf-8")
+    with pytest.raises(ValueError, match="CUB.*estimate"):
+        verifier.verify_cub(tmp_path)
