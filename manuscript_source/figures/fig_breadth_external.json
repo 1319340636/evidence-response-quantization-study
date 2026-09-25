@@ -1,0 +1,121 @@
+{
+  "caption": "Post-confirmatory common-support family estimates, fresh TabFact accuracy differences, and CUB/DRUID conflicting-control descriptive point estimates shown without confidence intervals. Panels answer different questions and raw magnitudes are not directly comparable; OLMo is not significant after Holm correction.",
+  "cub_interval_status": "descriptive_point_estimates_no_interval",
+  "effect_orientation": "quantized_minus_reference_or_reported_route_contrast",
+  "evidence_boundary": "post-confirmatory breadth and external diagnostics",
+  "final_width_mm": 183.0,
+  "marks": [
+    {
+      "evidence_role": "post-confirmatory common-support breadth",
+      "holm_significant": true,
+      "label": "Qwen3.5-9B",
+      "lower": 0.025982842059436226,
+      "lower_source_key": "rows[row_id=cac1d6850ab3c3c755ee7d22091ac05f494b015e7fa34616181e596f87d25057].metrics.delta_i_ci95[0]",
+      "source_key": "rows[row_id=cac1d6850ab3c3c755ee7d22091ac05f494b015e7fa34616181e596f87d25057].metrics.delta_i",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "upper": 0.14425942733026834,
+      "upper_source_key": "rows[row_id=cac1d6850ab3c3c755ee7d22091ac05f494b015e7fa34616181e596f87d25057].metrics.delta_i_ci95[1]",
+      "value": 0.0846712943131937
+    },
+    {
+      "evidence_role": "post-confirmatory common-support breadth",
+      "holm_significant": true,
+      "label": "Ministral-3-8B",
+      "lower": -0.4345931399344071,
+      "lower_source_key": "rows[row_id=0bb94af6bf654c2154b714a60600b4661ba65a9db34f6eb8d51b058982c21cb4].metrics.delta_i_ci95[0]",
+      "source_key": "rows[row_id=0bb94af6bf654c2154b714a60600b4661ba65a9db34f6eb8d51b058982c21cb4].metrics.delta_i",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "upper": -0.34317134300277935,
+      "upper_source_key": "rows[row_id=0bb94af6bf654c2154b714a60600b4661ba65a9db34f6eb8d51b058982c21cb4].metrics.delta_i_ci95[1]",
+      "value": -0.3887897840457414
+    },
+    {
+      "evidence_role": "post-confirmatory common-support breadth",
+      "holm_significant": true,
+      "label": "Gemma-4-E4B",
+      "lower": -3.3776824389102287,
+      "lower_source_key": "rows[row_id=ff51c59d45f66bda266842445752af99a7214f7d6f48af4d3152f16e88cd0e52].metrics.delta_i_ci95[0]",
+      "source_key": "rows[row_id=ff51c59d45f66bda266842445752af99a7214f7d6f48af4d3152f16e88cd0e52].metrics.delta_i",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "upper": -3.055274598308751,
+      "upper_source_key": "rows[row_id=ff51c59d45f66bda266842445752af99a7214f7d6f48af4d3152f16e88cd0e52].metrics.delta_i_ci95[1]",
+      "value": -3.217178342514887
+    },
+    {
+      "evidence_role": "post-confirmatory common-support breadth",
+      "holm_significant": false,
+      "label": "OLMo-3-7B",
+      "lower": -0.8933614135452017,
+      "lower_source_key": "rows[row_id=d4015ffcab3a99a35194d70f65b526afd99bac477495965eba02887e313ef0c4].metrics.delta_i_ci95[0]",
+      "source_key": "rows[row_id=d4015ffcab3a99a35194d70f65b526afd99bac477495965eba02887e313ef0c4].metrics.delta_i",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "upper": -0.778043928250311,
+      "upper_source_key": "rows[row_id=d4015ffcab3a99a35194d70f65b526afd99bac477495965eba02887e313ef0c4].metrics.delta_i_ci95[1]",
+      "value": -0.8346363940796295
+    },
+    {
+      "evidence_role": "fresh TabFact external validation",
+      "label": "Qwen3.5-9B",
+      "lower": -0.0961250480616377,
+      "lower_source_key": "rows[row_id=e9767e0e961e8a8689e63d21b384b10d3e58de809bb8c5bb43ad2c99f03db8ad].metrics.accuracy_ci95[0]",
+      "source_key": "rows[row_id=e9767e0e961e8a8689e63d21b384b10d3e58de809bb8c5bb43ad2c99f03db8ad].metrics.accuracy_difference",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "upper": -0.05408112168252377,
+      "upper_source_key": "rows[row_id=e9767e0e961e8a8689e63d21b384b10d3e58de809bb8c5bb43ad2c99f03db8ad].metrics.accuracy_ci95[1]",
+      "value": -0.07500000000000007
+    },
+    {
+      "evidence_role": "fresh TabFact external validation",
+      "label": "Gemma-4-E4B",
+      "lower": -0.06365048379028872,
+      "lower_source_key": "rows[row_id=50066a7133eff4dfecb4a0c377507eed892436e46b9488687dc81f5133691658].metrics.accuracy_ci95[0]",
+      "source_key": "rows[row_id=50066a7133eff4dfecb4a0c377507eed892436e46b9488687dc81f5133691658].metrics.accuracy_difference",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "upper": -0.029426433915212043,
+      "upper_source_key": "rows[row_id=50066a7133eff4dfecb4a0c377507eed892436e46b9488687dc81f5133691658].metrics.accuracy_ci95[1]",
+      "value": -0.0465000000000001
+    },
+    {
+      "evidence_role": "CUB/DRUID conflicting-control diagnostic",
+      "label": "Qwen3.5-4B",
+      "source_key": "rows[row_id=0ca5af0dd8cea940a2501564c61c5f6fe4ce57e0292776d45e43a6c828079571].metrics.conflicting_ccu_effect",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 0.059083662643952574
+    },
+    {
+      "evidence_role": "CUB/DRUID conflicting-control diagnostic",
+      "label": "Qwen3.5-9B",
+      "source_key": "rows[row_id=056df251ebcb6a205758da0c081d26a24afc4c22d01b7b2802b8bc3fb56db551].metrics.conflicting_ccu_effect",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 0.19169053423666851
+    },
+    {
+      "evidence_role": "CUB/DRUID conflicting-control diagnostic",
+      "label": "Ministral-3-3B",
+      "source_key": "rows[row_id=2e096c5889720a7e263fb975a3630a959e96320152ea9b5c9e4e6de85c30f9d6].metrics.conflicting_ccu_effect",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.04563840091825073
+    },
+    {
+      "evidence_role": "CUB/DRUID conflicting-control diagnostic",
+      "label": "Ministral-3-8B",
+      "source_key": "rows[row_id=ee9e33f7802da7f15271c4931d2048e6fecb7bee86f97f2e2a8c59eb59ed0458].metrics.conflicting_ccu_effect",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.038442578311825876
+    }
+  ],
+  "name": "fig_breadth_external",
+  "protocol": "manuscript-figures-v1-20260809",
+  "sample_unit": "dataset-specific frozen analysis units",
+  "title": "Breadth and external evidence"
+}

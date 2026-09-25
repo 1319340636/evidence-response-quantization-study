@@ -1,0 +1,71 @@
+{
+  "caption": "Confirmatory VitaminC paired result for Qwen3.5-9B, reporting the selected-token evidence-response interaction together with hard-label performance.",
+  "cells": [
+    {
+      "cell_id": "primary.delta_i",
+      "display": "0.069",
+      "source_key": "rows[row_id=36a0cfe0e166dbbe02fbd55fd9b9ddb1a47d0ccf3ff1d3fd7a6774d0a373543f].metrics.delta_i",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 0.06864686011285964
+    },
+    {
+      "cell_id": "primary.delta_i.lower",
+      "display": "0.019",
+      "source_key": "rows[row_id=36a0cfe0e166dbbe02fbd55fd9b9ddb1a47d0ccf3ff1d3fd7a6774d0a373543f].metrics.delta_i_ci95[0]",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 0.018730036162175074
+    },
+    {
+      "cell_id": "primary.delta_i.upper",
+      "display": "0.120",
+      "source_key": "rows[row_id=36a0cfe0e166dbbe02fbd55fd9b9ddb1a47d0ccf3ff1d3fd7a6774d0a373543f].metrics.delta_i_ci95[1]",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 0.1196716879045416
+    },
+    {
+      "cell_id": "primary.balanced_accuracy_f16",
+      "display": "68.95\\%",
+      "source_key": "rows[row_id=36a0cfe0e166dbbe02fbd55fd9b9ddb1a47d0ccf3ff1d3fd7a6774d0a373543f].metrics.balanced_accuracy_f16",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 0.6895340077376607
+    },
+    {
+      "cell_id": "primary.balanced_accuracy_quantized",
+      "display": "66.33\\%",
+      "source_key": "rows[row_id=36a0cfe0e166dbbe02fbd55fd9b9ddb1a47d0ccf3ff1d3fd7a6774d0a373543f].metrics.balanced_accuracy_quantized",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 0.6633290911135844
+    },
+    {
+      "cell_id": "primary.balanced_accuracy_difference",
+      "display": "-2.62 pp",
+      "source_key": "rows[row_id=36a0cfe0e166dbbe02fbd55fd9b9ddb1a47d0ccf3ff1d3fd7a6774d0a373543f].metrics.balanced_accuracy_difference",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.026204916624076313
+    },
+    {
+      "cell_id": "primary.quartets",
+      "display": "2,483",
+      "source_key": "rows[row_id=36a0cfe0e166dbbe02fbd55fd9b9ddb1a47d0ccf3ff1d3fd7a6774d0a373543f].population.quartets",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 2483
+    },
+    {
+      "cell_id": "primary.pages",
+      "display": "1,158",
+      "source_key": "rows[row_id=36a0cfe0e166dbbe02fbd55fd9b9ddb1a47d0ccf3ff1d3fd7a6774d0a373543f].population.pages",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 1158
+    }
+  ],
+  "name": "tab_primary_vitaminc",
+  "protocol": "manuscript-tables-v1-20260809"
+}

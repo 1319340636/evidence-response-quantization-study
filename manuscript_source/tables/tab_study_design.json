@@ -1,0 +1,79 @@
+{
+  "caption": "Frozen study populations and analysis roles. VitaminC counts are quartets and source pages; TabFact counts are claims and tables; CUB/DRUID counts are diagnostic samples.",
+  "cells": [
+    {
+      "cell_id": "design.primary.quartets",
+      "display": "2,483",
+      "source_key": "rows[row_id=36a0cfe0e166dbbe02fbd55fd9b9ddb1a47d0ccf3ff1d3fd7a6774d0a373543f].population.quartets",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 2483
+    },
+    {
+      "cell_id": "design.primary.pages",
+      "display": "1,158",
+      "source_key": "rows[row_id=36a0cfe0e166dbbe02fbd55fd9b9ddb1a47d0ccf3ff1d3fd7a6774d0a373543f].population.pages",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 1158
+    },
+    {
+      "cell_id": "design.stage_a.quartets",
+      "display": "1,200",
+      "source_key": "rows[row_id=cac1d6850ab3c3c755ee7d22091ac05f494b015e7fa34616181e596f87d25057].population.quartets",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 1200
+    },
+    {
+      "cell_id": "design.stage_a.pages",
+      "display": "1,078",
+      "source_key": "rows[row_id=cac1d6850ab3c3c755ee7d22091ac05f494b015e7fa34616181e596f87d25057].population.pages",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 1078
+    },
+    {
+      "cell_id": "design.tabfact.claims",
+      "display": "2,000",
+      "source_key": "rows[row_id=e9767e0e961e8a8689e63d21b384b10d3e58de809bb8c5bb43ad2c99f03db8ad].population.claims",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 2000
+    },
+    {
+      "cell_id": "design.tabfact.tables",
+      "display": "1,434",
+      "source_key": "rows[row_id=e9767e0e961e8a8689e63d21b384b10d3e58de809bb8c5bb43ad2c99f03db8ad].population.tables",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 1434
+    },
+    {
+      "cell_id": "design.cub.gold",
+      "display": "1,872",
+      "source_key": "rows[row_id=056df251ebcb6a205758da0c081d26a24afc4c22d01b7b2802b8bc3fb56db551].population.gold_samples",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 1872
+    },
+    {
+      "cell_id": "design.cub.conflicting",
+      "display": "2,413",
+      "source_key": "rows[row_id=056df251ebcb6a205758da0c081d26a24afc4c22d01b7b2802b8bc3fb56db551].population.conflicting_samples",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 2413
+    },
+    {
+      "cell_id": "design.cub.irrelevant",
+      "display": "17",
+      "source_key": "rows[row_id=056df251ebcb6a205758da0c081d26a24afc4c22d01b7b2802b8bc3fb56db551].population.irrelevant_samples",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 17
+    }
+  ],
+  "name": "tab_study_design",
+  "protocol": "manuscript-tables-v1-20260809"
+}

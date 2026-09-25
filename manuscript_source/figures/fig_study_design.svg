@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="518.740157pt" height="280.8pt" viewBox="0 0 518.740157 280.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <title>fig_study_design</title>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>fig_study_design</dc:title>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Experiment B manuscript figure generator</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 280.8 
+L 518.740157 280.8 
+L 518.740157 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 77.908287 134.23644 
+L 157.307953 134.23644 
+Q 159.98811 134.23644 159.98811 131.35356 
+L 159.98811 82.70496 
+Q 159.98811 79.82208 157.307953 79.82208 
+L 77.908287 79.82208 
+Q 75.22813 79.82208 75.22813 82.70496 
+L 75.22813 131.35356 
+Q 75.22813 134.23644 77.908287 134.23644 
+z
+" clip-path="url(#p46b5cc00c5)" style="fill: #dbeafe; stroke: #263238; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 174.393957 134.23644 
+L 253.793622 134.23644 
+Q 256.47378 134.23644 256.47378 131.35356 
+L 256.47378 82.70496 
+Q 256.47378 79.82208 253.793622 79.82208 
+L 174.393957 79.82208 
+Q 171.713799 79.82208 171.713799 82.70496 
+L 171.713799 131.35356 
+Q 171.713799 134.23644 174.393957 134.23644 
+z
+" clip-path="url(#p46b5cc00c5)" style="fill: #e0f2fe; stroke: #263238; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 270.879626 134.23644 
+L 350.279291 134.23644 
+Q 352.959449 134.23644 352.959449 131.35356 
+L 352.959449 82.70496 
+Q 352.959449 79.82208 350.279291 79.82208 
+L 270.879626 79.82208 
+Q 268.199469 79.82208 268.199469 82.70496 
+L 268.199469 131.35356 
+Q 268.199469 134.23644 270.879626 134.23644 
+z
+" clip-path="url(#p46b5cc00c5)" style="fill: #f1e8fa; stroke: #263238; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 367.365295 134.23644 
+L 453.465354 134.23644 
+Q 456.145512 134.23644 456.145512 131.35356 
+L 456.145512 82.70496 
+Q 456.145512 79.82208 453.465354 79.82208 
+L 367.365295 79.82208 
+Q 364.685138 79.82208 364.685138 82.70496 
+L 364.685138 131.35356 
+Q 364.685138 134.23644 367.365295 134.23644 
+z
+" clip-path="url(#p46b5cc00c5)" style="fill: #edeff2; stroke: #263238; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 161.653475 107.20944 
+Q 165.849935 107.20944 169.040165 107.20944 
+" clip-path="url(#p46b5cc00c5)" style="fill: none; stroke: #455a64; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 165.040165 105.20944 
+L 169.040165 107.20944 
+L 165.040165 109.20944 
+z
+" clip-path="url(#p46b5cc00c5)" style="fill: #455a64; stroke: #455a64; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 258.139145 107.20944 
+Q 262.335605 107.20944 265.525834 107.20944 
+" clip-path="url(#p46b5cc00c5)" style="fill: none; stroke: #455a64; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 261.525834 105.20944 
+L 265.525834 107.20944 
+L 261.525834 109.20944 
+z
+" clip-path="url(#p46b5cc00c5)" style="fill: #455a64; stroke: #455a64; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 354.624814 107.20944 
+Q 358.821274 107.20944 362.011504 107.20944 
+" clip-path="url(#p46b5cc00c5)" style="fill: none; stroke: #455a64; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 358.011504 105.20944 
+L 362.011504 107.20944 
+L 358.011504 109.20944 
+z
+" clip-path="url(#p46b5cc00c5)" style="fill: #455a64; stroke: #455a64; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 77.908287 221.80392 
+L 257.813858 221.80392 
+Q 260.494016 221.80392 260.494016 218.92104 
+L 260.494016 174.95712 
+Q 260.494016 172.07424 257.813858 172.07424 
+L 77.908287 172.07424 
+Q 75.22813 172.07424 75.22813 174.95712 
+L 75.22813 218.92104 
+Q 75.22813 221.80392 77.908287 221.80392 
+z
+" clip-path="url(#p46b5cc00c5)" style="fill: #f5f4e7; stroke: #263238; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 273.559783 221.80392 
+L 453.465354 221.80392 
+Q 456.145512 221.80392 456.145512 218.92104 
+L 456.145512 174.95712 
+Q 456.145512 172.07424 453.465354 172.07424 
+L 273.559783 172.07424 
+Q 270.879626 172.07424 270.879626 174.95712 
+L 270.879626 218.92104 
+Q 270.879626 221.80392 273.559783 221.80392 
+z
+" clip-path="url(#p46b5cc00c5)" style="fill: #f5f4e7; stroke: #263238; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start" x="76.568209" y="47.094593" transform="rotate(-0 76.568209 47.094593)">Evidence chronology and claim boundaries</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #455a64" x="76.568209" y="62.894815" transform="rotate(-0 76.568209 62.894815)">Same-item contrasts and page-clustered inference; later analyses do not become independent confirmations.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle" x="117.60812" y="100.750946" transform="rotate(-0 117.60812 100.750946)">1  Confirmatory</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 7.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(79.590394 114.791888)">2,483 VitaminC quartets</text>
+    <text style="font-size: 7.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(89.993003 122.523399)">GGUF Q4 vs F16</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle" x="214.093789" y="100.75102" transform="rotate(-0 214.093789 100.75102)">2  Three-model HF</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 7.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(176.797711 114.791888)">1,200 matched quartets</text>
+    <text style="font-size: 7.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(181.480383 122.523399)">FP16 / GPTQ / AWQ</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle" x="310.579459" y="100.750946" transform="rotate(-0 310.579459 100.750946)">3  Mapping check</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 7.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(277.62492 114.793829)">Same 1,200 quartets</text>
+    <text style="font-size: 7.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(278.027623 122.521319)">3 cyclic assignments</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle" x="410.415325" y="100.750946" transform="rotate(-0 410.415325 100.750946)">4  Repeatability audit</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 7.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(375.889911 114.793898)">Fixed artifacts; subset</text>
+    <text style="font-size: 7.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(380.226458 122.521389)">Not new replication</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #455a64" x="76.568209" y="157.567993" transform="rotate(-0 76.568209 157.567993)">Distinct external evidence</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle" x="167.861073" y="191.410389" transform="rotate(-0 167.861073 191.410389)">Fresh TabFact</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 7.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(125.633268 203.813629)">2,000 claims / 1,434 tables</text>
+    <text style="font-size: 7.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(135.500604 211.541119)">Hard-label validation</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle" x="363.512569" y="191.410389" transform="rotate(-0 363.512569 191.410389)">CUB/DRUID</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 7.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(309.253592 203.813491)">Gold, conflicting, irrelevant context</text>
+    <text style="font-size: 7.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif" transform="translate(329.76871 211.541119)">Behavioral diagnostic</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #37474f" x="265.854331" y="240.150575" transform="rotate(-0 265.854331 240.150575)">External outcomes do not replicate the VitaminC paired-interaction estimand.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p46b5cc00c5">
+   <rect x="64.84252" y="33.696" width="402.023622" height="216.216"/>
+  </clipPath>
+ </defs>
+</svg>

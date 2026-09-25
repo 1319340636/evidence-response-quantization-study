@@ -1,0 +1,118 @@
+{
+  "caption": "Frozen metadata for the three complete HF triplets. The broad HF evaluation interface was shared, but route-specific quantization software, packing, loaders, and kernels remained; hardware-performance outcomes were not collected.",
+  "cells": [
+    {
+      "cell_id": "metadata.calibration.count",
+      "display": "256",
+      "source_key": "/count",
+      "source_path": "data/manifests/gptq_calibration_manifest.json",
+      "source_sha256": "7b2cc940e0e8bcba84ca6a329f3662d323efaf0c6c7eb2463efbd0065c8f6851",
+      "value": 256
+    },
+    {
+      "cell_id": "metadata.qwen35_9b.gptq.bits",
+      "display": "4",
+      "source_key": "GPTQRouteConfig.qwen35_9b.bits",
+      "source_path": "src/qer_fv/gptq_route.py",
+      "source_sha256": "2f918af98cf6de867d0c2bdc11fbc8886a2738dc310bbd91e1fc0a41636ea9b1",
+      "value": 4
+    },
+    {
+      "cell_id": "metadata.qwen35_9b.gptq.group_size",
+      "display": "128",
+      "source_key": "GPTQRouteConfig.qwen35_9b.group_size",
+      "source_path": "src/qer_fv/gptq_route.py",
+      "source_sha256": "2f918af98cf6de867d0c2bdc11fbc8886a2738dc310bbd91e1fc0a41636ea9b1",
+      "value": 128
+    },
+    {
+      "cell_id": "metadata.qwen35_9b.awq.bits",
+      "display": "4",
+      "source_key": "/awq_recipe/bits",
+      "source_path": "configs/qwen_hf_triplet_only_v1.json",
+      "source_sha256": "71ed06d63185dc32cec8a2b2809ee1c834af76fd9a7cd015865d7c75bd49a000",
+      "value": 4
+    },
+    {
+      "cell_id": "metadata.qwen35_9b.awq.group_size",
+      "display": "128",
+      "source_key": "/awq_recipe/group_size",
+      "source_path": "configs/qwen_hf_triplet_only_v1.json",
+      "source_sha256": "71ed06d63185dc32cec8a2b2809ee1c834af76fd9a7cd015865d7c75bd49a000",
+      "value": 128
+    },
+    {
+      "cell_id": "metadata.ministral3_8b.gptq.bits",
+      "display": "4",
+      "source_key": "GPTQRouteConfig.ministral3_8b.bits",
+      "source_path": "src/qer_fv/gptq_route.py",
+      "source_sha256": "2f918af98cf6de867d0c2bdc11fbc8886a2738dc310bbd91e1fc0a41636ea9b1",
+      "value": 4
+    },
+    {
+      "cell_id": "metadata.ministral3_8b.gptq.group_size",
+      "display": "128",
+      "source_key": "GPTQRouteConfig.ministral3_8b.group_size",
+      "source_path": "src/qer_fv/gptq_route.py",
+      "source_sha256": "2f918af98cf6de867d0c2bdc11fbc8886a2738dc310bbd91e1fc0a41636ea9b1",
+      "value": 128
+    },
+    {
+      "cell_id": "metadata.ministral3_8b.awq.bits",
+      "display": "4",
+      "source_key": "/awq_recipe/bits",
+      "source_path": "configs/ministral_hf_triplet_v1.json",
+      "source_sha256": "3f42d08f44d86a5e0fb38ee40990b2e402060bd4893afcf50cacfaf268bbe2f2",
+      "value": 4
+    },
+    {
+      "cell_id": "metadata.ministral3_8b.awq.group_size",
+      "display": "128",
+      "source_key": "/awq_recipe/group_size",
+      "source_path": "configs/ministral_hf_triplet_v1.json",
+      "source_sha256": "3f42d08f44d86a5e0fb38ee40990b2e402060bd4893afcf50cacfaf268bbe2f2",
+      "value": 128
+    },
+    {
+      "cell_id": "metadata.olmo3_7b.gptq.bits",
+      "display": "4",
+      "source_key": "GPTQRouteConfig.olmo3_7b.bits",
+      "source_path": "src/qer_fv/gptq_route.py",
+      "source_sha256": "2f918af98cf6de867d0c2bdc11fbc8886a2738dc310bbd91e1fc0a41636ea9b1",
+      "value": 4
+    },
+    {
+      "cell_id": "metadata.olmo3_7b.gptq.group_size",
+      "display": "128",
+      "source_key": "GPTQRouteConfig.olmo3_7b.group_size",
+      "source_path": "src/qer_fv/gptq_route.py",
+      "source_sha256": "2f918af98cf6de867d0c2bdc11fbc8886a2738dc310bbd91e1fc0a41636ea9b1",
+      "value": 128
+    },
+    {
+      "cell_id": "metadata.olmo3_7b.awq.bits",
+      "display": "4",
+      "source_key": "/awq_recipe/bits",
+      "source_path": "configs/olmo3_hf_triplet_v1.json",
+      "source_sha256": "cafe41ed64e9779b3a4d21b004c20f24ce43ac2fc9550b7f7e51fb90058ae40d",
+      "value": 4
+    },
+    {
+      "cell_id": "metadata.olmo3_7b.awq.group_size",
+      "display": "128",
+      "source_key": "/awq_recipe/group_size",
+      "source_path": "configs/olmo3_hf_triplet_v1.json",
+      "source_sha256": "cafe41ed64e9779b3a4d21b004c20f24ce43ac2fc9550b7f7e51fb90058ae40d",
+      "value": 128
+    }
+  ],
+  "hardware_boundary": "hardware-performance outcomes not collected",
+  "name": "tab_route_metadata",
+  "protocol": "manuscript-tables-v1-20260809",
+  "software_freeze_sha256": "0528746ce7b0ed955a7766fb5f71f103635bc28e7e588f1a993270e88c9457cc",
+  "source_revisions": {
+    "ministral3_8b": "06cc81bfd6e45321d8fc8f816576c5b6ac67ec22",
+    "olmo3_7b": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+    "qwen35_9b": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+  }
+}

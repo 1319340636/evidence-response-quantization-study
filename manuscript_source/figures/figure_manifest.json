@@ -1,0 +1,43 @@
+{
+  "status": "current_export",
+  "generated_at": "2026-09-24T08:55:26.310882+00:00",
+  "path_base": "IJMLC_draft_20260908",
+  "scope": "Five figures used in the current Word manuscript. File hashes verify export integrity, not statistical validity. Historical mark-source metadata remains separate.",
+  "figures": {
+    "fig_study_design": {
+      "figures/fig_study_design.pdf": "e2df35c79686f0aea005629ec61dbd859524e117de2cca79886e62949d6e2296",
+      "figures/fig_study_design.png": "68aab1ac8248c402812d559dc91e94eab1f469f15c07dfc08ad54deda5b5757d",
+      "figures/fig_study_design.svg": "4d7692ca55a9c3ebd3c7818af49ba08226b5e5cfbfda888760a44c674169c590",
+      "figures/fig_study_design.tiff": "c1caa27190c522836352bfcc4bf1661a06d0b3b929d0158b9e0c76b7ea849f48",
+      "figures/fig_study_design.json": "e232d911301b79fde42b36cf99436b9b334feea448c43e60fa978faafbeefe69"
+    },
+    "fig_primary_paired_effect": {
+      "figures/fig_primary_paired_effect.pdf": "a84d896789cf7816ce3fb1c1b7327ea3dd2d6c601d10e4033f2e09f2cd346712",
+      "figures/fig_primary_paired_effect.png": "1bd88369860e686a867e3fca0ec2ac3486d7989a0f82b05fee975367f7ce5e16",
+      "figures/fig_primary_paired_effect.svg": "b8f5bdf488692d4e81ebaa75036f84ab52a28a5a9bd2df60c55bddfb7bb446e0",
+      "figures/fig_primary_paired_effect.tiff": "39324ea982c5d5cbf306ff1f9b13e963868d3a089b63eceefc64f3926f1d04f7",
+      "figures/fig_primary_paired_effect.json": "063b72770680539f54f76f770dd544e9b3f1a43047f80538dc95798d2e5dfb17"
+    },
+    "fig_hf_route_model_heterogeneity": {
+      "figures/fig_hf_route_model_heterogeneity.pdf": "39909b039c911e119faed3e96c0652bae214b22adbf7c29ce09d830889b78181",
+      "figures/fig_hf_route_model_heterogeneity.png": "381c9e5a5a6b54a63ebcd6695c8078c1058be1df0355f8f12741bf33a413f1a9",
+      "figures/fig_hf_route_model_heterogeneity.svg": "6eef6631ba3082f6e6df45cb17da61d51a6fe5b53b515ca6134ec7a4913d14b1",
+      "figures/fig_hf_route_model_heterogeneity.tiff": "f3038807ce59c59506515877f33688400345f6926dfed570519565bdc2022157",
+      "figures/fig_hf_route_model_heterogeneity.json": "669052334246f714f2ede4e76e3c6eaf711a27c976b0e69f0a5cbe65364bca92"
+    },
+    "fig_balanced_mapping": {
+      "figures/fig_balanced_mapping.pdf": "af80f172051022b19714fbab7cefbe576259ee407c5a0bf298293057661fb19e",
+      "figures/fig_balanced_mapping.png": "7fc9bd28151ba377c18676acdf1bf3fe3974cc5610bb4a96754fdcf73390ee47",
+      "figures/fig_balanced_mapping.svg": "b6effc09339f8c6babe6838dd2455a8911f22826bf0a156ed7cffa479f578b00",
+      "figures/fig_balanced_mapping.tiff": "87c7c5ebf54f36e58b3c7a792da85ac0ddd272dd23ed8b7fc685a83877139b7e",
+      "figures/fig_balanced_mapping.csv": "50f7500998e50ab6c7b5e3e0f3dbb4235904b0589d91605840f488101cbc6d2b"
+    },
+    "fig_breadth_external": {
+      "figures/fig_breadth_external.pdf": "52b497583964f73cf4444ba4bb5a7adcd5cdc6a4d79bdeb308b78d7e032bdd82",
+      "figures/fig_breadth_external.png": "f74c787447cd8e132ac63d13139dea506d6215ace7e120deeb8bd67a8694f645",
+      "figures/fig_breadth_external.svg": "de447b1b3912b5ae097dfb545accdc34aeee09f42377f771b2faa5546ede326c",
+      "figures/fig_breadth_external.tiff": "266b4c4b74a8aec56fb533bda963f88d8cba059396b1ddbe55a2b7032dc238d6",
+      "figures/fig_breadth_external.json": "55839d6d530157585bac003ce7304d17448703c4a9db2aa6ae091fd0dd640ee0"
+    }
+  }
+}

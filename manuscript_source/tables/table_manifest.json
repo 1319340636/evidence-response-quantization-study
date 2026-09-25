@@ -1,0 +1,44 @@
+{
+  "claim_evidence_map_sha256": "bd2b5cb43a7e81a13dbc04590f104c630ace5da041ca95d7be6599c751dd690a",
+  "manifest_record_sha256": "3960726b0091b2db07ebd87e62f330ce9b9ee09b5b8142fe10e9bae1efaf6a0f",
+  "protocol": "manuscript-tables-v1-20260809",
+  "source_inventory_sha256": "c3a21ec5c4cc090f36349a5d772da345d7545853e8408c88326e459d7a5b15f7",
+  "tables": {
+    "tab_cross_family": {
+      "json_sha256": "de94af34c573dc6c9caa74aa28f3016ee917959faae7873cc098d73c301ee75a",
+      "tex_sha256": "e27bfb486ab19d0cd4873dbbc99b4416a4fedb3e52f7285e21c4a97333c191b6"
+    },
+    "tab_external_validation": {
+      "json_sha256": "9f13223f892d2f87646b44b17ecbed13271bd421aa49666e2663b5b30cbcb700",
+      "tex_sha256": "5ff3c15786956a673c7aa737a0b6d55c8e775ba92931c4496247805f3ea8f999"
+    },
+    "tab_hard_label_diagnostics": {
+      "json_sha256": "886ee221460949c087a941144ad9ce5e393c515b9abefc7be0539a3e565737a8",
+      "tex_sha256": "b7bfde5fe3c31dde2c0b3e7131e2788ff1a9da0b1c0f917f744b2ef2f14ef71a"
+    },
+    "tab_hf_triplets": {
+      "json_sha256": "381ad17a03d629e2816772c75629c19c17f756b9ca6ed96616d7bd765ddbc814",
+      "tex_sha256": "b6cbbeef0ba484264b78a81e9fd1376ed9da46cf174abadf0b6407c7801361a2"
+    },
+    "tab_primary_vitaminc": {
+      "json_sha256": "fa2d15262047dfa1de71ef2c973dd4c560633e30dfadf4d8357b808240679878",
+      "tex_sha256": "e08ade7a7358411a1a192c043a66a16e2890a72005d27ac5737e4c015a69b95d"
+    },
+    "tab_route_metadata": {
+      "json_sha256": "17818bdcd86687c48aab1f22cb5beb898f8567b23aed26d1944496b53451fb3f",
+      "tex_sha256": "82c1805ad2db87def150a2d03e61052e192b05bebf4ed87b8480d2068c40ebaf"
+    },
+    "tab_route_model_interaction": {
+      "json_sha256": "a282d89ce829fba320573db1cc0d865ceedf29d60e0d81e6b2b6d9176e02dd05",
+      "tex_sha256": "28f37e10d80ac51d20fc98c4fd487091bce735be0e6774ce678410cc65f61f9b"
+    },
+    "tab_scale_robust_interaction": {
+      "json_sha256": "1fe9eb6ca0847f11491930aab6057e74095284bb247d67cba8935a055ea2f943",
+      "tex_sha256": "6916751aba38f1d920cf2541805a248ac18abdf995829d08eaad6395cbe00a08"
+    },
+    "tab_study_design": {
+      "json_sha256": "32bb61abb121d8fc3de2eca0c80ef585d803ae9e4d1328bd129f67b07673e6cb",
+      "tex_sha256": "9bce39ad2f279518174a2c9211548352541ca7e3732b4297f9715291960d9211"
+    }
+  }
+}

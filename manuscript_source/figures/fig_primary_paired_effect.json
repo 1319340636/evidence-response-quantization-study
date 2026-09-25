@@ -1,0 +1,23 @@
+{
+  "caption": "Confirmatory Qwen3.5-9B GGUF Q4-minus-F16 paired evidence-response contrast with the frozen 95% interval; 2,483 quartets are clustered within 1,158 source pages.",
+  "effect_orientation": "quantized_minus_reference",
+  "final_width_mm": 183.0,
+  "marks": [
+    {
+      "evidence_role": "confirmatory",
+      "label": "Qwen3.5-9B: GGUF Q4 - F16",
+      "lower": 0.018730036162175074,
+      "lower_source_key": "rows[row_id=36a0cfe0e166dbbe02fbd55fd9b9ddb1a47d0ccf3ff1d3fd7a6774d0a373543f].metrics.delta_i_ci95[0]",
+      "source_key": "rows[row_id=36a0cfe0e166dbbe02fbd55fd9b9ddb1a47d0ccf3ff1d3fd7a6774d0a373543f].metrics.delta_i",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "upper": 0.1196716879045416,
+      "upper_source_key": "rows[row_id=36a0cfe0e166dbbe02fbd55fd9b9ddb1a47d0ccf3ff1d3fd7a6774d0a373543f].metrics.delta_i_ci95[1]",
+      "value": 0.06864686011285964
+    }
+  ],
+  "name": "fig_primary_paired_effect",
+  "protocol": "manuscript-figures-v1-20260809",
+  "sample_unit": "quartets clustered within source pages",
+  "title": "Confirmatory paired VitaminC effect with uncertainty"
+}

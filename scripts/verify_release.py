@@ -33,7 +33,10 @@ def digest(path: Path) -> str:
 def release_files() -> dict[str, Path]:
     result = {}
     for path in ROOT.rglob("*"):
-        if any(part in {".git", "__pycache__", ".pytest_cache"} for part in path.relative_to(ROOT).parts):
+        parts = path.relative_to(ROOT).parts
+        if (any(part in {".git", "__pycache__", ".pytest_cache", ".venv"}
+                or part.endswith(".egg-info") for part in parts)
+            or parts == ("uv.lock",)):
             continue
         if path.is_symlink():
             raise ValueError(f"symlink forbidden: {path}")

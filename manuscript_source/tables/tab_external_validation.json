@@ -1,0 +1,199 @@
+{
+  "caption": "External validation. TabFact reports Q4$-$F16 hard-label differences; CUB/DRUID reports secondary behavioral diagnostic effects and does not replace the confirmatory VitaminC estimand.",
+  "cells": [
+    {
+      "cell_id": "external.tabfact.qwen35_9b.accuracy_difference",
+      "display": "-7.50 pp",
+      "source_key": "rows[row_id=e9767e0e961e8a8689e63d21b384b10d3e58de809bb8c5bb43ad2c99f03db8ad].metrics.accuracy_difference",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.07500000000000007
+    },
+    {
+      "cell_id": "external.tabfact.qwen35_9b.accuracy_ci.lower",
+      "display": "-9.61 pp",
+      "source_key": "rows[row_id=e9767e0e961e8a8689e63d21b384b10d3e58de809bb8c5bb43ad2c99f03db8ad].metrics.accuracy_ci95[0]",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.0961250480616377
+    },
+    {
+      "cell_id": "external.tabfact.qwen35_9b.accuracy_ci.upper",
+      "display": "-5.41 pp",
+      "source_key": "rows[row_id=e9767e0e961e8a8689e63d21b384b10d3e58de809bb8c5bb43ad2c99f03db8ad].metrics.accuracy_ci95[1]",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.05408112168252377
+    },
+    {
+      "cell_id": "external.tabfact.qwen35_9b.balanced_accuracy_difference",
+      "display": "-7.57 pp",
+      "source_key": "rows[row_id=e9767e0e961e8a8689e63d21b384b10d3e58de809bb8c5bb43ad2c99f03db8ad].metrics.balanced_accuracy_difference",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.07566068094612854
+    },
+    {
+      "cell_id": "external.tabfact.gemma4_e4b.accuracy_difference",
+      "display": "-4.65 pp",
+      "source_key": "rows[row_id=50066a7133eff4dfecb4a0c377507eed892436e46b9488687dc81f5133691658].metrics.accuracy_difference",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.0465000000000001
+    },
+    {
+      "cell_id": "external.tabfact.gemma4_e4b.accuracy_ci.lower",
+      "display": "-6.37 pp",
+      "source_key": "rows[row_id=50066a7133eff4dfecb4a0c377507eed892436e46b9488687dc81f5133691658].metrics.accuracy_ci95[0]",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.06365048379028872
+    },
+    {
+      "cell_id": "external.tabfact.gemma4_e4b.accuracy_ci.upper",
+      "display": "-2.94 pp",
+      "source_key": "rows[row_id=50066a7133eff4dfecb4a0c377507eed892436e46b9488687dc81f5133691658].metrics.accuracy_ci95[1]",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.029426433915212043
+    },
+    {
+      "cell_id": "external.tabfact.gemma4_e4b.balanced_accuracy_difference",
+      "display": "-4.69 pp",
+      "source_key": "rows[row_id=50066a7133eff4dfecb4a0c377507eed892436e46b9488687dc81f5133691658].metrics.balanced_accuracy_difference",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.04687092183829655
+    },
+    {
+      "cell_id": "external.cub.qwen35_4b.conflicting_ccu_effect",
+      "display": "0.059",
+      "source_key": "rows[row_id=0ca5af0dd8cea940a2501564c61c5f6fe4ce57e0292776d45e43a6c828079571].metrics.conflicting_ccu_effect",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 0.059083662643952574
+    },
+    {
+      "cell_id": "external.cub.qwen35_4b.conflicting_bcu_effect",
+      "display": "0.054",
+      "source_key": "rows[row_id=0ca5af0dd8cea940a2501564c61c5f6fe4ce57e0292776d45e43a6c828079571].metrics.conflicting_bcu_effect",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 0.05365731462925851
+    },
+    {
+      "cell_id": "external.cub.qwen35_4b.gold_ccu_effect",
+      "display": "-0.095",
+      "source_key": "rows[row_id=0ca5af0dd8cea940a2501564c61c5f6fe4ce57e0292776d45e43a6c828079571].metrics.gold_ccu_effect",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.09463199850687543
+    },
+    {
+      "cell_id": "external.cub.qwen35_4b.gold_bcu_effect",
+      "display": "-0.052",
+      "source_key": "rows[row_id=0ca5af0dd8cea940a2501564c61c5f6fe4ce57e0292776d45e43a6c828079571].metrics.gold_bcu_effect",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.051587301587301584
+    },
+    {
+      "cell_id": "external.cub.qwen35_9b.conflicting_ccu_effect",
+      "display": "0.192",
+      "source_key": "rows[row_id=056df251ebcb6a205758da0c081d26a24afc4c22d01b7b2802b8bc3fb56db551].metrics.conflicting_ccu_effect",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 0.19169053423666851
+    },
+    {
+      "cell_id": "external.cub.qwen35_9b.conflicting_bcu_effect",
+      "display": "-0.009",
+      "source_key": "rows[row_id=056df251ebcb6a205758da0c081d26a24afc4c22d01b7b2802b8bc3fb56db551].metrics.conflicting_bcu_effect",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.009335337341349365
+    },
+    {
+      "cell_id": "external.cub.qwen35_9b.gold_ccu_effect",
+      "display": "-0.197",
+      "source_key": "rows[row_id=056df251ebcb6a205758da0c081d26a24afc4c22d01b7b2802b8bc3fb56db551].metrics.gold_ccu_effect",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.19673520532942165
+    },
+    {
+      "cell_id": "external.cub.qwen35_9b.gold_bcu_effect",
+      "display": "-0.187",
+      "source_key": "rows[row_id=056df251ebcb6a205758da0c081d26a24afc4c22d01b7b2802b8bc3fb56db551].metrics.gold_bcu_effect",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.18683701122725513
+    },
+    {
+      "cell_id": "external.cub.ministral3_3b.conflicting_ccu_effect",
+      "display": "-0.046",
+      "source_key": "rows[row_id=2e096c5889720a7e263fb975a3630a959e96320152ea9b5c9e4e6de85c30f9d6].metrics.conflicting_ccu_effect",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.04563840091825073
+    },
+    {
+      "cell_id": "external.cub.ministral3_3b.conflicting_bcu_effect",
+      "display": "-0.020",
+      "source_key": "rows[row_id=2e096c5889720a7e263fb975a3630a959e96320152ea9b5c9e4e6de85c30f9d6].metrics.conflicting_bcu_effect",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.019756179024716096
+    },
+    {
+      "cell_id": "external.cub.ministral3_3b.gold_ccu_effect",
+      "display": "-0.103",
+      "source_key": "rows[row_id=2e096c5889720a7e263fb975a3630a959e96320152ea9b5c9e4e6de85c30f9d6].metrics.gold_ccu_effect",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.10279098444424341
+    },
+    {
+      "cell_id": "external.cub.ministral3_3b.gold_bcu_effect",
+      "display": "-0.107",
+      "source_key": "rows[row_id=2e096c5889720a7e263fb975a3630a959e96320152ea9b5c9e4e6de85c30f9d6].metrics.gold_bcu_effect",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.10723964382500967
+    },
+    {
+      "cell_id": "external.cub.ministral3_8b.conflicting_ccu_effect",
+      "display": "-0.038",
+      "source_key": "rows[row_id=ee9e33f7802da7f15271c4931d2048e6fecb7bee86f97f2e2a8c59eb59ed0458].metrics.conflicting_ccu_effect",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.038442578311825876
+    },
+    {
+      "cell_id": "external.cub.ministral3_8b.conflicting_bcu_effect",
+      "display": "-0.064",
+      "source_key": "rows[row_id=ee9e33f7802da7f15271c4931d2048e6fecb7bee86f97f2e2a8c59eb59ed0458].metrics.conflicting_bcu_effect",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.06401135604542418
+    },
+    {
+      "cell_id": "external.cub.ministral3_8b.gold_ccu_effect",
+      "display": "-0.062",
+      "source_key": "rows[row_id=ee9e33f7802da7f15271c4931d2048e6fecb7bee86f97f2e2a8c59eb59ed0458].metrics.gold_ccu_effect",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.061857107992421424
+    },
+    {
+      "cell_id": "external.cub.ministral3_8b.gold_bcu_effect",
+      "display": "-0.015",
+      "source_key": "rows[row_id=ee9e33f7802da7f15271c4931d2048e6fecb7bee86f97f2e2a8c59eb59ed0458].metrics.gold_bcu_effect",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.015214866434378629
+    }
+  ],
+  "name": "tab_external_validation",
+  "protocol": "manuscript-tables-v1-20260809"
+}

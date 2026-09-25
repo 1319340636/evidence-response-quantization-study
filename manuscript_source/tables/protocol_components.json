@@ -1,0 +1,11 @@
+{
+  "caption": "Table 8. Complementary information provided by the evaluation protocol. This is an evidence map using existing results, not a component-ablation experiment or proof that every component is necessary.",
+  "rows": [
+    ["Component", "Information added in this study", "Interpretive boundary"],
+    ["Aggregate hard-label outcomes", "The confirmatory Qwen comparison showed a 2.62 percentage-point decrease in balanced accuracy (Table 2).", "Final-label quality does not establish preservation of evidence responses."],
+    ["Paired evidence-response contrast", "The same comparison showed a positive interaction change of 0.069 despite lower balanced accuracy (Table 2).", "A larger selected-token contrast is not automatically better accuracy or internal evidence reliance."],
+    ["Scale-invariant cross-model endpoints", "The original mapping supported all six pair-by-route comparisons using two endpoints (Table 5).", "These compare route changes in evaluated checkpoints, not universal model rankings or pure quantizer effects."],
+    ["Cyclic label-mapping sensitivity", "Four comparisons retained orientation and dual-endpoint support; two OLMo–Qwen comparisons were sensitive (Table 6).", "This rules out a mapping-invariant ordering for the tested comparisons, not all scoring artifacts; only three cyclic assignments were tested."],
+    ["Integrity and provenance checks", "Shared identifiers, complete-condition gates, and hashes link the reported results to their input artifacts (Supplementary S3 and S5).", "Hashes verify file identity, not scientific validity, public accessibility, or successful end-to-end reproduction."]
+  ]
+}

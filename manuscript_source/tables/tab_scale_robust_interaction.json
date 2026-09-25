@@ -1,0 +1,400 @@
+{
+  "caption": "Reference-standardized and Directional common-language route-by-model endpoints for all Qwen--Ministral--OLMo model pairs on the frozen 1,200-quartet population. All 12 tests share one Holm family; every pair and route contrast satisfies the bounded scale-robust gate. Effects are pair-specific, not a population-wide model-family law or evidence of pure quantizer causality.",
+  "causal_boundary": "route_by_model_heterogeneity_not_pure_quantizer_kernel_packing_or_architecture_causality",
+  "cells": [
+    {
+      "cell_id": "scale_robust.ministral_minus_qwen.awq_minus_fp16.reference_standardized.estimate",
+      "display": "0.486",
+      "source_key": "/analysis/interactions/ministral_minus_qwen/awq_minus_fp16/endpoints/reference_standardized_route_effect/estimate",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.4863580331465139
+    },
+    {
+      "cell_id": "scale_robust.ministral_minus_qwen.awq_minus_fp16.reference_standardized.lower",
+      "display": "0.462",
+      "source_key": "/analysis/interactions/ministral_minus_qwen/awq_minus_fp16/endpoints/reference_standardized_route_effect/lower",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.4623016014530572
+    },
+    {
+      "cell_id": "scale_robust.ministral_minus_qwen.awq_minus_fp16.reference_standardized.upper",
+      "display": "0.511",
+      "source_key": "/analysis/interactions/ministral_minus_qwen/awq_minus_fp16/endpoints/reference_standardized_route_effect/upper",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.5109351419329826
+    },
+    {
+      "cell_id": "scale_robust.ministral_minus_qwen.awq_minus_fp16.reference_standardized.holm_pvalue",
+      "display": "$<.001$",
+      "source_key": "/analysis/interactions/ministral_minus_qwen/awq_minus_fp16/endpoints/reference_standardized_route_effect/holm_adjusted_pvalue",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.0
+    },
+    {
+      "cell_id": "scale_robust.ministral_minus_qwen.awq_minus_fp16.directional.estimate",
+      "display": "0.336",
+      "source_key": "/analysis/interactions/ministral_minus_qwen/awq_minus_fp16/endpoints/directional_common_language_effect/estimate",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.3362708719851577
+    },
+    {
+      "cell_id": "scale_robust.ministral_minus_qwen.awq_minus_fp16.directional.lower",
+      "display": "0.305",
+      "source_key": "/analysis/interactions/ministral_minus_qwen/awq_minus_fp16/endpoints/directional_common_language_effect/lower",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.3051948051948052
+    },
+    {
+      "cell_id": "scale_robust.ministral_minus_qwen.awq_minus_fp16.directional.upper",
+      "display": "0.368",
+      "source_key": "/analysis/interactions/ministral_minus_qwen/awq_minus_fp16/endpoints/directional_common_language_effect/upper",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.3682745825602968
+    },
+    {
+      "cell_id": "scale_robust.ministral_minus_qwen.awq_minus_fp16.directional.holm_pvalue",
+      "display": "$<.001$",
+      "source_key": "/analysis/interactions/ministral_minus_qwen/awq_minus_fp16/endpoints/directional_common_language_effect/holm_adjusted_pvalue",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 4.262975677608872e-99
+    },
+    {
+      "cell_id": "scale_robust.ministral_minus_qwen.awq_minus_gptq.reference_standardized.estimate",
+      "display": "0.466",
+      "source_key": "/analysis/interactions/ministral_minus_qwen/awq_minus_gptq/endpoints/reference_standardized_route_effect/estimate",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.4655576172858947
+    },
+    {
+      "cell_id": "scale_robust.ministral_minus_qwen.awq_minus_gptq.reference_standardized.lower",
+      "display": "0.440",
+      "source_key": "/analysis/interactions/ministral_minus_qwen/awq_minus_gptq/endpoints/reference_standardized_route_effect/lower",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.43992744742273593
+    },
+    {
+      "cell_id": "scale_robust.ministral_minus_qwen.awq_minus_gptq.reference_standardized.upper",
+      "display": "0.492",
+      "source_key": "/analysis/interactions/ministral_minus_qwen/awq_minus_gptq/endpoints/reference_standardized_route_effect/upper",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.49174482308673984
+    },
+    {
+      "cell_id": "scale_robust.ministral_minus_qwen.awq_minus_gptq.reference_standardized.holm_pvalue",
+      "display": "$<.001$",
+      "source_key": "/analysis/interactions/ministral_minus_qwen/awq_minus_gptq/endpoints/reference_standardized_route_effect/holm_adjusted_pvalue",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 5.197158279277754e-266
+    },
+    {
+      "cell_id": "scale_robust.ministral_minus_qwen.awq_minus_gptq.directional.estimate",
+      "display": "0.430",
+      "source_key": "/analysis/interactions/ministral_minus_qwen/awq_minus_gptq/endpoints/directional_common_language_effect/estimate",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.4301948051948052
+    },
+    {
+      "cell_id": "scale_robust.ministral_minus_qwen.awq_minus_gptq.directional.lower",
+      "display": "0.397",
+      "source_key": "/analysis/interactions/ministral_minus_qwen/awq_minus_gptq/endpoints/directional_common_language_effect/lower",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.3970315398886827
+    },
+    {
+      "cell_id": "scale_robust.ministral_minus_qwen.awq_minus_gptq.directional.upper",
+      "display": "0.465",
+      "source_key": "/analysis/interactions/ministral_minus_qwen/awq_minus_gptq/endpoints/directional_common_language_effect/upper",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.4645176252319109
+    },
+    {
+      "cell_id": "scale_robust.ministral_minus_qwen.awq_minus_gptq.directional.holm_pvalue",
+      "display": "$<.001$",
+      "source_key": "/analysis/interactions/ministral_minus_qwen/awq_minus_gptq/endpoints/directional_common_language_effect/holm_adjusted_pvalue",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 4.2105269423216456e-145
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_qwen.awq_minus_fp16.reference_standardized.estimate",
+      "display": "0.272",
+      "source_key": "/analysis/interactions/olmo_minus_qwen/awq_minus_fp16/endpoints/reference_standardized_route_effect/estimate",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.27227715569642497
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_qwen.awq_minus_fp16.reference_standardized.lower",
+      "display": "0.249",
+      "source_key": "/analysis/interactions/olmo_minus_qwen/awq_minus_fp16/endpoints/reference_standardized_route_effect/lower",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.2486278283987988
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_qwen.awq_minus_fp16.reference_standardized.upper",
+      "display": "0.296",
+      "source_key": "/analysis/interactions/olmo_minus_qwen/awq_minus_fp16/endpoints/reference_standardized_route_effect/upper",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.2964652446266638
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_qwen.awq_minus_fp16.reference_standardized.holm_pvalue",
+      "display": "$<.001$",
+      "source_key": "/analysis/interactions/olmo_minus_qwen/awq_minus_fp16/endpoints/reference_standardized_route_effect/holm_adjusted_pvalue",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 1.0277875044072979e-107
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_qwen.awq_minus_fp16.directional.estimate",
+      "display": "0.096",
+      "source_key": "/analysis/interactions/olmo_minus_qwen/awq_minus_fp16/endpoints/directional_common_language_effect/estimate",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.09601113172541743
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_qwen.awq_minus_fp16.directional.lower",
+      "display": "0.073",
+      "source_key": "/analysis/interactions/olmo_minus_qwen/awq_minus_fp16/endpoints/directional_common_language_effect/lower",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.0728200371057514
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_qwen.awq_minus_fp16.directional.upper",
+      "display": "0.120",
+      "source_key": "/analysis/interactions/olmo_minus_qwen/awq_minus_fp16/endpoints/directional_common_language_effect/upper",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.11966604823747681
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_qwen.awq_minus_fp16.directional.holm_pvalue",
+      "display": "$<.001$",
+      "source_key": "/analysis/interactions/olmo_minus_qwen/awq_minus_fp16/endpoints/directional_common_language_effect/holm_adjusted_pvalue",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 1.7094595439239252e-15
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_qwen.awq_minus_gptq.reference_standardized.estimate",
+      "display": "0.220",
+      "source_key": "/analysis/interactions/olmo_minus_qwen/awq_minus_gptq/endpoints/reference_standardized_route_effect/estimate",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.22032473633869368
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_qwen.awq_minus_gptq.reference_standardized.lower",
+      "display": "0.196",
+      "source_key": "/analysis/interactions/olmo_minus_qwen/awq_minus_gptq/endpoints/reference_standardized_route_effect/lower",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.19603888862771254
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_qwen.awq_minus_gptq.reference_standardized.upper",
+      "display": "0.245",
+      "source_key": "/analysis/interactions/olmo_minus_qwen/awq_minus_gptq/endpoints/reference_standardized_route_effect/upper",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.2449789274055251
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_qwen.awq_minus_gptq.reference_standardized.holm_pvalue",
+      "display": "$<.001$",
+      "source_key": "/analysis/interactions/olmo_minus_qwen/awq_minus_gptq/endpoints/reference_standardized_route_effect/holm_adjusted_pvalue",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 1.8625430897453874e-68
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_qwen.awq_minus_gptq.directional.estimate",
+      "display": "0.091",
+      "source_key": "/analysis/interactions/olmo_minus_qwen/awq_minus_gptq/endpoints/directional_common_language_effect/estimate",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.09137291280148423
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_qwen.awq_minus_gptq.directional.lower",
+      "display": "0.065",
+      "source_key": "/analysis/interactions/olmo_minus_qwen/awq_minus_gptq/endpoints/directional_common_language_effect/lower",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.06539888682745826
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_qwen.awq_minus_gptq.directional.upper",
+      "display": "0.118",
+      "source_key": "/analysis/interactions/olmo_minus_qwen/awq_minus_gptq/endpoints/directional_common_language_effect/upper",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 0.11827458256029684
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_qwen.awq_minus_gptq.directional.holm_pvalue",
+      "display": "$<.001$",
+      "source_key": "/analysis/interactions/olmo_minus_qwen/awq_minus_gptq/endpoints/directional_common_language_effect/holm_adjusted_pvalue",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 1.5619320699603815e-11
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_ministral.awq_minus_fp16.reference_standardized.estimate",
+      "display": "-0.214",
+      "source_key": "/analysis/interactions/olmo_minus_ministral/awq_minus_fp16/endpoints/reference_standardized_route_effect/estimate",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": -0.2140808774500889
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_ministral.awq_minus_fp16.reference_standardized.lower",
+      "display": "-0.235",
+      "source_key": "/analysis/interactions/olmo_minus_ministral/awq_minus_fp16/endpoints/reference_standardized_route_effect/lower",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": -0.23520581562421308
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_ministral.awq_minus_fp16.reference_standardized.upper",
+      "display": "-0.192",
+      "source_key": "/analysis/interactions/olmo_minus_ministral/awq_minus_fp16/endpoints/reference_standardized_route_effect/upper",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": -0.1923558594764077
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_ministral.awq_minus_fp16.reference_standardized.holm_pvalue",
+      "display": "$<.001$",
+      "source_key": "/analysis/interactions/olmo_minus_ministral/awq_minus_fp16/endpoints/reference_standardized_route_effect/holm_adjusted_pvalue",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 1.6423292769842914e-85
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_ministral.awq_minus_fp16.directional.estimate",
+      "display": "-0.240",
+      "source_key": "/analysis/interactions/olmo_minus_ministral/awq_minus_fp16/endpoints/directional_common_language_effect/estimate",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": -0.24025974025974026
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_ministral.awq_minus_fp16.directional.lower",
+      "display": "-0.276",
+      "source_key": "/analysis/interactions/olmo_minus_ministral/awq_minus_fp16/endpoints/directional_common_language_effect/lower",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": -0.275974025974026
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_ministral.awq_minus_fp16.directional.upper",
+      "display": "-0.205",
+      "source_key": "/analysis/interactions/olmo_minus_ministral/awq_minus_fp16/endpoints/directional_common_language_effect/upper",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": -0.20454545454545456
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_ministral.awq_minus_fp16.directional.holm_pvalue",
+      "display": "$<.001$",
+      "source_key": "/analysis/interactions/olmo_minus_ministral/awq_minus_fp16/endpoints/directional_common_language_effect/holm_adjusted_pvalue",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 7.627173123411665e-40
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_ministral.awq_minus_gptq.reference_standardized.estimate",
+      "display": "-0.245",
+      "source_key": "/analysis/interactions/olmo_minus_ministral/awq_minus_gptq/endpoints/reference_standardized_route_effect/estimate",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": -0.24523288094720097
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_ministral.awq_minus_gptq.reference_standardized.lower",
+      "display": "-0.268",
+      "source_key": "/analysis/interactions/olmo_minus_ministral/awq_minus_gptq/endpoints/reference_standardized_route_effect/lower",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": -0.26809374278753406
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_ministral.awq_minus_gptq.reference_standardized.upper",
+      "display": "-0.222",
+      "source_key": "/analysis/interactions/olmo_minus_ministral/awq_minus_gptq/endpoints/reference_standardized_route_effect/upper",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": -0.22242086349253382
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_ministral.awq_minus_gptq.reference_standardized.holm_pvalue",
+      "display": "$<.001$",
+      "source_key": "/analysis/interactions/olmo_minus_ministral/awq_minus_gptq/endpoints/reference_standardized_route_effect/holm_adjusted_pvalue",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 7.930323066271085e-99
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_ministral.awq_minus_gptq.directional.estimate",
+      "display": "-0.339",
+      "source_key": "/analysis/interactions/olmo_minus_ministral/awq_minus_gptq/endpoints/directional_common_language_effect/estimate",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": -0.33882189239332094
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_ministral.awq_minus_gptq.directional.lower",
+      "display": "-0.376",
+      "source_key": "/analysis/interactions/olmo_minus_ministral/awq_minus_gptq/endpoints/directional_common_language_effect/lower",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": -0.37569573283859
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_ministral.awq_minus_gptq.directional.upper",
+      "display": "-0.302",
+      "source_key": "/analysis/interactions/olmo_minus_ministral/awq_minus_gptq/endpoints/directional_common_language_effect/upper",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": -0.30194805194805197
+    },
+    {
+      "cell_id": "scale_robust.olmo_minus_ministral.awq_minus_gptq.directional.holm_pvalue",
+      "display": "$<.001$",
+      "source_key": "/analysis/interactions/olmo_minus_ministral/awq_minus_gptq/endpoints/directional_common_language_effect/holm_adjusted_pvalue",
+      "source_path": "reports/three_model_hf_scale_heterogeneity_v1/results.json",
+      "source_sha256": "d881836d3d96d21296e9d5afdf9f3afdfc84e1179d01ff821e06b2a41312d403",
+      "value": 5.701288893153324e-73
+    }
+  ],
+  "claim_gates": {
+    "ministral_minus_qwen.awq_minus_fp16": "bounded_scale_robust",
+    "ministral_minus_qwen.awq_minus_gptq": "bounded_scale_robust",
+    "olmo_minus_ministral.awq_minus_fp16": "bounded_scale_robust",
+    "olmo_minus_ministral.awq_minus_gptq": "bounded_scale_robust",
+    "olmo_minus_qwen.awq_minus_fp16": "bounded_scale_robust",
+    "olmo_minus_qwen.awq_minus_gptq": "bounded_scale_robust"
+  },
+  "name": "tab_scale_robust_interaction",
+  "protocol": "manuscript-tables-v1-20260809"
+}

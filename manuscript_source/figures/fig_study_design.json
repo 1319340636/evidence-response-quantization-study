@@ -1,0 +1,38 @@
+{
+  "name": "fig_study_design",
+  "protocol": "manuscript-figures-v1-20260809",
+  "title": "Evidence chronology and claim boundaries",
+  "caption": "Chronological evidence hierarchy. The 2,483-quartet confirmatory GGUF contrast precedes the matched 1,200-quartet, three-model HF extension. Cyclic mapping and fixed-artifact process checks are later sensitivity and engineering audits, not independent replications. Fresh TabFact and CUB/DRUID address distinct external and behavioral questions.",
+  "final_width_mm": 183.0,
+  "sample_unit": "dataset-specific analysis units shown in the diagram",
+  "marks": [
+    {
+      "label": "VitaminC confirmatory quartets",
+      "value": 2483,
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "source_key": "rows[row_id=36a0cfe0e166dbbe02fbd55fd9b9ddb1a47d0ccf3ff1d3fd7a6774d0a373543f].population.quartets"
+    },
+    {
+      "label": "VitaminC common-support quartets",
+      "value": 1200,
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "source_key": "rows[row_id=cac1d6850ab3c3c755ee7d22091ac05f494b015e7fa34616181e596f87d25057].population.quartets"
+    },
+    {
+      "label": "Fresh TabFact claims",
+      "value": 2000,
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "source_key": "rows[row_id=e9767e0e961e8a8689e63d21b384b10d3e58de809bb8c5bb43ad2c99f03db8ad].population.claims"
+    },
+    {
+      "label": "Fresh TabFact source tables",
+      "value": 1434,
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "source_key": "rows[row_id=e9767e0e961e8a8689e63d21b384b10d3e58de809bb8c5bb43ad2c99f03db8ad].population.tables"
+    }
+  ]
+}

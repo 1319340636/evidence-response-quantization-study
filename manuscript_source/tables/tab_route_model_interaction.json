@@ -1,0 +1,89 @@
+{
+  "caption": "Historical fixed-protocol descriptive contrasts, oriented as the Ministral route effect minus Qwen route effect. They are retained for chronology and are not used for cross-model inference; the scale-invariant endpoints provide the inferential evidence for route-by-model heterogeneity.",
+  "causal_boundary": "route_by_model_heterogeneity_not_pure_quantizer_causality",
+  "cells": [
+    {
+      "cell_id": "interaction.awq_minus_fp16.estimate",
+      "display": "1.586",
+      "source_key": "/analysis/interactions/awq_minus_fp16/page_bootstrap/estimate",
+      "source_path": "reports/qwen_ministral_method_interaction_v1/analysis.json",
+      "source_sha256": "3b597fa91e3ab88b6d3d4656b7285f01a6e541a878f63706c926f010e5fbe058",
+      "value": 1.5857961792671613
+    },
+    {
+      "cell_id": "interaction.awq_minus_fp16.lower",
+      "display": "1.499",
+      "source_key": "/analysis/interactions/awq_minus_fp16/page_bootstrap/lower",
+      "source_path": "reports/qwen_ministral_method_interaction_v1/analysis.json",
+      "source_sha256": "3b597fa91e3ab88b6d3d4656b7285f01a6e541a878f63706c926f010e5fbe058",
+      "value": 1.4994905659351807
+    },
+    {
+      "cell_id": "interaction.awq_minus_fp16.upper",
+      "display": "1.674",
+      "source_key": "/analysis/interactions/awq_minus_fp16/page_bootstrap/upper",
+      "source_path": "reports/qwen_ministral_method_interaction_v1/analysis.json",
+      "source_sha256": "3b597fa91e3ab88b6d3d4656b7285f01a6e541a878f63706c926f010e5fbe058",
+      "value": 1.6743597989621983
+    },
+    {
+      "cell_id": "interaction.awq_minus_fp16.raw_pvalue",
+      "display": "$<.001$",
+      "source_key": "/analysis/interactions/awq_minus_fp16/page_wald/pvalue",
+      "source_path": "reports/qwen_ministral_method_interaction_v1/analysis.json",
+      "source_sha256": "3b597fa91e3ab88b6d3d4656b7285f01a6e541a878f63706c926f010e5fbe058",
+      "value": 1.0543990514922844e-268
+    },
+    {
+      "cell_id": "interaction.awq_minus_fp16.holm_pvalue",
+      "display": "$<.001$",
+      "source_key": "/analysis/interactions/awq_minus_fp16/holm_adjusted_pvalue",
+      "source_path": "reports/qwen_ministral_method_interaction_v1/analysis.json",
+      "source_sha256": "3b597fa91e3ab88b6d3d4656b7285f01a6e541a878f63706c926f010e5fbe058",
+      "value": 2.108798102984569e-268
+    },
+    {
+      "cell_id": "interaction.awq_minus_gptq.estimate",
+      "display": "1.442",
+      "source_key": "/analysis/interactions/awq_minus_gptq/page_bootstrap/estimate",
+      "source_path": "reports/qwen_ministral_method_interaction_v1/analysis.json",
+      "source_sha256": "3b597fa91e3ab88b6d3d4656b7285f01a6e541a878f63706c926f010e5fbe058",
+      "value": 1.442326646567718
+    },
+    {
+      "cell_id": "interaction.awq_minus_gptq.lower",
+      "display": "1.354",
+      "source_key": "/analysis/interactions/awq_minus_gptq/page_bootstrap/lower",
+      "source_path": "reports/qwen_ministral_method_interaction_v1/analysis.json",
+      "source_sha256": "3b597fa91e3ab88b6d3d4656b7285f01a6e541a878f63706c926f010e5fbe058",
+      "value": 1.3540424070906774
+    },
+    {
+      "cell_id": "interaction.awq_minus_gptq.upper",
+      "display": "1.533",
+      "source_key": "/analysis/interactions/awq_minus_gptq/page_bootstrap/upper",
+      "source_path": "reports/qwen_ministral_method_interaction_v1/analysis.json",
+      "source_sha256": "3b597fa91e3ab88b6d3d4656b7285f01a6e541a878f63706c926f010e5fbe058",
+      "value": 1.533406907684949
+    },
+    {
+      "cell_id": "interaction.awq_minus_gptq.raw_pvalue",
+      "display": "$<.001$",
+      "source_key": "/analysis/interactions/awq_minus_gptq/page_wald/pvalue",
+      "source_path": "reports/qwen_ministral_method_interaction_v1/analysis.json",
+      "source_sha256": "3b597fa91e3ab88b6d3d4656b7285f01a6e541a878f63706c926f010e5fbe058",
+      "value": 1.0957087682237751e-217
+    },
+    {
+      "cell_id": "interaction.awq_minus_gptq.holm_pvalue",
+      "display": "$<.001$",
+      "source_key": "/analysis/interactions/awq_minus_gptq/holm_adjusted_pvalue",
+      "source_path": "reports/qwen_ministral_method_interaction_v1/analysis.json",
+      "source_sha256": "3b597fa91e3ab88b6d3d4656b7285f01a6e541a878f63706c926f010e5fbe058",
+      "value": 1.0957087682237751e-217
+    }
+  ],
+  "effect_orientation": "ministral_route_effect_minus_qwen_route_effect",
+  "name": "tab_route_model_interaction",
+  "protocol": "manuscript-tables-v1-20260809"
+}

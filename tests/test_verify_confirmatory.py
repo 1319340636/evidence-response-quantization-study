@@ -41,6 +41,22 @@ def test_release_file_inventory_ignores_test_cache(tmp_path):
     assert set(verifier.release_files()) == {"README.md"}
 
 
+def test_release_file_inventory_ignores_local_environment_and_build_outputs(tmp_path):
+    verifier = _verifier()
+    verifier.ROOT = tmp_path
+    verifier.MANIFEST = tmp_path / "SHA256SUMS.txt"
+    for relative in (
+        ".venv/Lib/site-packages/package.py",
+        "src/qer_fv.egg-info/PKG-INFO",
+        "uv.lock",
+    ):
+        path = tmp_path / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text("local generated artifact", encoding="utf-8")
+    (tmp_path / "README.md").write_text("public", encoding="utf-8")
+    assert set(verifier.release_files()) == {"README.md"}
+
+
 def test_tabfact_verifier_recalculates_frozen_balanced_accuracy(tmp_path):
     shutil.copytree(ROOT / "data/tabfact", tmp_path / "data/tabfact")
     shutil.copytree(ROOT / "results/tabfact", tmp_path / "results/tabfact")

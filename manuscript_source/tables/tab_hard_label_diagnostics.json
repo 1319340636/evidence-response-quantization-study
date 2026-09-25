@@ -1,0 +1,175 @@
+{
+  "caption": "Paired hard-label uncertainty and transition summaries. Agreement and changed-label counts summarize the frozen $3\\times3$ transition matrices; they do not replace the continuous paired evidence-response estimand.",
+  "cells": [
+    {
+      "cell_id": "hard.confirmatory.ba_difference",
+      "display": "-2.62 pp",
+      "source_key": "/balanced_accuracy/q4_minus_f16",
+      "source_path": "reports/vitaminc_main_v4/hard_metrics.json",
+      "source_sha256": "1d4865d1a90126c3abb6760fec3bc44eee482c0bb22c88320cb775f2fcc58714",
+      "value": -0.026204916624076313
+    },
+    {
+      "cell_id": "hard.confirmatory.ba_difference.lower",
+      "display": "-3.39",
+      "source_key": "/balanced_accuracy/ci95_percentile/0",
+      "source_path": "reports/vitaminc_main_v4/hard_metrics.json",
+      "source_sha256": "1d4865d1a90126c3abb6760fec3bc44eee482c0bb22c88320cb775f2fcc58714",
+      "value": -0.03391600502972841
+    },
+    {
+      "cell_id": "hard.confirmatory.ba_difference.upper",
+      "display": "-1.85",
+      "source_key": "/balanced_accuracy/ci95_percentile/1",
+      "source_path": "reports/vitaminc_main_v4/hard_metrics.json",
+      "source_sha256": "1d4865d1a90126c3abb6760fec3bc44eee482c0bb22c88320cb775f2fcc58714",
+      "value": -0.01847501981467747
+    },
+    {
+      "cell_id": "hard.qwen35_9b.awq_vs_fp16.agreement",
+      "display": "88.35\\%",
+      "source_key": "/analysis/hard_labels/awq_vs_fp16/agreement",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": 0.8835416666666667
+    },
+    {
+      "cell_id": "hard.qwen35_9b.awq_vs_fp16.changed_labels",
+      "display": "559",
+      "source_key": "/analysis/hard_labels/awq_vs_fp16/units,/agreement",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": 559
+    },
+    {
+      "cell_id": "hard.qwen35_9b.awq_vs_fp16.accuracy_difference",
+      "display": "-5.92 pp",
+      "source_key": "/analysis/hard_labels/awq_vs_fp16/accuracy/difference",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": -0.059166666666666666
+    },
+    {
+      "cell_id": "hard.qwen35_9b.awq_vs_gptq.agreement",
+      "display": "91.71\\%",
+      "source_key": "/analysis/hard_labels/awq_vs_gptq/agreement",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": 0.9170833333333334
+    },
+    {
+      "cell_id": "hard.qwen35_9b.awq_vs_gptq.changed_labels",
+      "display": "398",
+      "source_key": "/analysis/hard_labels/awq_vs_gptq/units,/agreement",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": 398
+    },
+    {
+      "cell_id": "hard.qwen35_9b.awq_vs_gptq.accuracy_difference",
+      "display": "-2.88 pp",
+      "source_key": "/analysis/hard_labels/awq_vs_gptq/accuracy/difference",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": -0.02875
+    },
+    {
+      "cell_id": "hard.ministral3_8b.awq_vs_fp16.agreement",
+      "display": "91.12\\%",
+      "source_key": "/hard_labels/awq_vs_fp16/agreement",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": 0.91125
+    },
+    {
+      "cell_id": "hard.ministral3_8b.awq_vs_fp16.changed_labels",
+      "display": "426",
+      "source_key": "/hard_labels/awq_vs_fp16/units,/agreement",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": 426
+    },
+    {
+      "cell_id": "hard.ministral3_8b.awq_vs_fp16.accuracy_difference",
+      "display": "-1.02 pp",
+      "source_key": "/hard_labels/awq_vs_fp16/accuracy/difference",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": -0.010208333333333333
+    },
+    {
+      "cell_id": "hard.ministral3_8b.awq_vs_gptq.agreement",
+      "display": "90.58\\%",
+      "source_key": "/hard_labels/awq_vs_gptq/agreement",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": 0.9058333333333334
+    },
+    {
+      "cell_id": "hard.ministral3_8b.awq_vs_gptq.changed_labels",
+      "display": "452",
+      "source_key": "/hard_labels/awq_vs_gptq/units,/agreement",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": 452
+    },
+    {
+      "cell_id": "hard.ministral3_8b.awq_vs_gptq.accuracy_difference",
+      "display": "-0.83 pp",
+      "source_key": "/hard_labels/awq_vs_gptq/accuracy/difference",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": -0.008333333333333333
+    },
+    {
+      "cell_id": "hard.olmo3_7b.awq_vs_fp16.agreement",
+      "display": "87.40\\%",
+      "source_key": "/hard_labels/awq_vs_fp16/agreement",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": 0.8739583333333333
+    },
+    {
+      "cell_id": "hard.olmo3_7b.awq_vs_fp16.changed_labels",
+      "display": "605",
+      "source_key": "/hard_labels/awq_vs_fp16/units,/agreement",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": 605
+    },
+    {
+      "cell_id": "hard.olmo3_7b.awq_vs_fp16.accuracy_difference",
+      "display": "-3.50 pp",
+      "source_key": "/hard_labels/awq_vs_fp16/accuracy/difference",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": -0.035
+    },
+    {
+      "cell_id": "hard.olmo3_7b.awq_vs_gptq.agreement",
+      "display": "86.98\\%",
+      "source_key": "/hard_labels/awq_vs_gptq/agreement",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": 0.8697916666666666
+    },
+    {
+      "cell_id": "hard.olmo3_7b.awq_vs_gptq.changed_labels",
+      "display": "625",
+      "source_key": "/hard_labels/awq_vs_gptq/units,/agreement",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": 625
+    },
+    {
+      "cell_id": "hard.olmo3_7b.awq_vs_gptq.accuracy_difference",
+      "display": "-2.48 pp",
+      "source_key": "/hard_labels/awq_vs_gptq/accuracy/difference",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": -0.024791666666666667
+    }
+  ],
+  "name": "tab_hard_label_diagnostics",
+  "protocol": "manuscript-tables-v1-20260809"
+}

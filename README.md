@@ -12,6 +12,7 @@ This public repository contains a **candidate commit**, not yet a frozen GitHub 
 - `data/repeatability/repeatability_exports.tar.gz`: 81 fixed-artifact process-repeat exports, 480 full-evidence records per run (38,880 total), each with a SHA-256-bound manifest.
 - `results/`: frozen three-model, mapping-sensitivity, and repeatability summaries and gates. The mapping gate's `gate_sha256` field is a canonical-content hash, not the byte hash of the JSON file.
 - `src/`, `scripts/`, `configs/`, and `pyproject.toml`: analysis and provenance code, execution contracts, and the 1,200-case ID list.
+- `manuscript_source/`: the five current manuscript figures as PDF/PNG/SVG plus their numeric JSON/CSV inputs, and nine frozen table JSON inputs. See its README for the scope of the source manifests and omitted formats/tables.
 
 The exported records contain selected-token scores, labels, case IDs, and source-page identifiers. They do **not** contain claim/evidence passages, raw prompts, model weights, credentials, or host-specific paths. The page identifiers are not anonymized; they support page-clustered analysis. Automated screening checked every included mapping/repeatability row and found zero recorded errors or unexpected row counts. The three-model text-free loader verified all nine conditions and 1,078 source pages.
 

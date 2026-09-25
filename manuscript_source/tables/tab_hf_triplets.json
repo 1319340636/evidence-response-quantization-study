@@ -1,0 +1,415 @@
+{
+  "caption": "Matched HF triplets for Qwen3.5-9B, Ministral-3-8B, and OLMo-3-7B on the frozen VitaminC population. Contrasts are route-associated; residual packing, loader, and kernel differences remain.",
+  "cells": [
+    {
+      "cell_id": "hf.qwen35_9b.fp16.accuracy",
+      "display": "77.50\\%",
+      "source_key": "/analysis/hard_labels/awq_vs_fp16/accuracy/reference",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": 0.775
+    },
+    {
+      "cell_id": "hf.qwen35_9b.fp16.balanced_accuracy",
+      "display": "69.36\\%",
+      "source_key": "/analysis/hard_labels/awq_vs_fp16/balanced_accuracy/reference",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": 0.6935717157178473
+    },
+    {
+      "cell_id": "hf.qwen35_9b.fp16.mcc",
+      "display": "0.617",
+      "source_key": "/analysis/hard_labels/awq_vs_fp16/mcc/reference",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": 0.616761289663955
+    },
+    {
+      "cell_id": "hf.qwen35_9b.gptq.accuracy",
+      "display": "74.46\\%",
+      "source_key": "/analysis/hard_labels/awq_vs_gptq/accuracy/reference",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": 0.7445833333333334
+    },
+    {
+      "cell_id": "hf.qwen35_9b.gptq.balanced_accuracy",
+      "display": "66.04\\%",
+      "source_key": "/analysis/hard_labels/awq_vs_gptq/balanced_accuracy/reference",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": 0.6603524006379501
+    },
+    {
+      "cell_id": "hf.qwen35_9b.gptq.mcc",
+      "display": "0.577",
+      "source_key": "/analysis/hard_labels/awq_vs_gptq/mcc/reference",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": 0.5765308692036453
+    },
+    {
+      "cell_id": "hf.qwen35_9b.awq.accuracy",
+      "display": "71.58\\%",
+      "source_key": "/analysis/hard_labels/awq_vs_fp16/accuracy/awq",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": 0.7158333333333333
+    },
+    {
+      "cell_id": "hf.qwen35_9b.awq.balanced_accuracy",
+      "display": "63.56\\%",
+      "source_key": "/analysis/hard_labels/awq_vs_fp16/balanced_accuracy/awq",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": 0.6356476442726886
+    },
+    {
+      "cell_id": "hf.qwen35_9b.awq.mcc",
+      "display": "0.532",
+      "source_key": "/analysis/hard_labels/awq_vs_fp16/mcc/awq",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": 0.5318612892944414
+    },
+    {
+      "cell_id": "hf.qwen35_9b.awq_minus_fp16.estimate",
+      "display": "-1.802",
+      "source_key": "/analysis/contrasts/awq_minus_fp16/page_bootstrap/estimate",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": -1.801813978432282
+    },
+    {
+      "cell_id": "hf.qwen35_9b.awq_minus_fp16.lower",
+      "display": "-1.877",
+      "source_key": "/analysis/contrasts/awq_minus_fp16/page_bootstrap/lower",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": -1.8769805738346477
+    },
+    {
+      "cell_id": "hf.qwen35_9b.awq_minus_fp16.upper",
+      "display": "-1.729",
+      "source_key": "/analysis/contrasts/awq_minus_fp16/page_bootstrap/upper",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": -1.7290586680339748
+    },
+    {
+      "cell_id": "hf.qwen35_9b.awq_minus_fp16.holm_pvalue",
+      "display": "$<.001$",
+      "source_key": "/analysis/contrasts/awq_minus_fp16/holm_adjusted_pvalue",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": 0.0
+    },
+    {
+      "cell_id": "hf.qwen35_9b.awq_minus_gptq.estimate",
+      "display": "-1.384",
+      "source_key": "/analysis/contrasts/awq_minus_gptq/page_bootstrap/estimate",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": -1.384059021335807
+    },
+    {
+      "cell_id": "hf.qwen35_9b.awq_minus_gptq.lower",
+      "display": "-1.449",
+      "source_key": "/analysis/contrasts/awq_minus_gptq/page_bootstrap/lower",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": -1.4494363476924863
+    },
+    {
+      "cell_id": "hf.qwen35_9b.awq_minus_gptq.upper",
+      "display": "-1.320",
+      "source_key": "/analysis/contrasts/awq_minus_gptq/page_bootstrap/upper",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": -1.3202342300556587
+    },
+    {
+      "cell_id": "hf.qwen35_9b.awq_minus_gptq.holm_pvalue",
+      "display": "$<.001$",
+      "source_key": "/analysis/contrasts/awq_minus_gptq/holm_adjusted_pvalue",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "value": 0.0
+    },
+    {
+      "cell_id": "hf.ministral3_8b.fp16.accuracy",
+      "display": "70.73\\%",
+      "source_key": "/hard_labels/awq_vs_fp16/accuracy/reference",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": 0.7072916666666667
+    },
+    {
+      "cell_id": "hf.ministral3_8b.fp16.balanced_accuracy",
+      "display": "62.72\\%",
+      "source_key": "/hard_labels/awq_vs_fp16/balanced_accuracy/reference",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": 0.6271955934995684
+    },
+    {
+      "cell_id": "hf.ministral3_8b.fp16.mcc",
+      "display": "0.505",
+      "source_key": "/hard_labels/awq_vs_fp16/mcc/reference",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": 0.504990676884364
+    },
+    {
+      "cell_id": "hf.ministral3_8b.gptq.accuracy",
+      "display": "70.54\\%",
+      "source_key": "/hard_labels/awq_vs_gptq/accuracy/reference",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": 0.7054166666666667
+    },
+    {
+      "cell_id": "hf.ministral3_8b.gptq.balanced_accuracy",
+      "display": "61.43\\%",
+      "source_key": "/hard_labels/awq_vs_gptq/balanced_accuracy/reference",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": 0.6143335973202588
+    },
+    {
+      "cell_id": "hf.ministral3_8b.gptq.mcc",
+      "display": "0.497",
+      "source_key": "/hard_labels/awq_vs_gptq/mcc/reference",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": 0.49743317326459313
+    },
+    {
+      "cell_id": "hf.ministral3_8b.awq.accuracy",
+      "display": "69.71\\%",
+      "source_key": "/hard_labels/awq_vs_fp16/accuracy/awq",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": 0.6970833333333334
+    },
+    {
+      "cell_id": "hf.ministral3_8b.awq.balanced_accuracy",
+      "display": "60.12\\%",
+      "source_key": "/hard_labels/awq_vs_fp16/balanced_accuracy/awq",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": 0.6012378686506216
+    },
+    {
+      "cell_id": "hf.ministral3_8b.awq.mcc",
+      "display": "0.487",
+      "source_key": "/hard_labels/awq_vs_fp16/mcc/awq",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": 0.4866965798417265
+    },
+    {
+      "cell_id": "hf.ministral3_8b.awq_minus_fp16.estimate",
+      "display": "-0.216",
+      "source_key": "/contrasts/awq_minus_fp16/page_bootstrap/estimate",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": -0.2160177991651206
+    },
+    {
+      "cell_id": "hf.ministral3_8b.awq_minus_fp16.lower",
+      "display": "-0.275",
+      "source_key": "/contrasts/awq_minus_fp16/page_bootstrap/lower",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": -0.2754486480316558
+    },
+    {
+      "cell_id": "hf.ministral3_8b.awq_minus_fp16.upper",
+      "display": "-0.156",
+      "source_key": "/contrasts/awq_minus_fp16/page_bootstrap/upper",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": -0.15642275553687388
+    },
+    {
+      "cell_id": "hf.ministral3_8b.awq_minus_fp16.holm_pvalue",
+      "display": "$<.001$",
+      "source_key": "/contrasts/awq_minus_fp16/holm_adjusted_pvalue",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": 4.003042342332543e-12
+    },
+    {
+      "cell_id": "hf.ministral3_8b.awq_minus_gptq.estimate",
+      "display": "0.058",
+      "source_key": "/contrasts/awq_minus_gptq/page_bootstrap/estimate",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": 0.058267625231910945
+    },
+    {
+      "cell_id": "hf.ministral3_8b.awq_minus_gptq.lower",
+      "display": "-0.003",
+      "source_key": "/contrasts/awq_minus_gptq/page_bootstrap/lower",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": -0.003123641146799629
+    },
+    {
+      "cell_id": "hf.ministral3_8b.awq_minus_gptq.upper",
+      "display": "0.122",
+      "source_key": "/contrasts/awq_minus_gptq/page_bootstrap/upper",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": 0.1217879428049629
+    },
+    {
+      "cell_id": "hf.ministral3_8b.awq_minus_gptq.holm_pvalue",
+      "display": "$.0690$",
+      "source_key": "/contrasts/awq_minus_gptq/holm_adjusted_pvalue",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "value": 0.06898378670880453
+    },
+    {
+      "cell_id": "hf.olmo3_7b.fp16.accuracy",
+      "display": "55.33\\%",
+      "source_key": "/hard_labels/awq_vs_fp16/accuracy/reference",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": 0.5533333333333333
+    },
+    {
+      "cell_id": "hf.olmo3_7b.fp16.balanced_accuracy",
+      "display": "56.21\\%",
+      "source_key": "/hard_labels/awq_vs_fp16/balanced_accuracy/reference",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": 0.5621420403012737
+    },
+    {
+      "cell_id": "hf.olmo3_7b.fp16.mcc",
+      "display": "0.346",
+      "source_key": "/hard_labels/awq_vs_fp16/mcc/reference",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": 0.3456421015542134
+    },
+    {
+      "cell_id": "hf.olmo3_7b.gptq.accuracy",
+      "display": "54.31\\%",
+      "source_key": "/hard_labels/awq_vs_gptq/accuracy/reference",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": 0.543125
+    },
+    {
+      "cell_id": "hf.olmo3_7b.gptq.balanced_accuracy",
+      "display": "55.62\\%",
+      "source_key": "/hard_labels/awq_vs_gptq/balanced_accuracy/reference",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": 0.5562084631360332
+    },
+    {
+      "cell_id": "hf.olmo3_7b.gptq.mcc",
+      "display": "0.339",
+      "source_key": "/hard_labels/awq_vs_gptq/mcc/reference",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": 0.3394239185629298
+    },
+    {
+      "cell_id": "hf.olmo3_7b.awq.accuracy",
+      "display": "51.83\\%",
+      "source_key": "/hard_labels/awq_vs_fp16/accuracy/awq",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": 0.5183333333333333
+    },
+    {
+      "cell_id": "hf.olmo3_7b.awq.balanced_accuracy",
+      "display": "53.12\\%",
+      "source_key": "/hard_labels/awq_vs_fp16/balanced_accuracy/awq",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": 0.5311834336702727
+    },
+    {
+      "cell_id": "hf.olmo3_7b.awq.mcc",
+      "display": "0.301",
+      "source_key": "/hard_labels/awq_vs_fp16/mcc/awq",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": 0.3006461393350586
+    },
+    {
+      "cell_id": "hf.olmo3_7b.awq_minus_fp16.estimate",
+      "display": "-1.634",
+      "source_key": "/contrasts/awq_minus_fp16/page_bootstrap/estimate",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": -1.6340300324675325
+    },
+    {
+      "cell_id": "hf.olmo3_7b.awq_minus_fp16.lower",
+      "display": "-1.737",
+      "source_key": "/contrasts/awq_minus_fp16/page_bootstrap/lower",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": -1.7374640809804034
+    },
+    {
+      "cell_id": "hf.olmo3_7b.awq_minus_fp16.upper",
+      "display": "-1.532",
+      "source_key": "/contrasts/awq_minus_fp16/page_bootstrap/upper",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": -1.5315143875376855
+    },
+    {
+      "cell_id": "hf.olmo3_7b.awq_minus_fp16.holm_pvalue",
+      "display": "$<.001$",
+      "source_key": "/contrasts/awq_minus_fp16/holm_adjusted_pvalue",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": 1.4233479837155118e-211
+    },
+    {
+      "cell_id": "hf.olmo3_7b.awq_minus_gptq.estimate",
+      "display": "-1.404",
+      "source_key": "/contrasts/awq_minus_gptq/page_bootstrap/estimate",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": -1.4043729707792207
+    },
+    {
+      "cell_id": "hf.olmo3_7b.awq_minus_gptq.lower",
+      "display": "-1.508",
+      "source_key": "/contrasts/awq_minus_gptq/page_bootstrap/lower",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": -1.5078068834067717
+    },
+    {
+      "cell_id": "hf.olmo3_7b.awq_minus_gptq.upper",
+      "display": "-1.304",
+      "source_key": "/contrasts/awq_minus_gptq/page_bootstrap/upper",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": -1.3035471050991418
+    },
+    {
+      "cell_id": "hf.olmo3_7b.awq_minus_gptq.holm_pvalue",
+      "display": "$<.001$",
+      "source_key": "/contrasts/awq_minus_gptq/holm_adjusted_pvalue",
+      "source_path": "reports/olmo3_hf_triplet_formal_v1/results.json",
+      "source_sha256": "63352c280dac9d7dcaccf8460c8fa8404b24bb5aa242aa4beef7de4a0b7e2ab0",
+      "value": 1.6750039899131797e-160
+    }
+  ],
+  "name": "tab_hf_triplets",
+  "protocol": "manuscript-tables-v1-20260809"
+}

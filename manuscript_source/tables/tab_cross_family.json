@@ -1,0 +1,199 @@
+{
+  "caption": "Post-confirmatory common-support VitaminC estimates across four evaluated checkpoints. The Holm-adjusted p values test balanced-accuracy differences, not the selected-token interaction ΔI. Raw interaction magnitudes are scale- and calibration-sensitive and are not ranked across models.",
+  "cells": [
+    {
+      "cell_id": "family.qwen35_9b.delta_i",
+      "display": "0.085",
+      "source_key": "rows[row_id=cac1d6850ab3c3c755ee7d22091ac05f494b015e7fa34616181e596f87d25057].metrics.delta_i",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 0.0846712943131937
+    },
+    {
+      "cell_id": "family.qwen35_9b.delta_i.lower",
+      "display": "0.026",
+      "source_key": "rows[row_id=cac1d6850ab3c3c755ee7d22091ac05f494b015e7fa34616181e596f87d25057].metrics.delta_i_ci95[0]",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 0.025982842059436226
+    },
+    {
+      "cell_id": "family.qwen35_9b.delta_i.upper",
+      "display": "0.144",
+      "source_key": "rows[row_id=cac1d6850ab3c3c755ee7d22091ac05f494b015e7fa34616181e596f87d25057].metrics.delta_i_ci95[1]",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 0.14425942733026834
+    },
+    {
+      "cell_id": "family.qwen35_9b.balanced_accuracy_difference",
+      "display": "-2.55 pp",
+      "source_key": "rows[row_id=cac1d6850ab3c3c755ee7d22091ac05f494b015e7fa34616181e596f87d25057].metrics.balanced_accuracy_difference",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.02546435409738368
+    },
+    {
+      "cell_id": "family.qwen35_9b.holm_pvalue",
+      "display": "$<.001$",
+      "source_key": "rows[row_id=cac1d6850ab3c3c755ee7d22091ac05f494b015e7fa34616181e596f87d25057].metrics.balanced_accuracy_holm_pvalue",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 3.999960000399996e-05
+    },
+    {
+      "cell_id": "family.qwen35_9b.negative_page_fraction",
+      "display": "48.24\\%",
+      "source_key": "rows[row_id=cac1d6850ab3c3c755ee7d22091ac05f494b015e7fa34616181e596f87d25057].metrics.negative_page_fraction",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 0.48237476808905383
+    },
+    {
+      "cell_id": "family.ministral3_8b.delta_i",
+      "display": "-0.389",
+      "source_key": "rows[row_id=0bb94af6bf654c2154b714a60600b4661ba65a9db34f6eb8d51b058982c21cb4].metrics.delta_i",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.3887897840457414
+    },
+    {
+      "cell_id": "family.ministral3_8b.delta_i.lower",
+      "display": "-0.435",
+      "source_key": "rows[row_id=0bb94af6bf654c2154b714a60600b4661ba65a9db34f6eb8d51b058982c21cb4].metrics.delta_i_ci95[0]",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.4345931399344071
+    },
+    {
+      "cell_id": "family.ministral3_8b.delta_i.upper",
+      "display": "-0.343",
+      "source_key": "rows[row_id=0bb94af6bf654c2154b714a60600b4661ba65a9db34f6eb8d51b058982c21cb4].metrics.delta_i_ci95[1]",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.34317134300277935
+    },
+    {
+      "cell_id": "family.ministral3_8b.balanced_accuracy_difference",
+      "display": "-2.57 pp",
+      "source_key": "rows[row_id=0bb94af6bf654c2154b714a60600b4661ba65a9db34f6eb8d51b058982c21cb4].metrics.balanced_accuracy_difference",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.025692018174568787
+    },
+    {
+      "cell_id": "family.ministral3_8b.holm_pvalue",
+      "display": "$<.001$",
+      "source_key": "rows[row_id=0bb94af6bf654c2154b714a60600b4661ba65a9db34f6eb8d51b058982c21cb4].metrics.balanced_accuracy_holm_pvalue",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 3.999960000399996e-05
+    },
+    {
+      "cell_id": "family.ministral3_8b.negative_page_fraction",
+      "display": "71.43\\%",
+      "source_key": "rows[row_id=0bb94af6bf654c2154b714a60600b4661ba65a9db34f6eb8d51b058982c21cb4].metrics.negative_page_fraction",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 0.7142857142857143
+    },
+    {
+      "cell_id": "family.gemma4_e4b.delta_i",
+      "display": "-3.217",
+      "source_key": "rows[row_id=ff51c59d45f66bda266842445752af99a7214f7d6f48af4d3152f16e88cd0e52].metrics.delta_i",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -3.217178342514887
+    },
+    {
+      "cell_id": "family.gemma4_e4b.delta_i.lower",
+      "display": "-3.378",
+      "source_key": "rows[row_id=ff51c59d45f66bda266842445752af99a7214f7d6f48af4d3152f16e88cd0e52].metrics.delta_i_ci95[0]",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -3.3776824389102287
+    },
+    {
+      "cell_id": "family.gemma4_e4b.delta_i.upper",
+      "display": "-3.055",
+      "source_key": "rows[row_id=ff51c59d45f66bda266842445752af99a7214f7d6f48af4d3152f16e88cd0e52].metrics.delta_i_ci95[1]",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -3.055274598308751
+    },
+    {
+      "cell_id": "family.gemma4_e4b.balanced_accuracy_difference",
+      "display": "-3.74 pp",
+      "source_key": "rows[row_id=ff51c59d45f66bda266842445752af99a7214f7d6f48af4d3152f16e88cd0e52].metrics.balanced_accuracy_difference",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.03742058484605515
+    },
+    {
+      "cell_id": "family.gemma4_e4b.holm_pvalue",
+      "display": "$<.001$",
+      "source_key": "rows[row_id=ff51c59d45f66bda266842445752af99a7214f7d6f48af4d3152f16e88cd0e52].metrics.balanced_accuracy_holm_pvalue",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 3.999960000399996e-05
+    },
+    {
+      "cell_id": "family.gemma4_e4b.negative_page_fraction",
+      "display": "88.96\\%",
+      "source_key": "rows[row_id=ff51c59d45f66bda266842445752af99a7214f7d6f48af4d3152f16e88cd0e52].metrics.negative_page_fraction",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 0.8896103896103896
+    },
+    {
+      "cell_id": "family.olmo3_7b.delta_i",
+      "display": "-0.835",
+      "source_key": "rows[row_id=d4015ffcab3a99a35194d70f65b526afd99bac477495965eba02887e313ef0c4].metrics.delta_i",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.8346363940796295
+    },
+    {
+      "cell_id": "family.olmo3_7b.delta_i.lower",
+      "display": "-0.893",
+      "source_key": "rows[row_id=d4015ffcab3a99a35194d70f65b526afd99bac477495965eba02887e313ef0c4].metrics.delta_i_ci95[0]",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.8933614135452017
+    },
+    {
+      "cell_id": "family.olmo3_7b.delta_i.upper",
+      "display": "-0.778",
+      "source_key": "rows[row_id=d4015ffcab3a99a35194d70f65b526afd99bac477495965eba02887e313ef0c4].metrics.delta_i_ci95[1]",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.778043928250311
+    },
+    {
+      "cell_id": "family.olmo3_7b.balanced_accuracy_difference",
+      "display": "-0.80 pp",
+      "source_key": "rows[row_id=d4015ffcab3a99a35194d70f65b526afd99bac477495965eba02887e313ef0c4].metrics.balanced_accuracy_difference",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": -0.008034463986049234
+    },
+    {
+      "cell_id": "family.olmo3_7b.holm_pvalue",
+      "display": "$.0503$",
+      "source_key": "rows[row_id=d4015ffcab3a99a35194d70f65b526afd99bac477495965eba02887e313ef0c4].metrics.balanced_accuracy_holm_pvalue",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 0.05031949680503195
+    },
+    {
+      "cell_id": "family.olmo3_7b.negative_page_fraction",
+      "display": "79.96\\%",
+      "source_key": "rows[row_id=d4015ffcab3a99a35194d70f65b526afd99bac477495965eba02887e313ef0c4].metrics.negative_page_fraction",
+      "source_path": "reports/result_governance_v1/master_table.json",
+      "source_sha256": "ff8d84c70f9f0db4133a1d6677c8f235cb5dba5a7af84fb3a66a26cb54404dbc",
+      "value": 0.7996289424860853
+    }
+  ],
+  "name": "tab_cross_family",
+  "protocol": "manuscript-tables-v1-20260809"
+}
