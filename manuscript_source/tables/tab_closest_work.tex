@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\caption{Nearest-neighbor comparison. The route-effect column refers specifically to a paired quartet estimand for selected-token evidence response, not to any same-example comparison across quantization methods. A checkmark denotes an explicit design component, not a quality ranking; a dash means the component is not evaluated as defined here.}
+\label{tab:closest-work}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}L{0.24\textwidth}L{0.10\textwidth}L{0.11\textwidth}L{0.12\textwidth}L{0.17\textwidth}L{0.18\textwidth}@{}}
+\toprule
+Study and evaluation target & Paired evidence intervention & Paired-quartet evidence-response route effect & Scale-aware cross-model difference of that effect & Outcomes & Reproducibility boundary \\
+\midrule
+Broad PTQ evaluation \citep{xu2024scaling,mekala2025longcontext}: accuracy, perplexity, and long-context quality & -- & -- & -- & Mostly aggregate task outcomes & Method and benchmark reporting \\
+Quantized truthfulness \citep{fu2025quantized}: truthfulness under prompt conditions & Prompt variants & -- & -- & Behavioral and representation analyses & Code/data release \\
+Context conflict \citep{longpre2021conflicts,zhou2023contextfaithful,xu2024knowledgeconflicts}: contextual versus parametric knowledge & \checkmark & -- & -- & Mostly task or conflict outcomes & Dataset/code dependent \\
+Contrastive fact verification \citep{schuster2021vitaminc}: robust fact verification & \checkmark & -- & -- & Hard-label task outcomes & Dataset release \\
+This work: preservation of paired selected-token response & \checkmark & \checkmark & \checkmark & Hard labels plus selected-token interaction & Hash-linked local records; public access pending \\
+\bottomrule
+\end{tabular}
+\end{table*}

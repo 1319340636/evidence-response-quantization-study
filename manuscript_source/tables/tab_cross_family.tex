@@ -1,0 +1,21 @@
+% GENERATED FILE---DO NOT EDIT
+% Regenerate with scripts/generate_manuscript_tables.py.
+\begin{table*}[t]
+\centering
+\caption{Post-confirmatory common-support VitaminC estimates across four evaluated checkpoints. The Holm-adjusted p values test balanced-accuracy differences, not the selected-token interaction ΔI. Raw interaction magnitudes are scale- and calibration-sensitive and are not ranked across models.}
+\label{tab:cross-family}
+\begingroup
+\small\setlength{\tabcolsep}{3pt}
+\textit{Panel A: post-confirmatory common-support checkpoint comparison}\par
+\begin{tabular}{p{0.14\textwidth}p{0.07\textwidth}p{0.15\textwidth}p{0.10\textwidth}p{0.08\textwidth}p{0.11\textwidth}p{0.23\textwidth}}
+\toprule
+Model & ΔI & 95\% CI & \shortstack{BA\\difference} & BA Holm $p$ & \shortstack{Negative\\pages} & Boundary \\
+\midrule
+Qwen3.5-9B & 0.085 & [0.026, 0.144] & -2.55 pp & $<.001$ & 48.24\% & exploratory common support \\
+Ministral-3-8B & -0.389 & [-0.435, -0.343] & -2.57 pp & $<.001$ & 71.43\% & exploratory common support \\
+Gemma-4-E4B & -3.217 & [-3.378, -3.055] & -3.74 pp & $<.001$ & 88.96\% & exploratory common support \\
+OLMo-3-7B & -0.835 & [-0.893, -0.778] & -0.80 pp & $.0503$ & 79.96\% & not significant after Holm correction \\
+\bottomrule
+\end{tabular}
+\endgroup
+\end{table*}

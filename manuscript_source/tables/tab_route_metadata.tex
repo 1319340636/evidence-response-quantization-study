@@ -1,0 +1,25 @@
+% GENERATED FILE---DO NOT EDIT
+% Regenerate with scripts/generate_manuscript_tables.py.
+\begin{table*}[t]
+\centering
+\caption{Frozen metadata for the three complete HF triplets. The broad HF evaluation interface was shared, but route-specific quantization software, packing, loaders, and kernels remained; hardware-performance outcomes were not collected.}
+\label{tab:route-metadata}
+\begingroup
+\scriptsize\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{p{0.15\textwidth}p{0.09\textwidth}p{0.17\textwidth}p{0.13\textwidth}p{0.20\textwidth}p{0.19\textwidth}}
+\toprule
+Model (revision) & Route & Weight/activation recipe & Calibration & Quantization software & Residual execution boundary \\
+\midrule
+Qwen3.5-9B (c20223623576) & FP16 & FP16 reference & None & Transformers / PyTorch & reference loader and kernels \\
+Qwen3.5-9B (c20223623576) & GPTQ INT4 & W4, group 128, symmetric & 256 VitaminC-dev records & GPTQModel 7.1.0 & GPTQ packing, loader, and kernels \\
+Qwen3.5-9B (c20223623576) & AWQ INT4 & W4A16, group 128, asymmetric zero-point & 256 VitaminC-dev records & llmcompressor 0.12.0; compressed-tensors 0.17.1 & AWQ packing, loader, and kernels \\
+Ministral-3-8B (06cc81bfd6e4) & FP16 & FP16 reference & None & Transformers / PyTorch & reference loader and kernels \\
+Ministral-3-8B (06cc81bfd6e4) & GPTQ INT4 & W4, group 128, symmetric & 256 VitaminC-dev records & GPTQModel 7.1.0 & GPTQ packing, loader, and kernels \\
+Ministral-3-8B (06cc81bfd6e4) & AWQ INT4 & W4A16, group 128, asymmetric zero-point & 256 VitaminC-dev records & llmcompressor 0.12.0; compressed-tensors 0.17.1 & AWQ packing, loader, and kernels \\
+OLMo-3-7B (6e5971d9eba4) & FP16 & FP16 reference & None & Transformers / PyTorch & reference loader and kernels \\
+OLMo-3-7B (6e5971d9eba4) & GPTQ INT4 & W4, group 128, symmetric & 256 VitaminC-dev records & GPTQModel 7.1.0 & GPTQ packing, loader, and kernels \\
+OLMo-3-7B (6e5971d9eba4) & AWQ INT4 & W4A16, group 128, asymmetric zero-point & 256 VitaminC-dev records & llmcompressor 0.12.0; compressed-tensors 0.17.1 & AWQ packing, loader, and kernels \\
+\bottomrule
+\end{tabular}
+\endgroup
+\end{table*}

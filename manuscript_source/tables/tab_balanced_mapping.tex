@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Balanced cyclic mapping sensitivity on the same 1,200 quartets. Each cell reports the page-balanced reference-standardized difference (directional difference). Pair names denote left minus right, not overall model rankings. Four rows retain their original orientation and dual-endpoint support in every mapping. The two OLMo--Qwen rows are mapping-sensitive. Reference scales were re-estimated in 10,000 shared page-bootstrap draws; alternative mappings were Holm-adjusted jointly over 24 endpoints. Both aggregation weights gave the same gate classifications. Full pointwise intervals and adjusted tests are in Supplementary Table S2.}
+\label{tab:balanced-mapping}
+\begin{tabular}{llrrr}
+\toprule
+Model pair & Contrast & Original & Cycle 1 & Cycle 2 \\
+\midrule
+Ministral--Qwen & AWQ--FP16 & $0.486\;(0.336)$ & $0.320\;(0.180)$ & $0.476\;(0.323)$ \\
+Ministral--Qwen & AWQ--GPTQ & $0.466\;(0.430)$ & $0.138\;(0.151)$ & $0.361\;(0.347)$ \\
+OLMo--Qwen & AWQ--FP16 & $0.272\;(0.096)$ & $-0.002\;(0.026)$ & $0.206\;(0.061)$ \\
+OLMo--Qwen & AWQ--GPTQ & $0.220\;(0.091)$ & $-0.138\;(-0.084)$ & $0.053\;(0.016)$ \\
+OLMo--Ministral & AWQ--FP16 & $-0.214\;(-0.240)$ & $-0.322\;(-0.154)$ & $-0.270\;(-0.262)$ \\
+OLMo--Ministral & AWQ--GPTQ & $-0.245\;(-0.339)$ & $-0.276\;(-0.234)$ & $-0.308\;(-0.331)$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+

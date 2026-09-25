@@ -1,0 +1,31 @@
+% GENERATED FILE---DO NOT EDIT
+% Regenerate with scripts/generate_manuscript_tables.py.
+\begin{table*}[t]
+\centering
+\caption{Matched HF triplets for Qwen3.5-9B, Ministral-3-8B, and OLMo-3-7B on the frozen VitaminC population. Contrasts are route-associated; residual packing, loader, and kernel differences remain.}
+\label{tab:hf-triplets}
+\begin{tabular}{lllll}
+\toprule
+Model & Method & Accuracy & Balanced accuracy & MCC \\
+\midrule
+Qwen3.5-9B & FP16 & 77.50\% & 69.36\% & 0.617 \\
+Qwen3.5-9B & GPTQ INT4 & 74.46\% & 66.04\% & 0.577 \\
+Qwen3.5-9B & AWQ INT4 & 71.58\% & 63.56\% & 0.532 \\
+Ministral-3-8B & FP16 & 70.73\% & 62.72\% & 0.505 \\
+Ministral-3-8B & GPTQ INT4 & 70.54\% & 61.43\% & 0.497 \\
+Ministral-3-8B & AWQ INT4 & 69.71\% & 60.12\% & 0.487 \\
+OLMo-3-7B & FP16 & 55.33\% & 56.21\% & 0.346 \\
+OLMo-3-7B & GPTQ INT4 & 54.31\% & 55.62\% & 0.339 \\
+OLMo-3-7B & AWQ INT4 & 51.83\% & 53.12\% & 0.301 \\
+\addlinespace
+\multicolumn{5}{l}{\textit{Paired evidence-response contrasts}} \\
+Model & Contrast & Estimate & 95\% CI & Holm $p$ \\
+Qwen3.5-9B & AWQ $-$ FP16 & -1.802 & [-1.877, -1.729] & $<.001$ \\
+Qwen3.5-9B & AWQ $-$ GPTQ & -1.384 & [-1.449, -1.320] & $<.001$ \\
+Ministral-3-8B & AWQ $-$ FP16 & -0.216 & [-0.275, -0.156] & $<.001$ \\
+Ministral-3-8B & AWQ $-$ GPTQ & 0.058 & [-0.003, 0.122] & $.0690$ \\
+OLMo-3-7B & AWQ $-$ FP16 & -1.634 & [-1.737, -1.532] & $<.001$ \\
+OLMo-3-7B & AWQ $-$ GPTQ & -1.404 & [-1.508, -1.304] & $<.001$ \\
+\bottomrule
+\end{tabular}
+\end{table*}

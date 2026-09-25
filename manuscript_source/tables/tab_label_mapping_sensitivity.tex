@@ -1,0 +1,15 @@
+\begin{table}[H]
+\centering
+\caption{Post-hoc discovery label-mapping sensitivity. Intervals are page-clustered 95\% intervals. The reversed mapping swaps the two negative-label assignments while retaining the output-choice interface.}
+\label{tab:label-mapping-sensitivity}
+\small
+\begin{tabular}{lrrc}
+\toprule
+Discovery route & Original mapping & Reversed mapping & Direction stable \\
+\midrule
+Gemma GGUF Q4\_K\_M & $-3.247\;[-3.451,-3.047]$ & $-2.287\;[-2.458,-2.115]$ & yes \\
+Qwen GGUF Q4\_K\_M & $0.120\;[0.051,0.190]$ & $0.361\;[0.298,0.424]$ & yes \\
+Qwen HF GPTQ INT4 & $-0.378\;[-0.427,-0.331]$ & $-0.618\;[-0.668,-0.567]$ & yes \\
+\bottomrule
+\end{tabular}
+\end{table}

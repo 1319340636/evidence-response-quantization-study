@@ -1,0 +1,24 @@
+% GENERATED FILE---DO NOT EDIT
+% Regenerate with scripts/generate_manuscript_tables.py.
+\begin{table*}[t]
+\centering
+\caption{Reference-standardized and Directional common-language route-by-model endpoints for all Qwen--Ministral--OLMo model pairs on the frozen 1,200-quartet population. All 12 tests share one Holm family; every pair and route contrast satisfies the bounded scale-robust gate. Effects are pair-specific, not a population-wide model-family law or evidence of pure quantizer causality.}
+\label{tab:scale-robust-interaction}
+\begingroup
+\scriptsize\setlength{\tabcolsep}{2.2pt}
+\begin{tabular}{p{0.12\textwidth}p{0.09\textwidth}lllllll}
+\toprule
+Model pair & Route & \multicolumn{3}{c}{Reference-standardized} & \multicolumn{3}{c}{Directional} & Gate \\ 
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}
+ & & Est. & 95\% CI & Holm $p$ & Est. & 95\% CI & Holm $p$ & \\ 
+\midrule
+Ministral $-$ Qwen & AWQ $-$ FP16 & 0.486 & [0.462, 0.511] & $<.001$ & 0.336 & [0.305, 0.368] & $<.001$ & bounded \\
+Ministral $-$ Qwen & AWQ $-$ GPTQ & 0.466 & [0.440, 0.492] & $<.001$ & 0.430 & [0.397, 0.465] & $<.001$ & bounded \\
+OLMo $-$ Qwen & AWQ $-$ FP16 & 0.272 & [0.249, 0.296] & $<.001$ & 0.096 & [0.073, 0.120] & $<.001$ & bounded \\
+OLMo $-$ Qwen & AWQ $-$ GPTQ & 0.220 & [0.196, 0.245] & $<.001$ & 0.091 & [0.065, 0.118] & $<.001$ & bounded \\
+OLMo $-$ Ministral & AWQ $-$ FP16 & -0.214 & [-0.235, -0.192] & $<.001$ & -0.240 & [-0.276, -0.205] & $<.001$ & bounded \\
+OLMo $-$ Ministral & AWQ $-$ GPTQ & -0.245 & [-0.268, -0.222] & $<.001$ & -0.339 & [-0.376, -0.302] & $<.001$ & bounded \\
+\bottomrule
+\end{tabular}
+\endgroup
+\end{table*}

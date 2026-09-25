@@ -1,0 +1,27 @@
+% GENERATED FILE---DO NOT EDIT
+% Regenerate with scripts/generate_manuscript_tables.py.
+\begin{table*}[t]
+\centering
+\caption{External validation. TabFact reports Q4$-$F16 hard-label differences; CUB/DRUID reports secondary behavioral diagnostic effects and does not replace the confirmatory VitaminC estimand.}
+\label{tab:external-validation}
+\textit{Panel A: Fresh TabFact external convergent evidence}\par
+\begin{tabular}{llll}
+\toprule
+Model & Accuracy difference & 95\% CI & BA difference \\
+\midrule
+Qwen3.5-9B & -7.50 pp & [-9.61 pp, -5.41 pp] & -7.57 pp \\
+Gemma-4-E4B & -4.65 pp & [-6.37 pp, -2.94 pp] & -4.69 pp \\
+\bottomrule
+\end{tabular}
+\par\medskip\textit{Panel B: CUB/DRUID external behavioral diagnostic}\par
+\begin{tabular}{lllll}
+\toprule
+Model & Conflict CCU & Conflict BCU & Gold CCU & Gold BCU \\
+\midrule
+Qwen3.5-4B & 0.059 & 0.054 & -0.095 & -0.052 \\
+Qwen3.5-9B & 0.192 & -0.009 & -0.197 & -0.187 \\
+Ministral-3-3B & -0.046 & -0.020 & -0.103 & -0.107 \\
+Ministral-3-8B & -0.038 & -0.064 & -0.062 & -0.015 \\
+\bottomrule
+\end{tabular}
+\end{table*}

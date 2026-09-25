@@ -1,0 +1,31 @@
+% GENERATED FILE---DO NOT EDIT
+% Regenerate with scripts/generate_manuscript_tables.py.
+\begin{table*}[t]
+\centering
+\caption{Paired hard-label uncertainty and transition summaries. Agreement and changed-label counts summarize the frozen $3\times3$ transition matrices; they do not replace the continuous paired evidence-response estimand.}
+\label{tab:hard-label-diagnostics}
+\begingroup
+\small
+\textit{Panel A: chronologically first confirmatory comparison}\par
+\begin{tabular}{llll}
+\toprule
+Outcome & Difference & Paired clustered 95\% CI & Clusters \\
+\midrule
+Balanced accuracy, Q4$-$F16 & -2.62 pp & [-3.39, -1.85] & 1,158 pages \\
+\bottomrule
+\end{tabular}
+\par\medskip\textit{Panel B: post-confirmatory HF triplet label transitions}\par
+\begin{tabular}{lllll}
+\toprule
+Model & Route contrast & Accuracy difference & Paired label agreement & Changed labels \\
+\midrule
+Qwen3.5-9B & AWQ $-$ FP16 & -5.92 pp & 88.35\% & 559 / 4,800 \\
+Qwen3.5-9B & AWQ $-$ GPTQ & -2.88 pp & 91.71\% & 398 / 4,800 \\
+Ministral-3-8B & AWQ $-$ FP16 & -1.02 pp & 91.12\% & 426 / 4,800 \\
+Ministral-3-8B & AWQ $-$ GPTQ & -0.83 pp & 90.58\% & 452 / 4,800 \\
+OLMo-3-7B & AWQ $-$ FP16 & -3.50 pp & 87.40\% & 605 / 4,800 \\
+OLMo-3-7B & AWQ $-$ GPTQ & -2.48 pp & 86.98\% & 625 / 4,800 \\
+\bottomrule
+\end{tabular}
+\endgroup
+\end{table*}
