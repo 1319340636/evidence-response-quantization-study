@@ -1,0 +1,748 @@
+{
+  "backend_comparability": {
+    "analysis_protocol": "vitaminc-backend-comparability-v1-20260719",
+    "hard_labels": {
+      "accuracy": {
+        "gguf_f16": 0.7745833333333333,
+        "hf_fp16": 0.775
+      },
+      "agreement": 0.998125,
+      "balanced_accuracy": {
+        "gguf_f16": 0.6915667185877465,
+        "hf_fp16": 0.6935717157178473
+      },
+      "confusion_gold_rows_predicted_columns": {
+        "gguf_f16": [
+          [
+            2269,
+            102,
+            29
+          ],
+          [
+            548,
+            1212,
+            166
+          ],
+          [
+            152,
+            85,
+            237
+          ]
+        ],
+        "hf_fp16": [
+          [
+            2267,
+            104,
+            29
+          ],
+          [
+            545,
+            1213,
+            168
+          ],
+          [
+            150,
+            84,
+            240
+          ]
+        ],
+        "labels": [
+          "SUPPORTS",
+          "REFUTES",
+          "NOT ENOUGH INFO"
+        ]
+      },
+      "mcc": {
+        "gguf_f16": 0.6159775645841365,
+        "hf_fp16": 0.616761289663955
+      },
+      "recall": {
+        "gguf_f16": {
+          "NOT ENOUGH INFO": 0.5,
+          "REFUTES": 0.6292834890965732,
+          "SUPPORTS": 0.9454166666666667
+        },
+        "hf_fp16": {
+          "NOT ENOUGH INFO": 0.5063291139240507,
+          "REFUTES": 0.6298026998961579,
+          "SUPPORTS": 0.9445833333333333
+        }
+      },
+      "transitions": {
+        "NOT ENOUGH INFO->NOT ENOUGH INFO": 432,
+        "NOT ENOUGH INFO->REFUTES": 2,
+        "NOT ENOUGH INFO->SUPPORTS": 3,
+        "REFUTES->REFUTES": 1397,
+        "REFUTES->SUPPORTS": 4,
+        "SUPPORTS->SUPPORTS": 2962
+      }
+    },
+    "identity": {
+      "gguf_precision": "F16",
+      "gguf_protocol_version": "vitaminc-formal-run-v4-20260716",
+      "hard_units": 4800,
+      "hf_precision": "FP16",
+      "hf_protocol_version": "hf-vitaminc-formal-v1-20260718",
+      "model_key": "qwen35_9b",
+      "pages": 1078,
+      "prompt_contract_sha256": "62be3ad998b851887ce433bb80a8269f020dbea63c048d418f0e1277590352e1",
+      "quartets": 1200,
+      "split": "dose_subset",
+      "split_sha256": "bbe3e66dc7e53e0fa08c656716e113f63b8c5232de8b9fa895de6046b861b9f1"
+    },
+    "inference_scope": "descriptive_backend_comparability",
+    "interaction": {
+      "estimand": "page-balanced mean(I_HF_FP16-I_GGUF_F16)",
+      "gguf_f16_scale": {
+        "maximum": 14.540427207946777,
+        "mean": 5.8333782548143605,
+        "median": 5.744327068328857,
+        "minimum": -3.239320755004883,
+        "standard_deviation": 3.2744026865893745
+      },
+      "hf_fp16_scale": {
+        "maximum": 14.6328125,
+        "mean": 5.850703704777366,
+        "median": 5.765625,
+        "minimum": -3.2265625,
+        "standard_deviation": 3.285838592169824
+      },
+      "hf_minus_gguf": {
+        "clusters": 1078,
+        "draws": 10000,
+        "estimate": 0.01732544996300522,
+        "lower": 0.015011654714042932,
+        "seed": 20260711,
+        "upper": 0.019609929148474075
+      },
+      "per_page_pearson_correlation": 0.9999390576621766
+    },
+    "interpretation_boundary": "This audit describes matched HF FP16 and GGUF F16 behavior. It does not establish statistical equivalence because no prospective equivalence margin was frozen.",
+    "label_probability_mass": {
+      "gguf_f16": 0.9965992146667734,
+      "hf_fp16": 0.9967118728144174,
+      "hf_minus_gguf": 0.00011265814764411685
+    },
+    "parameters": {
+      "bootstrap_draws": 10000,
+      "cluster": "page",
+      "seed": 20260711
+    },
+    "route_claim_boundary": "Any later HF GPTQ versus GGUF Q4 contrast remains a joint deployment-route effect, not a pure quantizer or bit-width effect."
+  },
+  "edit_strength_robustness": {
+    "analysis_protocol": "vitaminc-edit-strength-v1-20260719",
+    "bootstrap_contract": {
+      "cluster": "page",
+      "draws": 10000,
+      "seed": 20260711,
+      "shared_global_page_indices": true
+    },
+    "claim_narrowing_flags": {
+      "claim_quartile_direction_instability": true,
+      "entity_stratum_omitted": true,
+      "evidence_quartile_direction_instability": true,
+      "leave_one_page_out_crosses_zero": false,
+      "negative_label_direction_instability": true
+    },
+    "cutpoints": {
+      "claim_distance_normalized": [
+        0.09090909090909091,
+        0.16666666666666666,
+        0.3333333333333333
+      ],
+      "evidence_distance_normalized": [
+        0.045454545454545456,
+        0.09090909090909091,
+        0.23715538847117795
+      ],
+      "frozen_before_outcome_join": true,
+      "tie_policy": "lower_bin"
+    },
+    "high_volume_page_sensitivity": {
+      "capped_page_weighted_estimate": 0.08179979642232259,
+      "leave_one_page_out": {
+        "crosses_zero": false,
+        "maximum": 0.08868404705433681,
+        "maximum_absolute_shift": 0.0040127527411431135,
+        "maximum_shift_page": "Macklemore",
+        "minimum": 0.08076689701558487
+      },
+      "page_balanced_estimate": 0.0846712943131937,
+      "page_weight_cap": 5,
+      "uncapped_quartet_weighted_estimate": 0.08179979642232259
+    },
+    "inference_scope": "post_confirmatory_edit_robustness",
+    "interpretation_boundary": "Token edit distance is an operational difficulty measure, not semantic edit magnitude. This analysis cannot rewrite the original confirmatory hypothesis.",
+    "overall": {
+      "page_bootstrap": {
+        "clusters": 1078,
+        "draws": 10000,
+        "estimate": 0.0846712943131937,
+        "lower": 0.025982842059436226,
+        "seed": 20260711,
+        "upper": 0.14425942733026834
+      }
+    },
+    "population": {
+      "negative_labels": {
+        "NOT ENOUGH INFO": 237,
+        "REFUTES": 963
+      },
+      "pages": 1078,
+      "quartets": 1200
+    },
+    "robustness_family": {
+      "holm_adjusted_pvalues": {
+        "claim_quartile/Q1": 1.0,
+        "claim_quartile/Q2": 0.01949506466492948,
+        "claim_quartile/Q3": 0.1565316425104251,
+        "claim_quartile/Q4": 1.0,
+        "date_change/changed": 0.03327127487487284,
+        "date_change/unchanged": 0.15243702374383697,
+        "evidence_quartile/Q1": 1.0,
+        "evidence_quartile/Q2": 0.06303322669035726,
+        "evidence_quartile/Q3": 0.0851049973010343,
+        "evidence_quartile/Q4": 1.0,
+        "negation_change/changed": 1.0,
+        "negation_change/unchanged": 0.05643589678278589,
+        "negative_label/NOT ENOUGH INFO": 0.8282933460150027,
+        "negative_label/REFUTES": 0.004576344796532056,
+        "numeric_change/changed": 0.027242521081057437,
+        "numeric_change/unchanged": 1.0
+      },
+      "raw_pvalues": {
+        "claim_quartile/Q1": 0.7600198879658193,
+        "claim_quartile/Q2": 0.0012996709776619652,
+        "claim_quartile/Q3": 0.019566455313803136,
+        "claim_quartile/Q4": 0.7678738232343736,
+        "date_change/changed": 0.0025593288365286797,
+        "date_change/unchanged": 0.016937447082648553,
+        "evidence_quartile/Q1": 0.7506738499324616,
+        "evidence_quartile/Q2": 0.005730293335487024,
+        "evidence_quartile/Q3": 0.00851049973010343,
+        "evidence_quartile/Q4": 0.6509886268082024,
+        "negation_change/changed": 0.7140708060430043,
+        "negation_change/unchanged": 0.004702991398565491,
+        "negative_label/NOT ENOUGH INFO": 0.1183276208592861,
+        "negative_label/REFUTES": 0.0002860215497832535,
+        "numeric_change/changed": 0.001945894362932674,
+        "numeric_change/unchanged": 0.34802179116585724
+      },
+      "scope": "negative-label, marginal edit-quartile, and edit-type strata"
+    },
+    "strata": {
+      "claim_quartile": {
+        "Q1": {
+          "estimate": -0.01789666464740368,
+          "holm_adjusted_pvalue": 1.0,
+          "page_bootstrap": {
+            "clusters": 307,
+            "draws": 10000,
+            "estimate": -0.01789666464740368,
+            "lower": -0.1327252035522432,
+            "seed": 20260711,
+            "upper": 0.09811373283621691,
+            "valid_draws": 10000
+          },
+          "pages": 307,
+          "quartets": 310,
+          "raw_pvalue": 0.7600198879658193
+        },
+        "Q2": {
+          "estimate": 0.1983023622097113,
+          "holm_adjusted_pvalue": 0.01949506466492948,
+          "page_bootstrap": {
+            "clusters": 312,
+            "draws": 10000,
+            "estimate": 0.1983023622097113,
+            "lower": 0.07841524595901615,
+            "seed": 20260711,
+            "upper": 0.31884702291041683,
+            "valid_draws": 10000
+          },
+          "pages": 312,
+          "quartets": 314,
+          "raw_pvalue": 0.0012996709776619652
+        },
+        "Q3": {
+          "estimate": 0.13284013860969132,
+          "holm_adjusted_pvalue": 0.1565316425104251,
+          "page_bootstrap": {
+            "clusters": 279,
+            "draws": 10000,
+            "estimate": 0.13284013860969132,
+            "lower": 0.02283465491944086,
+            "seed": 20260711,
+            "upper": 0.24583247621327564,
+            "valid_draws": 10000
+          },
+          "pages": 279,
+          "quartets": 283,
+          "raw_pvalue": 0.019566455313803136
+        },
+        "Q4": {
+          "estimate": 0.015735285020969783,
+          "holm_adjusted_pvalue": 1.0,
+          "page_bootstrap": {
+            "clusters": 283,
+            "draws": 10000,
+            "estimate": 0.015735285020969783,
+            "lower": -0.08748488014070967,
+            "seed": 20260711,
+            "upper": 0.12041142282029149,
+            "valid_draws": 10000
+          },
+          "pages": 283,
+          "quartets": 293,
+          "raw_pvalue": 0.7678738232343736
+        }
+      },
+      "date_change": {
+        "changed": {
+          "estimate": 0.7872152555556524,
+          "holm_adjusted_pvalue": 0.03327127487487284,
+          "page_bootstrap": {
+            "clusters": 21,
+            "draws": 10000,
+            "estimate": 0.7872152555556524,
+            "lower": 0.2865689538774036,
+            "seed": 20260711,
+            "upper": 1.3173321386178336,
+            "valid_draws": 10000
+          },
+          "pages": 21,
+          "quartets": 21,
+          "raw_pvalue": 0.0025593288365286797
+        },
+        "unchanged": {
+          "estimate": 0.07172829064415043,
+          "holm_adjusted_pvalue": 0.15243702374383697,
+          "page_bootstrap": {
+            "clusters": 1061,
+            "draws": 10000,
+            "estimate": 0.07172829064415043,
+            "lower": 0.01353074906016895,
+            "seed": 20260711,
+            "upper": 0.1312181441742831,
+            "valid_draws": 10000
+          },
+          "pages": 1061,
+          "quartets": 1179,
+          "raw_pvalue": 0.016937447082648553
+        }
+      },
+      "evidence_quartile": {
+        "Q1": {
+          "estimate": 0.01870250387160298,
+          "holm_adjusted_pvalue": 1.0,
+          "page_bootstrap": {
+            "clusters": 303,
+            "draws": 10000,
+            "estimate": 0.01870250387160298,
+            "lower": -0.09684379847474099,
+            "seed": 20260711,
+            "upper": 0.1356119149841835,
+            "valid_draws": 10000
+          },
+          "pages": 303,
+          "quartets": 304,
+          "raw_pvalue": 0.7506738499324616
+        },
+        "Q2": {
+          "estimate": 0.1731922305998255,
+          "holm_adjusted_pvalue": 0.06303322669035726,
+          "page_bootstrap": {
+            "clusters": 305,
+            "draws": 10000,
+            "estimate": 0.1731922305998255,
+            "lower": 0.04898193690553412,
+            "seed": 20260711,
+            "upper": 0.29725531622369084,
+            "valid_draws": 10000
+          },
+          "pages": 305,
+          "quartets": 310,
+          "raw_pvalue": 0.005730293335487024
+        },
+        "Q3": {
+          "estimate": 0.15287376048317092,
+          "holm_adjusted_pvalue": 0.0851049973010343,
+          "page_bootstrap": {
+            "clusters": 279,
+            "draws": 10000,
+            "estimate": 0.15287376048317092,
+            "lower": 0.038736100618116005,
+            "seed": 20260711,
+            "upper": 0.2656723857015282,
+            "valid_draws": 10000
+          },
+          "pages": 279,
+          "quartets": 286,
+          "raw_pvalue": 0.00851049973010343
+        },
+        "Q4": {
+          "estimate": -0.023047230309910245,
+          "holm_adjusted_pvalue": 1.0,
+          "page_bootstrap": {
+            "clusters": 288,
+            "draws": 10000,
+            "estimate": -0.023047230309910245,
+            "lower": -0.12391101051655537,
+            "seed": 20260711,
+            "upper": 0.07715252196452746,
+            "valid_draws": 10000
+          },
+          "pages": 288,
+          "quartets": 300,
+          "raw_pvalue": 0.6509886268082024
+        }
+      },
+      "joint_quartile": {
+        "claim_Q1__evidence_Q1": {
+          "estimate": -0.14439133752750444,
+          "page_bootstrap": {
+            "clusters": 158,
+            "draws": 10000,
+            "estimate": -0.14439133752750444,
+            "lower": -0.2933736284601302,
+            "seed": 20260711,
+            "upper": 0.007862959758734835,
+            "valid_draws": 10000
+          },
+          "pages": 158,
+          "quartets": 159,
+          "raw_pvalue": 0.05906995845599776
+        },
+        "claim_Q1__evidence_Q2": {
+          "estimate": 0.005116487542788188,
+          "page_bootstrap": {
+            "clusters": 96,
+            "draws": 10000,
+            "estimate": 0.005116487542788188,
+            "lower": -0.20701456469625332,
+            "seed": 20260711,
+            "upper": 0.22343668757508206,
+            "valid_draws": 10000
+          },
+          "pages": 96,
+          "quartets": 97,
+          "raw_pvalue": 0.9629880041905022
+        },
+        "claim_Q1__evidence_Q3": {
+          "estimate": 0.42868488262861204,
+          "page_bootstrap": {
+            "clusters": 39,
+            "draws": 10000,
+            "estimate": 0.42868488262861204,
+            "lower": 0.07923169176381333,
+            "seed": 20260711,
+            "upper": 0.7682533870810683,
+            "valid_draws": 10000
+          },
+          "pages": 39,
+          "quartets": 40,
+          "raw_pvalue": 0.015142212748180174
+        },
+        "claim_Q1__evidence_Q4": {
+          "estimate": 0.007833003997802734,
+          "page_bootstrap": {
+            "clusters": 14,
+            "draws": 10000,
+            "estimate": 0.007833003997802734,
+            "lower": -0.4568451674779256,
+            "seed": 20260711,
+            "upper": 0.48714952902360387,
+            "valid_draws": 10000
+          },
+          "pages": 14,
+          "quartets": 14,
+          "raw_pvalue": 0.9732699279275049
+        },
+        "claim_Q2__evidence_Q1": {
+          "estimate": 0.1525347308108681,
+          "page_bootstrap": {
+            "clusters": 95,
+            "draws": 10000,
+            "estimate": 0.1525347308108681,
+            "lower": -0.06893934510553405,
+            "seed": 20260711,
+            "upper": 0.3737131776516897,
+            "valid_draws": 10000
+          },
+          "pages": 95,
+          "quartets": 95,
+          "raw_pvalue": 0.17598604571486803
+        },
+        "claim_Q2__evidence_Q2": {
+          "estimate": 0.17912791469904382,
+          "page_bootstrap": {
+            "clusters": 127,
+            "draws": 10000,
+            "estimate": 0.17912791469904382,
+            "lower": -0.027390303329856317,
+            "seed": 20260711,
+            "upper": 0.3891771735593436,
+            "valid_draws": 10000
+          },
+          "pages": 127,
+          "quartets": 127,
+          "raw_pvalue": 0.09016029020173824
+        },
+        "claim_Q2__evidence_Q3": {
+          "estimate": 0.29002389623158015,
+          "page_bootstrap": {
+            "clusters": 67,
+            "draws": 10000,
+            "estimate": 0.29002389623158015,
+            "lower": 0.06983093401151043,
+            "seed": 20260711,
+            "upper": 0.5161956161085297,
+            "valid_draws": 10000
+          },
+          "pages": 67,
+          "quartets": 67,
+          "raw_pvalue": 0.011820962443664302
+        },
+        "claim_Q2__evidence_Q4": {
+          "estimate": 0.23238086700439453,
+          "page_bootstrap": {
+            "clusters": 25,
+            "draws": 10000,
+            "estimate": 0.23238086700439453,
+            "lower": -0.10130413563355153,
+            "seed": 20260711,
+            "upper": 0.5693694348099348,
+            "valid_draws": 10000
+          },
+          "pages": 25,
+          "quartets": 25,
+          "raw_pvalue": 0.17552177674970368
+        },
+        "claim_Q3__evidence_Q1": {
+          "estimate": 0.3105083842610204,
+          "page_bootstrap": {
+            "clusters": 43,
+            "draws": 10000,
+            "estimate": 0.3105083842610204,
+            "lower": 0.012821561227018155,
+            "seed": 20260711,
+            "upper": 0.6327969417148576,
+            "valid_draws": 10000
+          },
+          "pages": 43,
+          "quartets": 43,
+          "raw_pvalue": 0.049327077354219165
+        },
+        "claim_Q3__evidence_Q2": {
+          "estimate": 0.24158396649716504,
+          "page_bootstrap": {
+            "clusters": 67,
+            "draws": 10000,
+            "estimate": 0.24158396649716504,
+            "lower": 0.02007171617187485,
+            "seed": 20260711,
+            "upper": 0.46320302604703256,
+            "valid_draws": 10000
+          },
+          "pages": 67,
+          "quartets": 67,
+          "raw_pvalue": 0.03397092564723335
+        },
+        "claim_Q3__evidence_Q3": {
+          "estimate": 0.05192221782004186,
+          "page_bootstrap": {
+            "clusters": 129,
+            "draws": 10000,
+            "estimate": 0.05192221782004186,
+            "lower": -0.11185760391292288,
+            "seed": 20260711,
+            "upper": 0.2150960974603514,
+            "valid_draws": 10000
+          },
+          "pages": 129,
+          "quartets": 130,
+          "raw_pvalue": 0.5360037449559418
+        },
+        "claim_Q3__evidence_Q4": {
+          "estimate": 0.018703693567320358,
+          "page_bootstrap": {
+            "clusters": 43,
+            "draws": 10000,
+            "estimate": 0.018703693567320358,
+            "lower": -0.22611533736405162,
+            "seed": 20260711,
+            "upper": 0.28229601878813243,
+            "valid_draws": 10000
+          },
+          "pages": 43,
+          "quartets": 43,
+          "raw_pvalue": 0.8866360895997469
+        },
+        "claim_Q4__evidence_Q1": {
+          "estimate": 0.09114715031215123,
+          "page_bootstrap": {
+            "clusters": 7,
+            "draws": 10000,
+            "estimate": 0.09114715031215123,
+            "lower": -0.5639077345530191,
+            "seed": 20260711,
+            "upper": 0.6400983333587646,
+            "valid_draws": 9990
+          },
+          "pages": 7,
+          "quartets": 7,
+          "raw_pvalue": 0.7601922395784861
+        },
+        "claim_Q4__evidence_Q2": {
+          "estimate": 0.8227730299297132,
+          "page_bootstrap": {
+            "clusters": 19,
+            "draws": 10000,
+            "estimate": 0.8227730299297132,
+            "lower": 0.4484845537643928,
+            "seed": 20260711,
+            "upper": 1.2299432150581302,
+            "valid_draws": 10000
+          },
+          "pages": 19,
+          "quartets": 19,
+          "raw_pvalue": 3.184544234384322e-05
+        },
+        "claim_Q4__evidence_Q3": {
+          "estimate": -0.0031377275784810386,
+          "page_bootstrap": {
+            "clusters": 48,
+            "draws": 10000,
+            "estimate": -0.0031377275784810386,
+            "lower": -0.25870997416121616,
+            "seed": 20260711,
+            "upper": 0.2411581478614897,
+            "valid_draws": 10000
+          },
+          "pages": 48,
+          "quartets": 49,
+          "raw_pvalue": 0.980174985804783
+        },
+        "claim_Q4__evidence_Q4": {
+          "estimate": -0.05236631044199769,
+          "page_bootstrap": {
+            "clusters": 213,
+            "draws": 10000,
+            "estimate": -0.05236631044199769,
+            "lower": -0.16869081868930458,
+            "seed": 20260711,
+            "upper": 0.06586267407994253,
+            "valid_draws": 10000
+          },
+          "pages": 213,
+          "quartets": 218,
+          "raw_pvalue": 0.38518157365429584
+        }
+      },
+      "negation_change": {
+        "changed": {
+          "estimate": 0.05804574489593506,
+          "holm_adjusted_pvalue": 1.0,
+          "page_bootstrap": {
+            "clusters": 24,
+            "draws": 10000,
+            "estimate": 0.05804574489593506,
+            "lower": -0.2677083854761599,
+            "seed": 20260711,
+            "upper": 0.35708603541056305,
+            "valid_draws": 10000
+          },
+          "pages": 24,
+          "quartets": 24,
+          "raw_pvalue": 0.7140708060430043
+        },
+        "unchanged": {
+          "estimate": 0.08608561257521312,
+          "holm_adjusted_pvalue": 0.05643589678278589,
+          "page_bootstrap": {
+            "clusters": 1056,
+            "draws": 10000,
+            "estimate": 0.08608561257521312,
+            "lower": 0.026898917022519543,
+            "seed": 20260711,
+            "upper": 0.14625891199959234,
+            "valid_draws": 10000
+          },
+          "pages": 1056,
+          "quartets": 1176,
+          "raw_pvalue": 0.004702991398565491
+        }
+      },
+      "negative_label": {
+        "NOT ENOUGH INFO": {
+          "estimate": -0.07991520764958507,
+          "holm_adjusted_pvalue": 0.8282933460150027,
+          "page_bootstrap": {
+            "clusters": 237,
+            "draws": 10000,
+            "estimate": -0.07991520764958507,
+            "lower": -0.17861951403130522,
+            "seed": 20260711,
+            "upper": 0.02057940325482552,
+            "valid_draws": 10000
+          },
+          "pages": 237,
+          "quartets": 237,
+          "raw_pvalue": 0.1183276208592861
+        },
+        "REFUTES": {
+          "estimate": 0.12159881611603195,
+          "holm_adjusted_pvalue": 0.004576344796532056,
+          "page_bootstrap": {
+            "clusters": 963,
+            "draws": 10000,
+            "estimate": 0.12159881611603195,
+            "lower": 0.0566360295904814,
+            "seed": 20260711,
+            "upper": 0.18655180515039518,
+            "valid_draws": 10000
+          },
+          "pages": 963,
+          "quartets": 963,
+          "raw_pvalue": 0.0002860215497832535
+        }
+      },
+      "numeric_change": {
+        "changed": {
+          "estimate": 0.13626686763763426,
+          "holm_adjusted_pvalue": 0.027242521081057437,
+          "page_bootstrap": {
+            "clusters": 500,
+            "draws": 10000,
+            "estimate": 0.13626686763763426,
+            "lower": 0.051363551107626526,
+            "seed": 20260711,
+            "upper": 0.22147561515992362,
+            "valid_draws": 10000
+          },
+          "pages": 500,
+          "quartets": 539,
+          "raw_pvalue": 0.001945894362932674
+        },
+        "unchanged": {
+          "estimate": 0.037465706039160586,
+          "holm_adjusted_pvalue": 1.0,
+          "page_bootstrap": {
+            "clusters": 626,
+            "draws": 10000,
+            "estimate": 0.037465706039160586,
+            "lower": -0.039782877239206475,
+            "seed": 20260711,
+            "upper": 0.11789608818051635,
+            "valid_draws": 10000
+          },
+          "pages": 626,
+          "quartets": 661,
+          "raw_pvalue": 0.34802179116585724
+        }
+      }
+    }
+  },
+  "report_protocol": "vitaminc-strengthening-report-v1-20260719"
+}

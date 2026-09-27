@@ -1,0 +1,975 @@
+{
+  "canonical_stage_a": "reports/vitaminc_stage_a_v4",
+  "ministral_triplet_results_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+  "protocol": "result-governance-v1-20260728",
+  "qwen_ministral_interaction_results_sha256": "3b597fa91e3ab88b6d3d4656b7285f01a6e541a878f63706c926f010e5fbe058",
+  "qwen_triplet_freeze_sha256": "71ed06d63185dc32cec8a2b2809ee1c834af76fd9a7cd015865d7c75bd49a000",
+  "qwen_triplet_report_manifest_sha256": "5d9c38319ac931d9a256b4fcf4a06243155015b2a4174cebbc1ecc799ec77d6b",
+  "rows": [
+    {
+      "boundaries": [
+        "secondary_behavioral_diagnostic"
+      ],
+      "comparison": "Q4_K_M minus F16",
+      "dataset": "CUB/DRUID",
+      "governance_status": "canonical_result",
+      "metrics": {
+        "conflicting_bcu_effect": -0.019756179024716096,
+        "conflicting_ccu_effect": -0.04563840091825073,
+        "gold_bcu_effect": -0.10723964382500967,
+        "gold_ccu_effect": -0.10279098444424341
+      },
+      "model_key": "ministral3_3b",
+      "population": {
+        "conflicting_samples": 2413,
+        "gold_samples": 1872,
+        "irrelevant_samples": 17
+      },
+      "route": "GGUF_Q4_K_M",
+      "row_id": "2e096c5889720a7e263fb975a3630a959e96320152ea9b5c9e4e6de85c30f9d6",
+      "scope": "confirmatory_external_validation",
+      "source_path": "reports/cub_formal_v4",
+      "source_role": "cub_diagnostic",
+      "source_sha256": "b74f89b5ea15c6e20b0dbeb9b1f57ee8f956b5b448916553d537ba0cf5804c1c",
+      "status": "formal_complete"
+    },
+    {
+      "boundaries": [
+        "secondary_behavioral_diagnostic"
+      ],
+      "comparison": "Q4_K_M minus F16",
+      "dataset": "CUB/DRUID",
+      "governance_status": "canonical_result",
+      "metrics": {
+        "conflicting_bcu_effect": -0.06401135604542418,
+        "conflicting_ccu_effect": -0.038442578311825876,
+        "gold_bcu_effect": -0.015214866434378629,
+        "gold_ccu_effect": -0.061857107992421424
+      },
+      "model_key": "ministral3_8b",
+      "population": {
+        "conflicting_samples": 2413,
+        "gold_samples": 1872,
+        "irrelevant_samples": 17
+      },
+      "route": "GGUF_Q4_K_M",
+      "row_id": "ee9e33f7802da7f15271c4931d2048e6fecb7bee86f97f2e2a8c59eb59ed0458",
+      "scope": "confirmatory_external_validation",
+      "source_path": "reports/cub_formal_v4",
+      "source_role": "cub_diagnostic",
+      "source_sha256": "b74f89b5ea15c6e20b0dbeb9b1f57ee8f956b5b448916553d537ba0cf5804c1c",
+      "status": "formal_complete"
+    },
+    {
+      "boundaries": [
+        "secondary_behavioral_diagnostic"
+      ],
+      "comparison": "Q4_K_M minus F16",
+      "dataset": "CUB/DRUID",
+      "governance_status": "canonical_result",
+      "metrics": {
+        "conflicting_bcu_effect": 0.05365731462925851,
+        "conflicting_ccu_effect": 0.059083662643952574,
+        "gold_bcu_effect": -0.051587301587301584,
+        "gold_ccu_effect": -0.09463199850687543
+      },
+      "model_key": "qwen35_4b",
+      "population": {
+        "conflicting_samples": 2413,
+        "gold_samples": 1872,
+        "irrelevant_samples": 17
+      },
+      "route": "GGUF_Q4_K_M",
+      "row_id": "0ca5af0dd8cea940a2501564c61c5f6fe4ce57e0292776d45e43a6c828079571",
+      "scope": "confirmatory_external_validation",
+      "source_path": "reports/cub_formal_v4",
+      "source_role": "cub_diagnostic",
+      "source_sha256": "b74f89b5ea15c6e20b0dbeb9b1f57ee8f956b5b448916553d537ba0cf5804c1c",
+      "status": "formal_complete"
+    },
+    {
+      "boundaries": [
+        "secondary_behavioral_diagnostic"
+      ],
+      "comparison": "Q4_K_M minus F16",
+      "dataset": "CUB/DRUID",
+      "governance_status": "canonical_result",
+      "metrics": {
+        "conflicting_bcu_effect": -0.009335337341349365,
+        "conflicting_ccu_effect": 0.19169053423666851,
+        "gold_bcu_effect": -0.18683701122725513,
+        "gold_ccu_effect": -0.19673520532942165
+      },
+      "model_key": "qwen35_9b",
+      "population": {
+        "conflicting_samples": 2413,
+        "gold_samples": 1872,
+        "irrelevant_samples": 17
+      },
+      "route": "GGUF_Q4_K_M",
+      "row_id": "056df251ebcb6a205758da0c081d26a24afc4c22d01b7b2802b8bc3fb56db551",
+      "scope": "confirmatory_external_validation",
+      "source_path": "reports/cub_formal_v4",
+      "source_role": "cub_diagnostic",
+      "source_sha256": "b74f89b5ea15c6e20b0dbeb9b1f57ee8f956b5b448916553d537ba0cf5804c1c",
+      "status": "formal_complete"
+    },
+    {
+      "boundaries": [
+        "secondary_behavioral_diagnostic"
+      ],
+      "comparison": "Q5_K_M minus F16",
+      "dataset": "CUB/DRUID",
+      "governance_status": "canonical_result",
+      "metrics": {
+        "conflicting_bcu_effect": 0.06294255177020708,
+        "conflicting_ccu_effect": 0.018522005591378506,
+        "gold_bcu_effect": -0.04645760743321719,
+        "gold_ccu_effect": -0.007124237313171285
+      },
+      "model_key": "qwen35_9b",
+      "population": {
+        "conflicting_samples": 2413,
+        "gold_samples": 1872,
+        "irrelevant_samples": 17
+      },
+      "route": "GGUF_Q5_K_M",
+      "row_id": "c4a4ccfe6f1f1949248b317f14f8568312fd45ba73ba92b38449388c07002bee",
+      "scope": "exploratory_dose_extension",
+      "source_path": "reports/cub_formal_v4",
+      "source_role": "cub_diagnostic",
+      "source_sha256": "b74f89b5ea15c6e20b0dbeb9b1f57ee8f956b5b448916553d537ba0cf5804c1c",
+      "status": "exploratory_complete"
+    },
+    {
+      "boundaries": [
+        "secondary_behavioral_diagnostic"
+      ],
+      "comparison": "Q8_0 minus F16",
+      "dataset": "CUB/DRUID",
+      "governance_status": "canonical_result",
+      "metrics": {
+        "conflicting_bcu_effect": 0.026402805611222442,
+        "conflicting_ccu_effect": 0.022609357431217926,
+        "gold_bcu_effect": -0.006097560975609756,
+        "gold_ccu_effect": -0.011843110236700054
+      },
+      "model_key": "qwen35_9b",
+      "population": {
+        "conflicting_samples": 2413,
+        "gold_samples": 1872,
+        "irrelevant_samples": 17
+      },
+      "route": "GGUF_Q8_0",
+      "row_id": "95314783c4c73a209b4503ba1c20e09237c3376a81bd04d04656f74112236bfc",
+      "scope": "exploratory_dose_extension",
+      "source_path": "reports/cub_formal_v4",
+      "source_role": "cub_diagnostic",
+      "source_sha256": "b74f89b5ea15c6e20b0dbeb9b1f57ee8f956b5b448916553d537ba0cf5804c1c",
+      "status": "exploratory_complete"
+    },
+    {
+      "boundaries": [
+        "external_structured_evidence_validation"
+      ],
+      "comparison": "Q4_K_M minus F16",
+      "dataset": "Fresh TabFact",
+      "governance_status": "canonical_result",
+      "metrics": {
+        "accuracy_ci95": [
+          -0.06365048379028872,
+          -0.029426433915212043
+        ],
+        "accuracy_difference": -0.0465000000000001,
+        "balanced_accuracy_difference": -0.04687092183829655
+      },
+      "model_key": "gemma4_e4b",
+      "population": {
+        "claims": 2000,
+        "conditions": 4,
+        "gold_counts": {
+          "Entailed": 1003,
+          "Refuted": 997
+        },
+        "tables": 1434
+      },
+      "route": "GGUF_Q4_K_M",
+      "row_id": "50066a7133eff4dfecb4a0c377507eed892436e46b9488687dc81f5133691658",
+      "scope": "external_convergent_evidence",
+      "source_path": "reports/tabfact_fresh_formal_v1",
+      "source_role": "tabfact_external_validation",
+      "source_sha256": "871792ca26d29307dfe7127529d047100dd7ea00479999e2d07dd327e11eb514",
+      "status": "formal_complete"
+    },
+    {
+      "boundaries": [
+        "external_structured_evidence_validation"
+      ],
+      "comparison": "Q4_K_M minus F16",
+      "dataset": "Fresh TabFact",
+      "governance_status": "canonical_result",
+      "metrics": {
+        "accuracy_ci95": [
+          -0.0961250480616377,
+          -0.05408112168252377
+        ],
+        "accuracy_difference": -0.07500000000000007,
+        "balanced_accuracy_difference": -0.07566068094612854
+      },
+      "model_key": "qwen35_9b",
+      "population": {
+        "claims": 2000,
+        "conditions": 4,
+        "gold_counts": {
+          "Entailed": 1003,
+          "Refuted": 997
+        },
+        "tables": 1434
+      },
+      "route": "GGUF_Q4_K_M",
+      "row_id": "e9767e0e961e8a8689e63d21b384b10d3e58de809bb8c5bb43ad2c99f03db8ad",
+      "scope": "external_convergent_evidence",
+      "source_path": "reports/tabfact_fresh_formal_v1",
+      "source_role": "tabfact_external_validation",
+      "source_sha256": "871792ca26d29307dfe7127529d047100dd7ea00479999e2d07dd327e11eb514",
+      "status": "formal_complete"
+    },
+    {
+      "boundaries": [
+        "raw_interaction_magnitudes_are_scale_and_calibration_sensitive"
+      ],
+      "comparison": "Q4_K_M minus F16",
+      "dataset": "VitaminC",
+      "governance_status": "canonical_result",
+      "metrics": {
+        "balanced_accuracy_difference": -0.03742058484605515,
+        "balanced_accuracy_holm_pvalue": 3.999960000399996e-05,
+        "delta_i": -3.217178342514887,
+        "delta_i_ci95": [
+          -3.3776824389102287,
+          -3.055274598308751
+        ],
+        "negative_page_fraction": 0.8896103896103896
+      },
+      "model_key": "gemma4_e4b",
+      "population": {
+        "pages": 1078,
+        "quartets": 1200
+      },
+      "route": "GGUF_Q4_K_M",
+      "row_id": "ff51c59d45f66bda266842445752af99a7214f7d6f48af4d3152f16e88cd0e52",
+      "scope": "post_confirmatory_exploratory",
+      "source_path": "reports/vitaminc_stage_a_v4",
+      "source_role": "vitaminc_stage_a",
+      "source_sha256": "5b4327ac0021bed995da160614ef4d2aa855c07ee27cbc83f74e2ed6ff67e2ba",
+      "status": "exploratory_complete"
+    },
+    {
+      "boundaries": [
+        "not_a_formal_result"
+      ],
+      "comparison": "AWQ_INT4 vs FP16/GPTQ_INT4",
+      "dataset": "VitaminC",
+      "governance_status": "retired_without_result",
+      "metrics": {},
+      "model_key": "gemma4_e4b",
+      "population": {
+        "pages": 1078,
+        "quartets": 1200
+      },
+      "route": "HF_AWQ",
+      "row_id": "ee5b891900b17828682e5cf83ebac8bbef870d726e91b40aa0e557ca1a637fde",
+      "scope": "prospectively_frozen_incomplete",
+      "source_path": "configs/qwen_hf_triplet_only_v1.json",
+      "source_role": "hf_awq_d5",
+      "source_sha256": "71ed06d63185dc32cec8a2b2809ee1c834af76fd9a7cd015865d7c75bd49a000",
+      "status": "not_formally_completed"
+    },
+    {
+      "boundaries": [
+        "same_hf_backend_paired_quantization_route"
+      ],
+      "comparison": "GPTQ_INT4 minus FP16",
+      "dataset": "VitaminC",
+      "governance_status": "canonical_result",
+      "metrics": {
+        "accuracy_difference": -0.00854166666666667,
+        "balanced_accuracy_ci95": [
+          -0.02489184215121426,
+          -0.0019182909591686128
+        ],
+        "balanced_accuracy_difference": -0.013406230967747623,
+        "delta_i": 1.371299106689906,
+        "delta_i_ci95": [
+          1.2212078186488107,
+          1.5240590380383776
+        ]
+      },
+      "model_key": "gemma4_e4b",
+      "population": {
+        "full_units": 4800,
+        "pages": 1078,
+        "quartets": 1200,
+        "units_per_condition": 9600
+      },
+      "route": "HF_GPTQ_INT4",
+      "row_id": "daa8e2a587ca6b270c9c5faaefa2c17176f63662bbd6a912971357d5dda09b8e",
+      "scope": "prospectively_frozen_followup",
+      "source_path": "reports/gemma_hf_d4_v1",
+      "source_role": "gemma_hf_gptq",
+      "source_sha256": "9b1620a53a1a7c5f7e28232c19273b77af0493fbbbd9d137a3a1cdea39875dbc",
+      "status": "formal_complete"
+    },
+    {
+      "boundaries": [
+        "raw_interaction_magnitudes_are_scale_and_calibration_sensitive"
+      ],
+      "comparison": "Q4_K_M minus F16",
+      "dataset": "VitaminC",
+      "governance_status": "canonical_result",
+      "metrics": {
+        "balanced_accuracy_difference": -0.025692018174568787,
+        "balanced_accuracy_holm_pvalue": 3.999960000399996e-05,
+        "delta_i": -0.3887897840457414,
+        "delta_i_ci95": [
+          -0.4345931399344071,
+          -0.34317134300277935
+        ],
+        "negative_page_fraction": 0.7142857142857143
+      },
+      "model_key": "ministral3_8b",
+      "population": {
+        "pages": 1078,
+        "quartets": 1200
+      },
+      "route": "GGUF_Q4_K_M",
+      "row_id": "0bb94af6bf654c2154b714a60600b4661ba65a9db34f6eb8d51b058982c21cb4",
+      "scope": "post_confirmatory_exploratory",
+      "source_path": "reports/vitaminc_stage_a_v4",
+      "source_role": "vitaminc_stage_a",
+      "source_sha256": "5b4327ac0021bed995da160614ef4d2aa855c07ee27cbc83f74e2ed6ff67e2ba",
+      "status": "exploratory_complete"
+    },
+    {
+      "boundaries": [
+        "negative_point_estimate_not_significant_after_holm",
+        "raw_interaction_magnitudes_are_scale_and_calibration_sensitive"
+      ],
+      "comparison": "Q4_K_M minus F16",
+      "dataset": "VitaminC",
+      "governance_status": "canonical_result",
+      "metrics": {
+        "balanced_accuracy_difference": -0.008034463986049234,
+        "balanced_accuracy_holm_pvalue": 0.05031949680503195,
+        "delta_i": -0.8346363940796295,
+        "delta_i_ci95": [
+          -0.8933614135452017,
+          -0.778043928250311
+        ],
+        "negative_page_fraction": 0.7996289424860853
+      },
+      "model_key": "olmo3_7b",
+      "population": {
+        "pages": 1078,
+        "quartets": 1200
+      },
+      "route": "GGUF_Q4_K_M",
+      "row_id": "d4015ffcab3a99a35194d70f65b526afd99bac477495965eba02887e313ef0c4",
+      "scope": "post_confirmatory_exploratory",
+      "source_path": "reports/vitaminc_stage_a_v4",
+      "source_role": "vitaminc_stage_a",
+      "source_sha256": "5b4327ac0021bed995da160614ef4d2aa855c07ee27cbc83f74e2ed6ff67e2ba",
+      "status": "exploratory_complete"
+    },
+    {
+      "boundaries": [
+        "operational_edit_difficulty_only"
+      ],
+      "comparison": "edit-strength robustness",
+      "dataset": "VitaminC",
+      "governance_status": "canonical_result",
+      "metrics": {
+        "delta_i": 0.0846712943131937,
+        "leave_one_page_out_crosses_zero": false
+      },
+      "model_key": "qwen35_9b",
+      "population": {
+        "negative_labels": {
+          "NOT ENOUGH INFO": 237,
+          "REFUTES": 963
+        },
+        "pages": 1078,
+        "quartets": 1200
+      },
+      "route": "GGUF_Q4_K_M",
+      "row_id": "c77f9739785df859b4a67cfb0e00e43e155e267dddc3e1a9a2078e3b190db855",
+      "scope": "post_confirmatory_robustness",
+      "source_path": "reports/vitaminc_strengthening_qwen_v1",
+      "source_role": "strengthening_audit",
+      "source_sha256": "644a43d65963a317f089dbf908bb1823b5ce4f71efc9c4ac6ae0c408a92db9c5",
+      "status": "formal_complete"
+    },
+    {
+      "boundaries": [
+        "confirmatory_h1_not_supported"
+      ],
+      "comparison": "Q4_K_M minus F16",
+      "dataset": "VitaminC",
+      "governance_status": "canonical_result",
+      "metrics": {
+        "balanced_accuracy_difference": -0.026204916624076313,
+        "balanced_accuracy_f16": 0.6895340077376607,
+        "balanced_accuracy_quantized": 0.6633290911135844,
+        "delta_i": 0.06864686011285964,
+        "delta_i_ci95": [
+          0.018730036162175074,
+          0.1196716879045416
+        ]
+      },
+      "model_key": "qwen35_9b",
+      "population": {
+        "full_evidence_rows": 9932,
+        "pages": 1158,
+        "quartets": 2483
+      },
+      "route": "GGUF_Q4_K_M",
+      "row_id": "36a0cfe0e166dbbe02fbd55fd9b9ddb1a47d0ccf3ff1d3fd7a6774d0a373543f",
+      "scope": "confirmatory",
+      "source_path": "reports/vitaminc_main_v4",
+      "source_role": "vitaminc_confirmatory_anchor",
+      "source_sha256": "2a7b301610584c3d24fa3fe0508ece8ef580eaf4f7af7964d22c940c5dd1d406",
+      "status": "formal_complete"
+    },
+    {
+      "boundaries": [
+        "raw_interaction_magnitudes_are_scale_and_calibration_sensitive"
+      ],
+      "comparison": "Q4_K_M minus F16",
+      "dataset": "VitaminC",
+      "governance_status": "canonical_result",
+      "metrics": {
+        "balanced_accuracy_difference": -0.02546435409738368,
+        "balanced_accuracy_holm_pvalue": 3.999960000399996e-05,
+        "delta_i": 0.0846712943131937,
+        "delta_i_ci95": [
+          0.025982842059436226,
+          0.14425942733026834
+        ],
+        "negative_page_fraction": 0.48237476808905383
+      },
+      "model_key": "qwen35_9b",
+      "population": {
+        "pages": 1078,
+        "quartets": 1200
+      },
+      "route": "GGUF_Q4_K_M",
+      "row_id": "cac1d6850ab3c3c755ee7d22091ac05f494b015e7fa34616181e596f87d25057",
+      "scope": "post_confirmatory_exploratory",
+      "source_path": "reports/vitaminc_stage_a_v4",
+      "source_role": "vitaminc_stage_a",
+      "source_sha256": "5b4327ac0021bed995da160614ef4d2aa855c07ee27cbc83f74e2ed6ff67e2ba",
+      "status": "exploratory_complete"
+    },
+    {
+      "boundaries": [
+        "descriptive_comparability_not_equivalence"
+      ],
+      "comparison": "high-precision backend comparability",
+      "dataset": "VitaminC",
+      "governance_status": "canonical_result",
+      "metrics": {
+        "hard_label_agreement": 0.998125,
+        "interaction_offset": 0.01732544996300522,
+        "per_page_interaction_correlation": 0.9999390576621766
+      },
+      "model_key": "qwen35_9b",
+      "population": {
+        "gguf_precision": "F16",
+        "gguf_protocol_version": "vitaminc-formal-run-v4-20260716",
+        "hard_units": 4800,
+        "hf_precision": "FP16",
+        "hf_protocol_version": "hf-vitaminc-formal-v1-20260718",
+        "model_key": "qwen35_9b",
+        "pages": 1078,
+        "prompt_contract_sha256": "62be3ad998b851887ce433bb80a8269f020dbea63c048d418f0e1277590352e1",
+        "quartets": 1200,
+        "split": "dose_subset",
+        "split_sha256": "bbe3e66dc7e53e0fa08c656716e113f63b8c5232de8b9fa895de6046b861b9f1"
+      },
+      "route": "HF_FP16_vs_GGUF_F16",
+      "row_id": "395f81573b252772236c5b9887064df57bee31c6fb8bb3a4e03f0137dcfe1b80",
+      "scope": "post_confirmatory_robustness",
+      "source_path": "reports/vitaminc_strengthening_qwen_v1",
+      "source_role": "strengthening_audit",
+      "source_sha256": "644a43d65963a317f089dbf908bb1823b5ce4f71efc9c4ac6ae0c408a92db9c5",
+      "status": "formal_complete"
+    },
+    {
+      "boundaries": [
+        "same_hf_backend_paired_quantization_route"
+      ],
+      "comparison": "GPTQ_INT4 minus FP16",
+      "dataset": "VitaminC",
+      "governance_status": "canonical_result",
+      "metrics": {
+        "accuracy_difference": -0.030416666666666647,
+        "balanced_accuracy_ci95": [
+          -0.0440954524881737,
+          -0.022786973625201896
+        ],
+        "balanced_accuracy_difference": -0.03321931507989717,
+        "delta_i": -0.417754957096475,
+        "delta_i_ci95": [
+          -0.4569302419121058,
+          -0.37874083227040817
+        ]
+      },
+      "model_key": "qwen35_9b",
+      "population": {
+        "full_units": 4800,
+        "pages": 1078,
+        "quartets": 1200,
+        "units_per_condition": 9600
+      },
+      "route": "HF_GPTQ_INT4",
+      "row_id": "d3f467d66d4255168fa92a55c4936b26d8115e54e23adbef33a61b48ab3be960",
+      "scope": "prospectively_frozen_followup",
+      "source_path": "reports/qwen_hf_formal_v1",
+      "source_role": "qwen_hf_gptq",
+      "source_sha256": "23c2befe77882f15e5c6f96ab4289165b7a314eaa434646bfeaa23c7e626dfee",
+      "status": "formal_complete"
+    },
+    {
+      "boundaries": [
+        "joint_deployment_route_effect",
+        "not_a_pure_quantizer_backend_bitwidth_or_architecture_effect"
+      ],
+      "comparison": "Gemma route minus Qwen route",
+      "dataset": "VitaminC",
+      "governance_status": "canonical_result",
+      "metrics": {
+        "ci95": [
+          4.853706674662061,
+          5.329425763840578
+        ],
+        "four_way_interaction": 5.090903700614462
+      },
+      "model_key": "qwen35_9b_x_gemma4_e4b",
+      "population": {
+        "pages": 1078,
+        "quartets": 1200
+      },
+      "route": "GGUF_vs_HF_interaction",
+      "row_id": "a65be01bd45e59111c0ac686522813d42f1315b4eacd5242902ae5e553c97783",
+      "scope": "prospectively_frozen_followup",
+      "source_path": "reports/qwen_gemma_route_model_interaction_v1",
+      "source_role": "route_model_interaction",
+      "source_sha256": "a2bd1cb1f432791421a970044dd54ff2599d4aa610bc1b6c8de8d1629201dce6",
+      "status": "formal_complete"
+    },
+    {
+      "boundaries": [
+        "cannot_select_or_rewrite_primary_mapping"
+      ],
+      "comparison": "reversed label mapping sensitivity",
+      "dataset": "VitaminC discovery",
+      "governance_status": "canonical_result",
+      "metrics": {
+        "direction_stable": true,
+        "original_delta_i": -3.24734467989432,
+        "reversed_delta_i": -2.286797131694333
+      },
+      "model_key": "gemma4_e4b",
+      "population": {
+        "full_units_per_cell": 4000,
+        "mapping_route_cells": 12,
+        "pages": 671,
+        "quartets": 1000
+      },
+      "route": "GGUF_Q4_K_M",
+      "row_id": "bd164b42105aa7c6d581b5815976e9f04ba17110b61f22bef0595118c7353073",
+      "scope": "post_confirmatory_robustness",
+      "source_path": "reports/vitaminc_mapping_sensitivity_v1",
+      "source_role": "mapping_sensitivity",
+      "source_sha256": "cffef508345a6ffa0b93a3aebfd921e10eda343b581aa27850c949970c0a4404",
+      "status": "formal_complete"
+    },
+    {
+      "boundaries": [
+        "cannot_select_or_rewrite_primary_mapping"
+      ],
+      "comparison": "reversed label mapping sensitivity",
+      "dataset": "VitaminC discovery",
+      "governance_status": "canonical_result",
+      "metrics": {
+        "direction_stable": true,
+        "original_delta_i": 0.12039376953984028,
+        "reversed_delta_i": 0.3608775254952445
+      },
+      "model_key": "qwen35_9b",
+      "population": {
+        "full_units_per_cell": 4000,
+        "mapping_route_cells": 12,
+        "pages": 671,
+        "quartets": 1000
+      },
+      "route": "GGUF_Q4_K_M",
+      "row_id": "7ce505c7f17d508a7e0d0cf749e34550d6ed70854e1ce864bbcfa46b757673ce",
+      "scope": "post_confirmatory_robustness",
+      "source_path": "reports/vitaminc_mapping_sensitivity_v1",
+      "source_role": "mapping_sensitivity",
+      "source_sha256": "cffef508345a6ffa0b93a3aebfd921e10eda343b581aa27850c949970c0a4404",
+      "status": "formal_complete"
+    },
+    {
+      "boundaries": [
+        "cannot_select_or_rewrite_primary_mapping"
+      ],
+      "comparison": "reversed label mapping sensitivity",
+      "dataset": "VitaminC discovery",
+      "governance_status": "canonical_result",
+      "metrics": {
+        "direction_stable": true,
+        "original_delta_i": -0.3780548494044559,
+        "reversed_delta_i": -0.6176344560571694
+      },
+      "model_key": "qwen35_9b",
+      "population": {
+        "full_units_per_cell": 4000,
+        "mapping_route_cells": 12,
+        "pages": 671,
+        "quartets": 1000
+      },
+      "route": "HF_GPTQ_INT4",
+      "row_id": "955c40371a911a1a1b696aa77b0c70e8dbbd85caad1c30adc988e28f7b8843a5",
+      "scope": "post_confirmatory_robustness",
+      "source_path": "reports/vitaminc_mapping_sensitivity_v1",
+      "source_role": "mapping_sensitivity",
+      "source_sha256": "cffef508345a6ffa0b93a3aebfd921e10eda343b581aa27850c949970c0a4404",
+      "status": "formal_complete"
+    },
+    {
+      "boundaries": [
+        "single_model_qwen_only",
+        "method_associated_not_pure_algorithm_effect",
+        "packing_loader_kernel_differences_remain"
+      ],
+      "comparison": "AWQ_INT4 minus FP16 and GPTQ_INT4",
+      "dataset": "VitaminC",
+      "governance_status": "formal_completed_qwen_only",
+      "metric_family": "interaction",
+      "metrics": {
+        "awq_minus_fp16_ci": [
+          -1.8769805738346477,
+          -1.7290586680339748
+        ],
+        "awq_minus_fp16_estimate": -1.801813978432282,
+        "awq_minus_fp16_holm_pvalue": 0.0,
+        "awq_minus_gptq_ci": [
+          -1.4494363476924863,
+          -1.3202342300556587
+        ],
+        "awq_minus_gptq_estimate": -1.384059021335807,
+        "awq_minus_gptq_holm_pvalue": 0.0
+      },
+      "model_key": "qwen35_9b",
+      "population": {
+        "full_inputs": 4800,
+        "pages": 1078,
+        "quartets": 1200
+      },
+      "route": "HF_AWQ",
+      "row_id": "b3d36e7c1e40351f12a6d81f3193d019a9911240fd4bc6e5fa7748365e034bd2",
+      "scope": "confirmatory_within_hf_method_associated",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_role": "qwen_hf_triplet_formal",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "status": "formal_completed"
+    },
+    {
+      "boundaries": [
+        "single_model_qwen_only",
+        "method_associated_not_pure_algorithm_effect",
+        "packing_loader_kernel_differences_remain"
+      ],
+      "comparison": "FP16 vs GPTQ_INT4 vs AWQ_INT4",
+      "dataset": "VitaminC",
+      "governance_status": "formal_completed_qwen_only",
+      "metric_family": "accuracy",
+      "metrics": {
+        "awq": 0.7158333333333333,
+        "fp16": 0.775,
+        "gptq": 0.7445833333333334
+      },
+      "model_key": "qwen35_9b",
+      "population": {
+        "full_inputs": 4800,
+        "pages": 1078,
+        "quartets": 1200
+      },
+      "route": "HF_AWQ",
+      "row_id": "414ea7e28199df3373f1ba2bb948b051030a32a36c7f7733ee272e3d4e4a29cd",
+      "scope": "confirmatory_within_hf_method_associated",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_role": "qwen_hf_triplet_formal",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "status": "formal_completed"
+    },
+    {
+      "boundaries": [
+        "single_model_qwen_only",
+        "method_associated_not_pure_algorithm_effect",
+        "packing_loader_kernel_differences_remain"
+      ],
+      "comparison": "FP16 vs GPTQ_INT4 vs AWQ_INT4",
+      "dataset": "VitaminC",
+      "governance_status": "formal_completed_qwen_only",
+      "metric_family": "balanced_accuracy",
+      "metrics": {
+        "awq": 0.6356476442726886,
+        "fp16": 0.6935717157178473,
+        "gptq": 0.6603524006379501
+      },
+      "model_key": "qwen35_9b",
+      "population": {
+        "full_inputs": 4800,
+        "pages": 1078,
+        "quartets": 1200
+      },
+      "route": "HF_AWQ",
+      "row_id": "1c2d0c8a6779d0080efb3c49cd36f9853b6523cec044487ae8fae51012fe3211",
+      "scope": "confirmatory_within_hf_method_associated",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_role": "qwen_hf_triplet_formal",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "status": "formal_completed"
+    },
+    {
+      "boundaries": [
+        "single_model_qwen_only",
+        "method_associated_not_pure_algorithm_effect",
+        "packing_loader_kernel_differences_remain"
+      ],
+      "comparison": "FP16 vs GPTQ_INT4 vs AWQ_INT4",
+      "dataset": "VitaminC",
+      "governance_status": "formal_completed_qwen_only",
+      "metric_family": "mcc",
+      "metrics": {
+        "awq": 0.5318612892944414,
+        "fp16": 0.616761289663955,
+        "gptq": 0.5765308692036453
+      },
+      "model_key": "qwen35_9b",
+      "population": {
+        "full_inputs": 4800,
+        "pages": 1078,
+        "quartets": 1200
+      },
+      "route": "HF_AWQ",
+      "row_id": "77012a11e191cf45c5f27ac769b9681a743c5b308a2449c7459276bffb0de217",
+      "scope": "confirmatory_within_hf_method_associated",
+      "source_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+      "source_role": "qwen_hf_triplet_formal",
+      "source_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "status": "formal_completed"
+    },
+    {
+      "boundaries": [
+        "method_associated_not_pure_algorithm_effect",
+        "packing_loader_kernel_differences_remain",
+        "raw_probability_scale_not_for_cross_model_ranking"
+      ],
+      "comparison": "AWQ_INT4 minus FP16 and GPTQ_INT4",
+      "dataset": "VitaminC",
+      "governance_status": "formal_completed_second_hf_family",
+      "metric_family": "interaction",
+      "metrics": {
+        "awq_minus_fp16_ci": [
+          -0.2754486480316558,
+          -0.15642275553687388
+        ],
+        "awq_minus_fp16_estimate": -0.2160177991651206,
+        "awq_minus_fp16_holm_pvalue": 4.003042342332543e-12,
+        "awq_minus_gptq_ci": [
+          -0.003123641146799629,
+          0.1217879428049629
+        ],
+        "awq_minus_gptq_estimate": 0.058267625231910945,
+        "awq_minus_gptq_holm_pvalue": 0.06898378670880453
+      },
+      "model_key": "ministral3_8b",
+      "population": {
+        "full_inputs": 4800,
+        "pages": 1078,
+        "quartets": 1200
+      },
+      "route": "HF_AWQ",
+      "row_id": "2a6c8c6fac4aa1194d1fd3f0f275b4c4085f29a5b9ba9661044aeac2097c7f05",
+      "scope": "prospectively_frozen_within_hf_method_associated",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_role": "ministral_hf_triplet_formal",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "status": "formal_completed"
+    },
+    {
+      "boundaries": [
+        "method_associated_not_pure_algorithm_effect",
+        "packing_loader_kernel_differences_remain",
+        "raw_probability_scale_not_for_cross_model_ranking"
+      ],
+      "comparison": "FP16 vs GPTQ_INT4 vs AWQ_INT4",
+      "dataset": "VitaminC",
+      "governance_status": "formal_completed_second_hf_family",
+      "metric_family": "accuracy",
+      "metrics": {
+        "awq": 0.6970833333333334,
+        "fp16": 0.7072916666666667,
+        "gptq": 0.7054166666666667
+      },
+      "model_key": "ministral3_8b",
+      "population": {
+        "full_inputs": 4800,
+        "pages": 1078,
+        "quartets": 1200
+      },
+      "route": "HF_AWQ",
+      "row_id": "d695fee8ccf03f07a8c2807c4d681d91a196e718ec5e38a1cf935c397d15c6b6",
+      "scope": "prospectively_frozen_within_hf_method_associated",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_role": "ministral_hf_triplet_formal",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "status": "formal_completed"
+    },
+    {
+      "boundaries": [
+        "method_associated_not_pure_algorithm_effect",
+        "packing_loader_kernel_differences_remain",
+        "raw_probability_scale_not_for_cross_model_ranking"
+      ],
+      "comparison": "FP16 vs GPTQ_INT4 vs AWQ_INT4",
+      "dataset": "VitaminC",
+      "governance_status": "formal_completed_second_hf_family",
+      "metric_family": "balanced_accuracy",
+      "metrics": {
+        "awq": 0.6012378686506216,
+        "fp16": 0.6271955934995684,
+        "gptq": 0.6143335973202588
+      },
+      "model_key": "ministral3_8b",
+      "population": {
+        "full_inputs": 4800,
+        "pages": 1078,
+        "quartets": 1200
+      },
+      "route": "HF_AWQ",
+      "row_id": "982cfc0dc694ddd17d210ee8dfb58940eaa405f0780941db6c93e7608f7b3568",
+      "scope": "prospectively_frozen_within_hf_method_associated",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_role": "ministral_hf_triplet_formal",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "status": "formal_completed"
+    },
+    {
+      "boundaries": [
+        "method_associated_not_pure_algorithm_effect",
+        "packing_loader_kernel_differences_remain",
+        "raw_probability_scale_not_for_cross_model_ranking"
+      ],
+      "comparison": "FP16 vs GPTQ_INT4 vs AWQ_INT4",
+      "dataset": "VitaminC",
+      "governance_status": "formal_completed_second_hf_family",
+      "metric_family": "mcc",
+      "metrics": {
+        "awq": 0.4866965798417265,
+        "fp16": 0.504990676884364,
+        "gptq": 0.49743317326459313
+      },
+      "model_key": "ministral3_8b",
+      "population": {
+        "full_inputs": 4800,
+        "pages": 1078,
+        "quartets": 1200
+      },
+      "route": "HF_AWQ",
+      "row_id": "5e1dc44f827ca17d007d0e5f92d36c711d4e21c839a6c9a6e65c8111f918fa53",
+      "scope": "prospectively_frozen_within_hf_method_associated",
+      "source_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+      "source_role": "ministral_hf_triplet_formal",
+      "source_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b",
+      "status": "formal_completed"
+    },
+    {
+      "boundaries": [
+        "route_by_model_heterogeneity_not_pure_quantizer_causality",
+        "not_architecture_causality",
+        "packing_loader_kernel_differences_remain"
+      ],
+      "comparison": "Ministral awq_minus_fp16 minus Qwen awq_minus_fp16",
+      "dataset": "VitaminC",
+      "governance_status": "formal_completed_central_interaction",
+      "metric_family": "awq_minus_fp16_interaction",
+      "metrics": {
+        "ci95": [
+          1.4994905659351807,
+          1.6743597989621983
+        ],
+        "estimate": 1.5857961792671613,
+        "holm_adjusted_pvalue": 2.108798102984569e-268,
+        "raw_pvalue": 1.0543990514922844e-268
+      },
+      "model_key": "qwen35_9b__ministral3_8b",
+      "population": {
+        "full_inputs_per_condition": 4800,
+        "pages": 1078,
+        "quartets": 1200
+      },
+      "route": "HF_FP16_GPTQ_AWQ_INTERACTION",
+      "row_id": "597684e4a6a5c0c87e2efe460b9ac1747d67804aa5756f776244e95d9f1697fb",
+      "scope": "prospectively_frozen_route_by_model_interaction",
+      "source_path": "reports/qwen_ministral_method_interaction_v1/analysis.json",
+      "source_role": "qwen_ministral_hf_method_interaction",
+      "source_sha256": "3b597fa91e3ab88b6d3d4656b7285f01a6e541a878f63706c926f010e5fbe058",
+      "status": "formal_completed"
+    },
+    {
+      "boundaries": [
+        "route_by_model_heterogeneity_not_pure_quantizer_causality",
+        "not_architecture_causality",
+        "packing_loader_kernel_differences_remain"
+      ],
+      "comparison": "Ministral awq_minus_gptq minus Qwen awq_minus_gptq",
+      "dataset": "VitaminC",
+      "governance_status": "formal_completed_central_interaction",
+      "metric_family": "awq_minus_gptq_interaction",
+      "metrics": {
+        "ci95": [
+          1.3540424070906774,
+          1.533406907684949
+        ],
+        "estimate": 1.442326646567718,
+        "holm_adjusted_pvalue": 1.0957087682237751e-217,
+        "raw_pvalue": 1.0957087682237751e-217
+      },
+      "model_key": "qwen35_9b__ministral3_8b",
+      "population": {
+        "full_inputs_per_condition": 4800,
+        "pages": 1078,
+        "quartets": 1200
+      },
+      "route": "HF_FP16_GPTQ_AWQ_INTERACTION",
+      "row_id": "64b1dcc691a3cae7596dc7983277c16feb6ad7db57061df05048b578f75d802e",
+      "scope": "prospectively_frozen_route_by_model_interaction",
+      "source_path": "reports/qwen_ministral_method_interaction_v1/analysis.json",
+      "source_role": "qwen_ministral_hf_method_interaction",
+      "source_sha256": "3b597fa91e3ab88b6d3d4656b7285f01a6e541a878f63706c926f010e5fbe058",
+      "status": "formal_completed"
+    }
+  ],
+  "source_publication_inventory_sha256": "9ce03f395c17565a41f687b8a44fe0db8361483f6cdc41393cb82be06a7c34e6",
+  "source_publication_manifest_sha256": "7a2e1aabfcc0564bfc613417ca2c7c044c94b3fe9aa354ad33186775698b317e",
+  "superseded_stage_a": [
+    "reports/vitaminc_stage_a_v1",
+    "reports/vitaminc_stage_a_v2",
+    "reports/vitaminc_stage_a_v3"
+  ]
+}

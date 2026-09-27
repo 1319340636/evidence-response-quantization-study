@@ -1,0 +1,152 @@
+{
+  "analysis": {
+    "analysis_protocol": "qwen-hf-triplet-analysis-v1-20260802",
+    "bootstrap_contract": {
+      "alternative": "two_sided",
+      "cluster": "page",
+      "confidence_level": 0.95,
+      "draws": 10000,
+      "seed": 20260711,
+      "shared_page_indices": true
+    },
+    "causal_boundary": "quantizer_route_associated_not_pure_algorithm_effect",
+    "contrast_order": [
+      "awq_minus_fp16",
+      "awq_minus_gptq"
+    ],
+    "contrasts": {
+      "awq_minus_fp16": {
+        "confidence_interval_status": "unadjusted_descriptive",
+        "estimand": "awq_minus_fp16",
+        "holm_adjusted_pvalue": 0.0,
+        "page_bootstrap": {
+          "clusters": 1078,
+          "draws": 10000,
+          "estimate": -1.801813978432282,
+          "lower": -1.8769805738346477,
+          "seed": 20260711,
+          "upper": -1.7290586680339748
+        },
+        "page_wald": {
+          "clusters": 1078,
+          "estimate": -1.801813978432282,
+          "pvalue": 0.0,
+          "standard_error": 0.038900239195878386,
+          "statistic": 2145.4349940912634
+        }
+      },
+      "awq_minus_gptq": {
+        "confidence_interval_status": "unadjusted_descriptive",
+        "estimand": "awq_minus_gptq",
+        "holm_adjusted_pvalue": 0.0,
+        "page_bootstrap": {
+          "clusters": 1078,
+          "draws": 10000,
+          "estimate": -1.384059021335807,
+          "lower": -1.4494363476924863,
+          "seed": 20260711,
+          "upper": -1.3202342300556587
+        },
+        "page_wald": {
+          "clusters": 1078,
+          "estimate": -1.384059021335807,
+          "pvalue": 0.0,
+          "standard_error": 0.03344613171617609,
+          "statistic": 1712.4481447389037
+        }
+      }
+    },
+    "gate": {
+      "aligned_full_owners": 4800,
+      "gate_sha256": "86258a7dad2a1064d5b623acdd21d9934007a54a99b08f4355309ffe2e29666b",
+      "mode": "qwen_formal4800",
+      "model_key": "qwen35_9b",
+      "qwen_triplet_freeze_sha256": "71ed06d63185dc32cec8a2b2809ee1c834af76fd9a7cd015865d7c75bd49a000"
+    },
+    "hard_labels": {
+      "awq_vs_fp16": {
+        "accuracy": {
+          "awq": 0.7158333333333333,
+          "difference": -0.059166666666666666,
+          "reference": 0.775
+        },
+        "agreement": 0.8835416666666667,
+        "balanced_accuracy": {
+          "awq": 0.6356476442726886,
+          "reference": 0.6935717157178473
+        },
+        "mcc": {
+          "awq": 0.5318612892944414,
+          "reference": 0.616761289663955
+        },
+        "transitions": {
+          "NOT ENOUGH INFO->NOT ENOUGH INFO": 343,
+          "NOT ENOUGH INFO->REFUTES": 11,
+          "NOT ENOUGH INFO->SUPPORTS": 83,
+          "REFUTES->NOT ENOUGH INFO": 108,
+          "REFUTES->REFUTES": 956,
+          "REFUTES->SUPPORTS": 337,
+          "SUPPORTS->NOT ENOUGH INFO": 4,
+          "SUPPORTS->REFUTES": 16,
+          "SUPPORTS->SUPPORTS": 2942
+        },
+        "units": 4800
+      },
+      "awq_vs_gptq": {
+        "accuracy": {
+          "awq": 0.7158333333333333,
+          "difference": -0.02875,
+          "reference": 0.7445833333333334
+        },
+        "agreement": 0.9170833333333334,
+        "balanced_accuracy": {
+          "awq": 0.6356476442726886,
+          "reference": 0.6603524006379501
+        },
+        "mcc": {
+          "awq": 0.5318612892944414,
+          "reference": 0.5765308692036453
+        },
+        "transitions": {
+          "NOT ENOUGH INFO->NOT ENOUGH INFO": 353,
+          "NOT ENOUGH INFO->REFUTES": 17,
+          "NOT ENOUGH INFO->SUPPORTS": 51,
+          "REFUTES->NOT ENOUGH INFO": 71,
+          "REFUTES->REFUTES": 891,
+          "REFUTES->SUPPORTS": 153,
+          "SUPPORTS->NOT ENOUGH INFO": 31,
+          "SUPPORTS->REFUTES": 75,
+          "SUPPORTS->SUPPORTS": 3158
+        },
+        "units": 4800
+      }
+    },
+    "holm_family": [
+      {
+        "holm_adjusted_pvalue": 0.0,
+        "name": "awq_minus_fp16",
+        "raw_pvalue": 0.0
+      },
+      {
+        "holm_adjusted_pvalue": 0.0,
+        "name": "awq_minus_gptq",
+        "raw_pvalue": 0.0
+      }
+    ],
+    "inference_scope": "qwen35_9b_within_hf_method_associated_contrasts",
+    "population": {
+      "pages": 1078,
+      "quartets": 1200
+    },
+    "quartet_weighted_sensitivity": {
+      "estimates": {
+        "awq_minus_fp16": -1.7913313802083333,
+        "awq_minus_gptq": -1.3704752604166666
+      },
+      "status": "secondary",
+      "weighting": "unequal_page_quartet_weighted"
+    }
+  },
+  "report_protocol": "qwen-hf-triplet-report-v1-20260802",
+  "results_sha256": "9c971fb7ff29350513d497070b01cc63284d42a80ba22d5442f86042fd51e3f7"
+}

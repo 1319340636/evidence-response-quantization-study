@@ -1,0 +1,93 @@
+{
+  "protocol": "olmo3-hf-triplet-v1-20260901",
+  "freeze_date": "2026-09-01",
+  "scientific_role": "prospectively_frozen_post_confirmatory_extension",
+  "model": {
+    "model_key": "olmo3_7b",
+    "repo_id": "allenai/OLMo-3-7B-Instruct",
+    "revision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+    "model_type": "olmo3",
+    "architecture": "Olmo3ForCausalLM"
+  },
+  "routes": [
+    "HF_FP16",
+    "HF_GPTQ_INT4",
+    "HF_AWQ_INT4"
+  ],
+  "engineering_gate": {
+    "common_full_evidence_inputs": 16,
+    "outcome_access": false,
+    "triplet_gate_required": true,
+    "disposable_calibration_records_per_route": 1,
+    "bounded_compatibility_repairs_per_route": 1
+  },
+  "formal_run": {
+    "quartets": 1200,
+    "pages": 1078,
+    "full_evidence_inputs_per_route": 4800,
+    "serial_routes": true
+  },
+  "split": {
+    "name": "dose_subset",
+    "sha256": "bbe3e66dc7e53e0fa08c656716e113f63b8c5232de8b9fa895de6046b861b9f1"
+  },
+  "calibration": {
+    "source_role": "vitaminc_dev",
+    "count": 256,
+    "records_sha256": "f58dae1576c76c937026a565b3a899fec75658587e9d84ed39f652c2228503ed",
+    "manifest_sha256": "7b2cc940e0e8bcba84ca6a329f3662d323efaf0c6c7eb2463efbd0065c8f6851",
+    "shuffle": false,
+    "allow_truncation": false
+  },
+  "gptq_recipe": {
+    "algorithm": "GPTQ",
+    "bits": 4,
+    "group_size": 128,
+    "sym": true,
+    "desc_act": false,
+    "static_groups": false,
+    "mse": false,
+    "package": "gptqmodel",
+    "package_version": "7.1.0"
+  },
+  "awq_recipe": {
+    "algorithm": "AWQ",
+    "scheme": "W4A16_ASYM",
+    "bits": 4,
+    "activation_bits": 16,
+    "group_size": 128,
+    "zero_point": true,
+    "targets": [
+      "Linear"
+    ],
+    "ignore": [
+      "lm_head"
+    ]
+  },
+  "statistics": {
+    "cluster": "page",
+    "bootstrap_draws": 10000,
+    "seed": 20260711,
+    "confidence_level": 0.95,
+    "alternative": "two_sided",
+    "primary_holm_family": [
+      "awq_minus_fp16",
+      "awq_minus_gptq"
+    ],
+    "secondary_contrast": "gptq_minus_fp16",
+    "cross_model_endpoint_policy": "scale_invariant_only",
+    "cross_model_multiplicity_control": true
+  },
+  "prior_results_reference": {
+    "qwen_results_path": "reports/qwen_hf_triplet_formal_v1/results.json",
+    "qwen_results_file_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+    "ministral_results_path": "reports/ministral_hf_triplet_formal_v1/results.json",
+    "ministral_results_file_sha256": "8dcaf5a9a1d934f11d77054376ae078b8ff9649a7dd82ae2ea1abb985bbdf26b"
+  },
+  "causal_boundary": "model_route_associated_not_pure_quantizer_kernel_packing_or_architecture_effect",
+  "failure_policy": "engineering_failure_is_not_a_scientific_result",
+  "fallback_model": "granite",
+  "fallback_model_activation": false,
+  "recovery_access": false,
+  "frozen_before_olmo_hf_outcome_access": true
+}

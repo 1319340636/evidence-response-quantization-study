@@ -1,0 +1,69 @@
+{
+  "protocol": "qwen-hf-triplet-only-v1-20260728",
+  "freeze_date": "2026-07-28",
+  "active_models": [
+    "qwen35_9b"
+  ],
+  "routes": [
+    "HF_FP16",
+    "HF_GPTQ_INT4",
+    "HF_AWQ_INT4"
+  ],
+  "engineering_gate": {
+    "common_full_evidence_inputs": 16,
+    "outcome_access": false,
+    "triplet_gate_required": true
+  },
+  "formal_run": {
+    "quartets": 1200,
+    "pages": 1078,
+    "full_evidence_inputs_per_route": 4800,
+    "new_awq_inputs": 4800,
+    "reuse_existing_fp16_gptq": true
+  },
+  "backend_boundary": {
+    "same_hf_backend": true,
+    "inference_stack": {
+      "transformers": "5.14.1",
+      "torch": "2.13.0",
+      "torchvision": "0.28.0"
+    },
+    "causal_claim": "within_backend_quantization_method_contrast",
+    "residual_boundary": "packing_and_quantized_kernels_may_differ"
+  },
+  "awq_recipe": {
+    "algorithm": "AWQ",
+    "scheme": "W4A16_ASYM",
+    "bits": 4,
+    "activation_bits": 16,
+    "group_size": 128,
+    "zero_point": true,
+    "calibration_count": 256,
+    "calibration_batch_size": 1,
+    "allow_truncation": false
+  },
+  "source_bindings": {
+    "fp16_gptq_report": "reports/qwen_hf_formal_v1",
+    "fp16_gptq_report_manifest_sha256": "23c2befe77882f15e5c6f96ab4289165b7a314eaa434646bfeaa23c7e626dfee",
+    "dose_subset": "data/manifests/vitaminc_dose_subset_ids.txt",
+    "dose_subset_sha256": "bbe3e66dc7e53e0fa08c656716e113f63b8c5232de8b9fa895de6046b861b9f1"
+  },
+  "statistics": {
+    "cluster": "page",
+    "bootstrap_draws": 10000,
+    "seed": 20260711,
+    "confidence_level": 0.95,
+    "alternative": "two_sided",
+    "multiplicity": "holm"
+  },
+  "retired_routes": {
+    "gemma4_e4b": {
+      "route": "HF_AWQ_INT4",
+      "status": "not_formally_completed",
+      "boundary": "not_a_formal_result",
+      "resume_allowed": false
+    }
+  },
+  "recovery_access": false,
+  "frozen_before_awq_outcome_access": true
+}

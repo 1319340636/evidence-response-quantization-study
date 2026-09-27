@@ -1,0 +1,86 @@
+{
+  "analysis": {
+    "analysis_protocol": "qwen-ministral-hf-method-interaction-v1-20260809",
+    "bootstrap_contract": {
+      "alternative": "two_sided",
+      "cluster": "page",
+      "confidence_level": 0.95,
+      "draws": 10000,
+      "seed": 20260711,
+      "shared_page_indices": true
+    },
+    "causal_boundary": "route_by_model_heterogeneity_not_pure_quantizer_causality",
+    "estimand": "ministral_route_effect_minus_qwen_route_effect",
+    "holm_family": [
+      {
+        "holm_adjusted_pvalue": 2.108798102984569e-268,
+        "name": "awq_minus_fp16",
+        "raw_pvalue": 1.0543990514922844e-268
+      },
+      {
+        "holm_adjusted_pvalue": 1.0957087682237751e-217,
+        "name": "awq_minus_gptq",
+        "raw_pvalue": 1.0957087682237751e-217
+      }
+    ],
+    "interaction_order": [
+      "awq_minus_fp16",
+      "awq_minus_gptq"
+    ],
+    "interactions": {
+      "awq_minus_fp16": {
+        "holm_adjusted_pvalue": 2.108798102984569e-268,
+        "page_bootstrap": {
+          "clusters": 1078,
+          "draws": 10000,
+          "estimate": 1.5857961792671613,
+          "lower": 1.4994905659351807,
+          "seed": 20260711,
+          "upper": 1.6743597989621983
+        },
+        "page_wald": {
+          "clusters": 1078,
+          "estimate": 1.5857961792671613,
+          "pvalue": 1.0543990514922844e-268,
+          "standard_error": 0.04528047969893662,
+          "statistic": 1226.5145261353375
+        }
+      },
+      "awq_minus_gptq": {
+        "holm_adjusted_pvalue": 1.0957087682237751e-217,
+        "page_bootstrap": {
+          "clusters": 1078,
+          "draws": 10000,
+          "estimate": 1.442326646567718,
+          "lower": 1.3540424070906774,
+          "seed": 20260711,
+          "upper": 1.533406907684949
+        },
+        "page_wald": {
+          "clusters": 1078,
+          "estimate": 1.442326646567718,
+          "pvalue": 1.0957087682237751e-217,
+          "standard_error": 0.04579885648854481,
+          "statistic": 991.7860259022744
+        }
+      }
+    },
+    "population": {
+      "pages": 1078,
+      "quartets": 1200
+    },
+    "qwen_reference": {
+      "awq_minus_fp16_estimate": -1.801813978432282,
+      "awq_minus_gptq_estimate": -1.384059021335807,
+      "report_manifest_file_sha256": "0a83f6b0e404ec316cf82c6f6bbb0022b99ffeb311ea29dcd53668e78be744e2",
+      "report_manifest_path": "reports/qwen_hf_triplet_formal_v1/report_manifest.json",
+      "results_file_sha256": "d433af237dc2208d60e21bce283232f3c0f53acac3d02a6eeb100bfc14ff544e",
+      "results_path": "reports/qwen_hf_triplet_formal_v1/results.json"
+    },
+    "source_gates": {
+      "ministral": "bc28f5e91020128df538bba44837ebe1a397be61c8a727585afa6124ff6e55fd",
+      "qwen": "86258a7dad2a1064d5b623acdd21d9934007a54a99b08f4355309ffe2e29666b"
+    }
+  },
+  "analysis_sha256": "6cd45bb85b4d506392e50a74a3b2e7ce97e660af1c2590b87d610a0411609ceb"
+}

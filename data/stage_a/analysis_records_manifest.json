@@ -1,0 +1,44 @@
+{
+  "conditions": {
+    "gemma_f16": 1200,
+    "gemma_q4": 1200,
+    "ministral_f16": 1200,
+    "ministral_q4": 1200,
+    "olmo_f16": 1200,
+    "olmo_q4": 1200,
+    "qwen_f16": 1200,
+    "qwen_q4": 1200
+  },
+  "dataset_text_included": false,
+  "manifest_sha256": "af723bfd3081674657e05fd85a11be7b0f93cd0432f114600e164b7e2249778d",
+  "paired_pages": 1078,
+  "paired_quartets": 1200,
+  "prompt_contract_sha256": "62be3ad998b851887ce433bb80a8269f020dbea63c048d418f0e1277590352e1",
+  "protocol": "vitaminc-stage-a-text-free-v1-20260927",
+  "quartet_interaction_formula": "(m0-m1-m2+m3)/2; m=logp(SUPPORTS)-logp(negative_label)",
+  "records": 9600,
+  "records_jsonl_sha256": "316f2c91b7450808b36a3ceb30da34b4b1afc06e69a4e8eac526e86088924b11",
+  "source_sha256": {
+    "gemma_f16_manifest": "423b13f21021596f16b5ad879aff0f89d90be0376b88d7740bbc4b1f67becc9f",
+    "gemma_f16_records": "2d64583386451b9722a58617828407f379cb59784aec4b2c9081a7eef8b098bc",
+    "gemma_q4_manifest": "8b02e11cf1cc5aac696612d5179a1231b0fd9ae628711f3c030951ecfa1311c9",
+    "gemma_q4_records": "1c205983787c9e1c74e04ef78d7ec5529fc294347a0081ebf3deff04cf18095f",
+    "ministral_f16_manifest": "0942515481f2cee476d6db503508e9301831af85a0df57718df4d5ae254570e6",
+    "ministral_f16_records": "02768da9010f5e3adfdbc5d8bd0ece38bae91475a72a77e39046b8067af9cb46",
+    "ministral_q4_manifest": "169d3f28405815415c99591e253ecf24f631b67a6c014a94adbd29f912686218",
+    "ministral_q4_records": "20cac67355a49ae163397ff4ca33d4bfe2a57d7c142db003d371f9c10f909bdd",
+    "olmo_f16_manifest": "ded6c9d17608f0f120ca34328f3dd9c01756d37b5e060773a6729a1983fa471e",
+    "olmo_f16_records": "33669c3c272cb5d0d34158ab7fbed81b1370e742ce87f25c02804512363a319c",
+    "olmo_q4_manifest": "355cabf9fd5211cec1a53ce16323beeb2a43c2f321c5d91172bfc8143c5998b9",
+    "olmo_q4_records": "0a17729775d6e17dd694a80e3bd8807225586b4310b5eaabae9efaa0de374d2d",
+    "qwen_f16_manifest": "df78eeafef88f64091631561604bf15ecc2d2d888c95bf78fdf57994bcce3a5f",
+    "qwen_f16_records": "0936f1db6475cf5883dafd53946dff23bf6ae0758bfc1798103f82800e3c1ed9",
+    "qwen_q4_manifest": "4197c4c3fa9100b4839bbf2d844b81985f4d7a4aecf6bfc570965d6a525fba04",
+    "qwen_q4_records": "825af735662906e68c36affb6e3a6e8fb34dbd004a4e928440a87239c97b0360",
+    "subset_ids": "bbe3e66dc7e53e0fa08c656716e113f63b8c5232de8b9fa895de6046b861b9f1"
+  },
+  "split_sha256": {
+    "confirmatory": "2ca1fcc9fdc9dd857202756be072f518c627a67307cfc75df73e4c3b04cf56ee",
+    "dose_subset": "bbe3e66dc7e53e0fa08c656716e113f63b8c5232de8b9fa895de6046b861b9f1"
+  }
+}

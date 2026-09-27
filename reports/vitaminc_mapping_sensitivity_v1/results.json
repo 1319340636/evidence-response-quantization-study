@@ -1,0 +1,290 @@
+{
+  "analysis_protocol": "vitaminc-mapping-sensitivity-analysis-v1-20260719",
+  "inference_scope": "post_hoc_prompt_robustness",
+  "interpretation_boundary": "Mapping sensitivity cannot select the primary mapping or rewrite the original confirmatory hypothesis.",
+  "parameters": {
+    "cluster": "page",
+    "draws": 10000,
+    "mapping_difference_family": "Holm across three routes",
+    "seed": 20260711
+  },
+  "population": {
+    "full_units_per_cell": 4000,
+    "mapping_route_cells": 12,
+    "pages": 671,
+    "quartets": 1000
+  },
+  "report_protocol": "vitaminc-mapping-report-v1-20260719",
+  "routes": {
+    "gemma_gguf": {
+      "direction_stable": true,
+      "hard_label_transitions": {
+        "high_precision": {
+          "NOT ENOUGH INFO->NOT ENOUGH INFO": 377,
+          "NOT ENOUGH INFO->REFUTES": 13,
+          "NOT ENOUGH INFO->SUPPORTS": 54,
+          "REFUTES->NOT ENOUGH INFO": 35,
+          "REFUTES->REFUTES": 1028,
+          "REFUTES->SUPPORTS": 36,
+          "SUPPORTS->NOT ENOUGH INFO": 2,
+          "SUPPORTS->REFUTES": 37,
+          "SUPPORTS->SUPPORTS": 2418
+        },
+        "quantized": {
+          "NOT ENOUGH INFO->NOT ENOUGH INFO": 258,
+          "NOT ENOUGH INFO->REFUTES": 3,
+          "NOT ENOUGH INFO->SUPPORTS": 12,
+          "REFUTES->NOT ENOUGH INFO": 79,
+          "REFUTES->REFUTES": 975,
+          "REFUTES->SUPPORTS": 20,
+          "SUPPORTS->NOT ENOUGH INFO": 55,
+          "SUPPORTS->REFUTES": 98,
+          "SUPPORTS->SUPPORTS": 2500
+        }
+      },
+      "label_probability_mass": {
+        "original": {
+          "high_precision": 0.9999985346925314,
+          "quantized": 0.9999738987085955
+        },
+        "reversed": {
+          "high_precision": 0.9999983653843627,
+          "quantized": 0.9999681271810947
+        }
+      },
+      "mapping_difference_holm_pvalue": 5.178159038854438e-53,
+      "mapping_difference_raw_pvalue": 2.589079519427219e-53,
+      "original": {
+        "page_bootstrap": {
+          "clusters": 671,
+          "draws": 10000,
+          "estimate": -3.24734467989432,
+          "lower": -3.4514067493655585,
+          "seed": 20260711,
+          "upper": -3.047315895129367
+        },
+        "page_wald": {
+          "clusters": 671,
+          "estimate": -3.24734467989432,
+          "pvalue": 1.9189779061759374e-219,
+          "standard_error": 0.10269686004540221,
+          "statistic": 999.8674845755581
+        },
+        "quartet_weighted": -3.133479845762253
+      },
+      "reversed": {
+        "page_bootstrap": {
+          "clusters": 671,
+          "draws": 10000,
+          "estimate": -2.286797131694333,
+          "lower": -2.457451761746083,
+          "seed": 20260711,
+          "upper": -2.11538027650342
+        },
+        "page_wald": {
+          "clusters": 671,
+          "estimate": -2.286797131694333,
+          "pvalue": 7.639532171263309e-153,
+          "standard_error": 0.0868351586550873,
+          "statistic": 693.5281177499143
+        },
+        "quartet_weighted": -2.1801666288375854
+      },
+      "reversed_minus_original": {
+        "page_bootstrap": {
+          "clusters": 671,
+          "draws": 10000,
+          "estimate": 0.9605475481999869,
+          "lower": 0.8409702542444941,
+          "seed": 20260711,
+          "upper": 1.0851777254534036
+        },
+        "page_wald": {
+          "clusters": 671,
+          "estimate": 0.9605475481999869,
+          "pvalue": 2.589079519427219e-53,
+          "standard_error": 0.06249368072180198,
+          "statistic": 236.24657827848702
+        }
+      }
+    },
+    "qwen_gguf": {
+      "direction_stable": true,
+      "hard_label_transitions": {
+        "high_precision": {
+          "NOT ENOUGH INFO->NOT ENOUGH INFO": 331,
+          "REFUTES->NOT ENOUGH INFO": 172,
+          "REFUTES->REFUTES": 1055,
+          "REFUTES->SUPPORTS": 57,
+          "SUPPORTS->NOT ENOUGH INFO": 92,
+          "SUPPORTS->REFUTES": 10,
+          "SUPPORTS->SUPPORTS": 2283
+        },
+        "quantized": {
+          "NOT ENOUGH INFO->NOT ENOUGH INFO": 306,
+          "NOT ENOUGH INFO->REFUTES": 9,
+          "NOT ENOUGH INFO->SUPPORTS": 7,
+          "REFUTES->NOT ENOUGH INFO": 16,
+          "REFUTES->REFUTES": 954,
+          "REFUTES->SUPPORTS": 56,
+          "SUPPORTS->NOT ENOUGH INFO": 22,
+          "SUPPORTS->REFUTES": 53,
+          "SUPPORTS->SUPPORTS": 2577
+        }
+      },
+      "label_probability_mass": {
+        "original": {
+          "high_precision": 0.9967323747959774,
+          "quantized": 0.8891216097116801
+        },
+        "reversed": {
+          "high_precision": 0.9976979113598897,
+          "quantized": 0.8873175786089387
+        }
+      },
+      "mapping_difference_holm_pvalue": 2.121689098216535e-34,
+      "mapping_difference_raw_pvalue": 2.121689098216535e-34,
+      "original": {
+        "page_bootstrap": {
+          "clusters": 671,
+          "draws": 10000,
+          "estimate": 0.12039376953984028,
+          "lower": 0.05076296692954688,
+          "seed": 20260711,
+          "upper": 0.18946478166713007
+        },
+        "page_wald": {
+          "clusters": 671,
+          "estimate": 0.12039376953984028,
+          "pvalue": 0.0006999728008184159,
+          "standard_error": 0.03551868421942495,
+          "statistic": 11.489318974140527
+        },
+        "quartet_weighted": 0.11355273103713989
+      },
+      "reversed": {
+        "page_bootstrap": {
+          "clusters": 671,
+          "draws": 10000,
+          "estimate": 0.3608775254952445,
+          "lower": 0.2977664243661599,
+          "seed": 20260711,
+          "upper": 0.42409037451922665
+        },
+        "page_wald": {
+          "clusters": 671,
+          "estimate": 0.3608775254952445,
+          "pvalue": 6.291430923671161e-29,
+          "standard_error": 0.03233232321919548,
+          "statistic": 124.57928929722027
+        },
+        "quartet_weighted": 0.35711222553253175
+      },
+      "reversed_minus_original": {
+        "page_bootstrap": {
+          "clusters": 671,
+          "draws": 10000,
+          "estimate": 0.2404837559554042,
+          "lower": 0.20161732457384698,
+          "seed": 20260711,
+          "upper": 0.27969312047552447
+        },
+        "page_wald": {
+          "clusters": 671,
+          "estimate": 0.2404837559554042,
+          "pvalue": 2.121689098216535e-34,
+          "standard_error": 0.01966173690421667,
+          "statistic": 149.59866969125397
+        }
+      }
+    },
+    "qwen_hf": {
+      "direction_stable": true,
+      "hard_label_transitions": {
+        "high_precision": {
+          "NOT ENOUGH INFO->NOT ENOUGH INFO": 336,
+          "REFUTES->NOT ENOUGH INFO": 169,
+          "REFUTES->REFUTES": 1061,
+          "REFUTES->SUPPORTS": 54,
+          "SUPPORTS->NOT ENOUGH INFO": 87,
+          "SUPPORTS->REFUTES": 13,
+          "SUPPORTS->SUPPORTS": 2280
+        },
+        "quantized": {
+          "NOT ENOUGH INFO->NOT ENOUGH INFO": 315,
+          "REFUTES->NOT ENOUGH INFO": 309,
+          "REFUTES->REFUTES": 682,
+          "REFUTES->SUPPORTS": 34,
+          "SUPPORTS->NOT ENOUGH INFO": 310,
+          "SUPPORTS->REFUTES": 24,
+          "SUPPORTS->SUPPORTS": 2326
+        }
+      },
+      "label_probability_mass": {
+        "original": {
+          "high_precision": 0.9968442758280431,
+          "quantized": 0.9986229679301167
+        },
+        "reversed": {
+          "high_precision": 0.9977900772290407,
+          "quantized": 0.9986651966931801
+        }
+      },
+      "mapping_difference_holm_pvalue": 7.044962587998723e-54,
+      "mapping_difference_raw_pvalue": 2.3483208626662413e-54,
+      "original": {
+        "page_bootstrap": {
+          "clusters": 671,
+          "draws": 10000,
+          "estimate": -0.3780548494044559,
+          "lower": -0.4267179203932956,
+          "seed": 20260711,
+          "upper": -0.33061432577224953
+        },
+        "page_wald": {
+          "clusters": 671,
+          "estimate": -0.3780548494044559,
+          "pvalue": 1.7298780468393088e-53,
+          "standard_error": 0.02455472609319352,
+          "statistic": 237.0497155699074
+        },
+        "quartet_weighted": -0.3666640625
+      },
+      "reversed": {
+        "page_bootstrap": {
+          "clusters": 671,
+          "draws": 10000,
+          "estimate": -0.6176344560571694,
+          "lower": -0.6682408322290058,
+          "seed": 20260711,
+          "upper": -0.5672684015067847
+        },
+        "page_wald": {
+          "clusters": 671,
+          "estimate": -0.6176344560571694,
+          "pvalue": 9.645438234364995e-125,
+          "standard_error": 0.025999668313206804,
+          "statistic": 564.3225658590904
+        },
+        "quartet_weighted": -0.582375
+      },
+      "reversed_minus_original": {
+        "page_bootstrap": {
+          "clusters": 671,
+          "draws": 10000,
+          "estimate": -0.2395796066527135,
+          "lower": -0.2695114340786175,
+          "seed": 20260711,
+          "upper": -0.20934471644056363
+        },
+        "page_wald": {
+          "clusters": 671,
+          "estimate": -0.2395796066527135,
+          "pvalue": 2.3483208626662413e-54,
+          "standard_error": 0.015431812031876034,
+          "statistic": 241.02708347226968
+        }
+      }
+    }
+  }
+}

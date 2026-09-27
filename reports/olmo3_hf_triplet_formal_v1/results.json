@@ -1,0 +1,199 @@
+{
+  "analysis_protocol": "olmo3-hf-triplet-analysis-v1-20260901",
+  "bootstrap_contract": {
+    "alternative": "two_sided",
+    "cluster": "page",
+    "confidence_level": 0.95,
+    "draws": 10000,
+    "seed": 20260711,
+    "shared_page_indices": true
+  },
+  "causal_boundary": "model_route_associated_not_pure_quantizer_kernel_packing_or_architecture_effect",
+  "contrasts": {
+    "awq_minus_fp16": {
+      "confidence_interval_status": "unadjusted_descriptive",
+      "estimand": "awq_minus_fp16",
+      "holm_adjusted_pvalue": 1.4233479837155118e-211,
+      "multiplicity_status": "holm_primary_family",
+      "page_bootstrap": {
+        "clusters": 1078,
+        "draws": 10000,
+        "estimate": -1.6340300324675325,
+        "lower": -1.7374640809804034,
+        "seed": 20260711,
+        "upper": -1.5315143875376855
+      },
+      "page_wald": {
+        "clusters": 1078,
+        "estimate": -1.6340300324675325,
+        "pvalue": 7.116739918577559e-212,
+        "standard_error": 0.05260005181599774,
+        "statistic": 965.0453550360579
+      }
+    },
+    "awq_minus_gptq": {
+      "confidence_interval_status": "unadjusted_descriptive",
+      "estimand": "awq_minus_gptq",
+      "holm_adjusted_pvalue": 1.6750039899131797e-160,
+      "multiplicity_status": "holm_primary_family",
+      "page_bootstrap": {
+        "clusters": 1078,
+        "draws": 10000,
+        "estimate": -1.4043729707792207,
+        "lower": -1.5078068834067717,
+        "seed": 20260711,
+        "upper": -1.3035471050991418
+      },
+      "page_wald": {
+        "clusters": 1078,
+        "estimate": -1.4043729707792207,
+        "pvalue": 1.6750039899131797e-160,
+        "standard_error": 0.05202273649644595,
+        "statistic": 728.7499502149818
+      }
+    },
+    "gptq_minus_fp16": {
+      "confidence_interval_status": "unadjusted_descriptive",
+      "estimand": "gptq_minus_fp16",
+      "multiplicity_status": "secondary_not_in_holm_family",
+      "page_bootstrap": {
+        "clusters": 1078,
+        "draws": 10000,
+        "estimate": -0.22965706168831168,
+        "lower": -0.2796163413874072,
+        "seed": 20260711,
+        "upper": -0.17998925600069576
+      },
+      "page_wald": {
+        "clusters": 1078,
+        "estimate": -0.22965706168831168,
+        "pvalue": 3.613755395387477e-20,
+        "standard_error": 0.024965501683296788,
+        "statistic": 84.62116746326379
+      }
+    }
+  },
+  "gate": {
+    "aligned_full_owners": 4800,
+    "gate_sha256": "56d3e28c31e9848b0a03d768bf6acc4cf31a5e83b03b2e22b80c2b2cb4f8090c",
+    "mode": "olmo3_formal4800",
+    "model_key": "olmo3_7b",
+    "olmo3_triplet_freeze_sha256": "cafe41ed64e9779b3a4d21b004c20f24ce43ac2fc9550b7f7e51fb90058ae40d"
+  },
+  "hard_labels": {
+    "awq_vs_fp16": {
+      "accuracy": {
+        "awq": 0.5183333333333333,
+        "difference": -0.035,
+        "reference": 0.5533333333333333
+      },
+      "agreement": 0.8739583333333333,
+      "balanced_accuracy": {
+        "awq": 0.5311834336702727,
+        "reference": 0.5621420403012737
+      },
+      "mcc": {
+        "awq": 0.3006461393350586,
+        "reference": 0.3456421015542134
+      },
+      "transitions": {
+        "NOT ENOUGH INFO->NOT ENOUGH INFO": 1412,
+        "NOT ENOUGH INFO->REFUTES": 46,
+        "NOT ENOUGH INFO->SUPPORTS": 156,
+        "REFUTES->NOT ENOUGH INFO": 165,
+        "REFUTES->REFUTES": 420,
+        "REFUTES->SUPPORTS": 23,
+        "SUPPORTS->NOT ENOUGH INFO": 154,
+        "SUPPORTS->REFUTES": 61,
+        "SUPPORTS->SUPPORTS": 2363
+      },
+      "units": 4800
+    },
+    "awq_vs_gptq": {
+      "accuracy": {
+        "awq": 0.5183333333333333,
+        "difference": -0.024791666666666667,
+        "reference": 0.543125
+      },
+      "agreement": 0.8697916666666666,
+      "balanced_accuracy": {
+        "awq": 0.5311834336702727,
+        "reference": 0.5562084631360332
+      },
+      "mcc": {
+        "awq": 0.3006461393350586,
+        "reference": 0.3394239185629298
+      },
+      "transitions": {
+        "NOT ENOUGH INFO->NOT ENOUGH INFO": 1456,
+        "NOT ENOUGH INFO->REFUTES": 46,
+        "NOT ENOUGH INFO->SUPPORTS": 207,
+        "REFUTES->NOT ENOUGH INFO": 155,
+        "REFUTES->REFUTES": 429,
+        "REFUTES->SUPPORTS": 45,
+        "SUPPORTS->NOT ENOUGH INFO": 120,
+        "SUPPORTS->REFUTES": 52,
+        "SUPPORTS->SUPPORTS": 2290
+      },
+      "units": 4800
+    },
+    "gptq_vs_fp16": {
+      "accuracy": {
+        "difference": -0.010208333333333333,
+        "gptq": 0.543125,
+        "reference": 0.5533333333333333
+      },
+      "agreement": 0.9372916666666666,
+      "balanced_accuracy": {
+        "gptq": 0.5562084631360332,
+        "reference": 0.5621420403012737
+      },
+      "mcc": {
+        "gptq": 0.3394239185629298,
+        "reference": 0.3456421015542134
+      },
+      "transitions": {
+        "NOT ENOUGH INFO->NOT ENOUGH INFO": 1534,
+        "NOT ENOUGH INFO->REFUTES": 41,
+        "NOT ENOUGH INFO->SUPPORTS": 39,
+        "REFUTES->NOT ENOUGH INFO": 50,
+        "REFUTES->REFUTES": 550,
+        "REFUTES->SUPPORTS": 8,
+        "SUPPORTS->NOT ENOUGH INFO": 125,
+        "SUPPORTS->REFUTES": 38,
+        "SUPPORTS->SUPPORTS": 2415
+      },
+      "units": 4800
+    }
+  },
+  "holm_family": [
+    {
+      "holm_adjusted_pvalue": 1.4233479837155118e-211,
+      "name": "awq_minus_fp16",
+      "raw_pvalue": 7.116739918577559e-212
+    },
+    {
+      "holm_adjusted_pvalue": 1.6750039899131797e-160,
+      "name": "awq_minus_gptq",
+      "raw_pvalue": 1.6750039899131797e-160
+    }
+  ],
+  "inference_scope": "olmo3_7b_within_hf_method_associated_contrasts",
+  "population": {
+    "pages": 1078,
+    "quartets": 1200
+  },
+  "primary_contrast_order": [
+    "awq_minus_fp16",
+    "awq_minus_gptq"
+  ],
+  "quartet_weighted_sensitivity": {
+    "estimates": {
+      "awq_minus_fp16": -1.6451139322916666,
+      "awq_minus_gptq": -1.41748046875,
+      "gptq_minus_fp16": -0.22763346354166666
+    },
+    "status": "secondary"
+  },
+  "secondary_contrast": "gptq_minus_fp16"
+}
